@@ -9,30 +9,6 @@
 <book xml:id="calcplot3d-help">
 <title>CalcPlot3D Help</title>
 
-<frontmatter xml:id="index">
-<titlepage>
-    <credit>
-		<title><em>Author:</em></title>
-		<author>
-		  <personname>Paul Seeburger</personname>
-		  <department>Professor of Mathematics</department>
-		  <institution>Monroe Community College</institution>
-		  <email>pseeburger@monroecc.edu</email>
-		</author>
-    </credit>
-   <date>Last updated: <today />, <timeofday />
-   <p>This is a help manual for using <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/"><alert>CalcPlot3D</alert></url>,
-	 an interactive JavaScript app for visualizing multivariable calculus, differential equations, physics, and more!</p>
-	 <figure xml:id="figure-calcplot3d-defaultview">
-		<caption>CalcPlot3D Default View</caption>
-		<image width="100%" source="images/CalcPlot3Dopen.png">
-			<description>Default view of CalcPlot3D</description>
-		</image>
-	 </figure>
-   </date>
-</titlepage>
-</frontmatter>
-
 <chapter xml:id="chapter-overview"><title>Overview</title>
     <introduction>
     <p>First let’s cover some of the basic functionality of the CalcPlot3D app.</p>
@@ -43,12 +19,14 @@
         This should rotate the surface in the direction you move the mouse about the focus point (the origin, by default).
         To reset the viewpoint to the original one, press the <alert>Home</alert> key (<em>fn-left arrow</em> on Mac).</p>
         <p>Useful key shortcuts are shown below for rotating the plot and many other features (on any device with a real keyboard).</p>
-		<sidebyside xml:id="table-rotation-key-shortcuts">
+		<sidebyside>
 		<stack>
-			<title>CalcPlot3D <alert>Rotation</alert> Key Shortcuts</title>
-			<tabular top="major">
+			<tabular top="none">
 				<col width="25%"/>
 				<col width="75%" />
+				<row valign="bottom" bottom="major">
+				    <cell colspan="2" halign="center"><p><m>\large\textbf{CalcPlot3D}</m> <m>\large\textit{Rotation}</m> <m>\large\textbf{Key Shortcuts}</m></p></cell>
+				</row>
 				<row valign="top" bottom="medium">
 					<cell>Key combination</cell>
 					<cell><p>Action</p></cell>
@@ -89,12 +67,15 @@
 			</stack>
 		</sidebyside>
 		
-		<sidebyside xml:id="table-viewpoint-key-shortcuts">
-		<stack>
-			<title>CalcPlot3D <alert>Viewpoint</alert> and <alert>Center</alert> Key Shortcuts</title>
-			<tabular top="major">
+		<sidebyside>
+		<stack>			
+		    
+			<tabular top="none">
 				<col width="25%"/>
 				<col width="75%" />
+				<row valign="bottom" bottom="major">
+				    <cell colspan="2" halign="center"><p><m>\large\textbf{CalcPlot3D}</m> <m>\large\textit{Viewpoint}</m> <m>\large\textbf{and}</m> <m>\large\textit{Center}</m> <m>\large\textbf{Key Shortcuts}</m></p></cell>
+				</row>
 				<row valign="top" bottom="medium">
 					<cell><p>Key combination</p></cell>
 					<cell><p>Action</p></cell>
@@ -143,12 +124,14 @@
 			</stack>
 		</sidebyside>
 		
-		<sidebyside xml:id="table-other-key-shortcuts">
+		<sidebyside>
 		<stack>
-			<title>Additional CalcPlot3D Key Shortcuts</title>
-			<tabular top="major">
+			<tabular top="none">
 				<col width="25%"/>
 				<col width="75%" />
+				<row valign="bottom" bottom="major">
+				    <cell colspan="2" halign="center"><p><m>\large \textbf{Additional CalcPlot3D Key Shortcuts}</m></p></cell>
+				</row>
 				<row valign="top" bottom="medium">
 					<cell><p>Key combination</p></cell>
 					<cell><p>Action</p></cell>
@@ -199,14 +182,11 @@
     </section>
     <section>
         <title>Using 3D Glasses</title>
-        <p>
-        To turn on/off the 3D Glasses Mode, click <image width="7%" source="images/3Dglasses.png">
-		<description>Image of 3D glasses</description></image>, the small toolbar button with an image of 3D glasses on it.
-        </p>
-        <p>
-        The plot should now appear to have overlapping red and cyan shadows, as shown in the figure below.  
-        You should wear the 3D glasses so the red lens is on the left and the cyan lens is on the right.
-        </p>
+        <sidebyside widths="7% 85%"><image width="7%" source="images/3DGlasses.png"><description>Image of 3D glasses</description></image>
+        <p>To turn on/off the 3D Glasses Mode, click the small toolbar button with an image of 3D glasses on it.</p></sidebyside>
+
+        <p>The plot should now appear to have overlapping red and cyan shadows, as shown in the figure below.  
+        You should wear the 3D glasses so the red lens is on the left and the cyan lens is on the right.</p>
         <figure>
             <caption>3D Glasses Mode</caption>
             <interactive calcplot3d="type=z;z=7xy/e^(x^2+y^2);visible=true;umin=-2;umax=2;vmin=-2;vmax=2;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=window;hsrmode=3;nomidpts=true;anaglyph=0;center=-3.0033092873796114,-8.221936222744707,4.83527642161825,1;focus=0,0,0,1;up=0.07574356174225831,0.41516237846394183,0.9065887228301264,1;transparent=true;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.4;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.45;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
@@ -215,39 +195,38 @@
 				</static>
 			</interactive>
         </figure>
-        <p>
-        There are a variety of 3D viewing modes you can experiment with in CalcPlot3D. 
+        <p>There are a variety of 3D viewing modes you can experiment with in CalcPlot3D. 
         These are found in the <alert>3D Options</alert> submenu of the Main menu in CalcPlot3D.
-        For more details on the other options see the help page in <xref ref="section-3doptions" /> for this submenu.        
-        </p>
+        For more details on the other options see the help page in <xref ref="section-3doptions" /> for this submenu.</p>
     </section>
     
     <section>
 		<title>Other Toolbar Actions</title>
 		<p>Here is a description of each of the other toolbar buttons at the top of the CalcPlot3D control panel.</p>    
-		<sidebyside widths="7% 80%"><p><image width="7%" source="images/reset.png"><description>Reset button</description></image></p><p>Resets the app to the original view.</p></sidebyside>
-		<sidebyside widths="7% 80%"><p><image width="7%" source="images/clear.png"><description>Clear Plot button</description></image></p><p>Clears the 3D plot of any plotted objects.</p></sidebyside>
-		<sidebyside widths="7% 80%"><p><image width="7%" source="images/zoomIn.png"><description>Zoom In</description></image></p><p>Zooms the domain window in by a factor of 1/2.</p></sidebyside>
-		<sidebyside widths="7% 80%"><p><image width="7%" source="images/zoomOut.png"><description>Zoom Out</description></image></p><p>Zooms the domain window out by a factor of 2.</p></sidebyside>
-		<sidebyside widths="7% 80%"><p><image width="7%" source="images/search.png"><description>Switch Transparency</description></image></p><p>Turns surface transparency on/off.</p></sidebyside>
-		<sidebyside widths="7% 80%"><p><image width="7%" source="images/edgesbutton.png"><description>Show/hide Edges</description></image></p><p>Show/hide the surface edges.</p></sidebyside>
-		<sidebyside widths="7% 80%"><p><image width="7%" source="images/facesbutton.png"><description>Show/hide Faces</description></image></p><p>Show/hide the surface faces.</p></sidebyside>
-		<sidebyside widths="10% 80%"><p><image width="10%" source="images/graphbutton.png"><description>Update plot</description></image></p><p>Force all objects to update in plot.</p></sidebyside>
-		<sidebyside widths="14% 80%"><p><image width="14%" source="images/3Dmodebutton.png"><description>Next 3D rendering mode</description></image></p><stack><p>Render plot using the next 3D Hidden Surface mode. See <xref ref="section-3doptions" />.</p>
+		<sidebyside widths="7% 80%"><image width="7%" source="images/reset.png"><description>Reset button</description></image><p>Resets the app to the original view.</p></sidebyside>
+		<sidebyside widths="7% 80%"><image width="7%" source="images/clear.png"><description>Clear Plot button</description></image><p>Clears the 3D plot of any plotted objects.</p></sidebyside>
+		<sidebyside widths="7% 80%"><image width="7%" source="images/zoomIn.png"><description>Zoom In</description></image><p>Zooms the domain window in by a factor of 1/2.</p></sidebyside>
+		<sidebyside widths="7% 80%"><image width="7%" source="images/zoomOut.png"><description>Zoom Out</description></image><p>Zooms the domain window out by a factor of 2.</p></sidebyside>
+		<sidebyside widths="7% 80%"><image width="7%" source="images/search.png"><description>Switch Transparency</description></image><p>Turns surface transparency on/off.</p></sidebyside>
+		<sidebyside widths="7% 80%"><image width="7%" source="images/edgesbutton.png"><description>Show/hide Edges</description></image><p>Show/hide the surface edges.</p></sidebyside>
+		<sidebyside widths="7% 80%"><image width="7%" source="images/facesbutton.png"><description>Show/hide Faces</description></image><p>Show/hide the surface faces.</p></sidebyside>
+		<sidebyside widths="10% 80%"><image width="10%" source="images/graphbutton.png"><description>Update plot</description></image><p>Force all objects to update in plot.</p></sidebyside>
+		<sidebyside widths="14% 80%"><image width="14%" source="images/3Dmodebutton.png"><description>Next 3D rendering mode</description></image><stack><p>Render plot using the next 3D Hidden Surface mode. See <xref ref="section-3doptions" />.</p>
 		<p>These modes are: <ul><li>Array Depthsort,</li> <li>Array Depthsort Triangularized,</li> <li>BSP Tree,</li> <li>BSP Tree Triangularized,</li> <li>Object Depth Sort</li></ul></p></stack></sidebyside>
-		<sidebyside widths="7% 80%"><p><image width="7%" source="images/formatAxes.png"><description>Format axes</description></image></p><p>Show/hide the format axes options.</p></sidebyside>
-		<sidebyside widths="7% 80%"><p><image width="7%" source="images/gridmenu.png"><description>Show Gridlines Menu</description></image></p><p>Show/hide the gridlines menu.</p></sidebyside>
-		<sidebyside widths="7% 80%"><p><image width="7%" source="images/tracePlane.png"><description>Show/hide 2D Traceplane</description></image></p><p>Show/hide the 2D traceplane and its options. See <xref ref="chapter-traceplane" />.</p></sidebyside>
+		<sidebyside widths="7% 80%"><image width="7%" source="images/formatAxes.png"><description>Format axes</description></image><p>Show/hide the format axes options.</p></sidebyside>
+		<sidebyside widths="7% 80%"><image width="7%" source="images/gridmenu.png"><description>Show Gridlines Menu</description></image><p>Show/hide the gridlines menu.</p></sidebyside>
+		<sidebyside widths="7% 80%"><image width="7%" source="images/tracePlane.png"><description>Show/hide 2D Traceplane</description></image><p>Show/hide the 2D traceplane and its options. See <xref ref="chapter-traceplane" />.</p></sidebyside>
     </section>
 </chapter>
 
 <chapter xml:id="chapter-objects">
+    <title>CalcPlot3D Objects</title>
     <introduction>
     <p>
     There are a number of objects that can be added to the plot window in CalcPlot3D using the <alert>Add to graph</alert> drop-down menu.  This chapter will explain each of these objects and how to use them.
     </p>
     </introduction>
-	<title>CalcPlot3D Objects</title>
+	
 	<section xml:id="section-functions-fxy">
 	<title>Functions of Two-Variables</title>
 	    <subsection>
@@ -256,36 +235,45 @@
         </subsection>
         <subsection>
 	       <title>Functions in the form <m>x = f(y, z)</m></title>
+	       <p></p>
         </subsection>
         <subsection>
 	       <title>Functions in the form <m>y = f(x, z)</m></title>
+	       <p></p>
         </subsection>
 	    <subsection>
 	       <title>Functions in Cylindrical Coordinates</title>
+	       <p></p>
         </subsection>
         <subsection>
 	       <title>Functions in Spherical Coordinates</title>
+	       <p></p>
         </subsection>
 	</section>
 
 	<section xml:id="section-space-curves">
 	<title>Space Curves</title>
+		<p></p>
 	</section>
 
 	<section xml:id="section-vectorfields">
 	<title>Vector Fields</title>
+		<p></p>
 	</section>
 
 	<section xml:id="section-points">
 	<title>Points</title>
+		<p></p>
 	</section>
 	
 	<section xml:id="section-vectors">
 	<title>Vectors</title>
+		<p></p>
 	</section>
 	
 	<section xml:id="section-textlabels">
 	<title>Text Labels</title>
+		<p></p>
 	</section>
 
 	<section xml:id="section-implicit-surfaces">
@@ -293,26 +281,32 @@
 	
 	    <subsection>
 			<title>Cartesian Coordinates</title>
+				<p></p>
 		</subsection>
 	    <subsection>
 			<title>Cylindrical Coordinates</title>
+				<p></p>
 		</subsection>
 		<subsection>
 			<title>Spherical Coordinates</title>
+				<p></p>
 		</subsection>
 	
 	</section>
 
 	<section xml:id="section-parametric-surfaces">
 	<title>Parametric Surfaces</title>
+		<p></p>
 	</section>
 	
     <section xml:id="section-regions">
 	<title>Regions</title>
+		<p></p>
 	</section>
 	
 	<section xml:id="section-sliders">
 	<title>Parameter Sliders</title>
+		<p></p>
 	</section>
 </chapter>
 
@@ -331,56 +325,70 @@
 		(e.g., when displaying contour plots),
 		it is generally not displayed when you first open CalcPlot3D.</p>
 		
-		<p>To access the Trace Plane, click on the <image width="5%" source="images/tracePlane.png">
-		<description>Trace plane button</description></image> button, located at the far right of the row of buttons
+		<p>To access the Trace Plane, click on the trace plane button, located at the far right of the row of buttons
 		above the <alert>Add to graph</alert> menu.  See the circled button below.</p>
-		
-		<p><image width="50%" source="images/traceplaneButton.png"><description>Trace plane button</description></image></p>
+		<sidebyside widths="70%">
+		<image width="50%" source="images/traceplaneButton.png"><description>Trace plane button</description></image>
+		</sidebyside>
     </section>
     <section>
         <title>Trace points on the 2D Trace Plane</title>
+			<p></p>
     </section>
     <section>
         <title>Trace Plane Menu Options</title>
         <introduction>
-        <p>When the 2D trace plane is displayed, a related menu appears just to the right of the trace plane button with additional options.  
-        It looks like a downward pointing triangle.  See the circled button below.</p>
-        <p><image width="50%" source="images/traceplanemenubuttoncircled.png"><description>Trace plane menu button</description></image></p>
-        <p>Click on it to view the available options.</p>
-        <p>Each of these options is described below.</p>
+			<p>When the 2D trace plane is displayed, a related menu appears just to the right of the trace plane button with additional options.  
+			It looks like a downward pointing triangle.  See the circled button below.</p>
+			<sidebyside widths="70%">
+			<image width="50%" source="images/traceplanemenubuttoncircled.png"><description>Trace plane menu button</description></image>
+			</sidebyside>
+			<p>Click on it to view the available options.</p>
+			<p>Each of these options is described below.</p>
         </introduction>
         <subsection>
             <title>Enter trace point</title>
+            <p></p>
         </subsection>
         <subsection>
             <title>Show trace point only</title>
+            <p></p>
         </subsection>
         <subsection>
             <title>Show tangent plane at point</title>
+            <p></p>
         </subsection>
         <subsection>
             <title>Show gradient at point on surface</title>
+            <p></p>
         </subsection>
         <subsection>
             <title>Show gradient at input point</title>
+            <p></p>
         </subsection>
         <subsection>
             <title>Show normal vector at point</title>
+            <p></p>
         </subsection>
         <subsection>
             <title>Show fx trace/tangent line</title>
+            <p></p>
         </subsection>
         <subsection>
             <title>Show fy trace/tangent line</title>
+            <p></p>
         </subsection>
         <subsection>
             <title>Show dir derivative trace</title>
+            <p></p>
         </subsection>
         <subsection>
             <title>Enter a direction vector</title>
+            <p></p>
         </subsection>
         <subsection>
             <title>Hide all objects</title>
+            <p></p>
         </subsection>
     </section>
 </chapter>
@@ -389,22 +397,28 @@
 <chapter>
 <title>CalcPlot3D Menus <ampersand /> Options</title>
 <section>
-<title>File menu</title>
+	<title>File menu</title>
+	<p></p>
 </section>
 <section>
-<title>Scripts</title>
+	<title>Scripts</title>
+	<p></p>
 </section>
 <section>
-<title>Print Plot</title>
+	<title>Print Plot</title>
+	<p></p>
 </section>
 <section xml:id="section-3doptions">
-<title>3D Options</title>
+	<title>3D Options</title>
+	<p></p>
 </section>
 <section>
-<title>View Settings</title>
+	<title>View Settings</title>
+	<p></p>
 </section>
 <section>
-<title>Examples</title>
+	<title>Examples</title>
+	<p></p>
 </section>
 </chapter>
 
@@ -413,13 +427,14 @@
     <title>Exploring Multivariable Calculus</title>
         <section>
 	         <title>Vector Explorations</title>
+	         <p></p>
 	    </section>
 	    <section>
 	         <title>Points, Lines <ampersand/> Planes in Space</title>
 	         <subsection>
 	            <title>Plane through Three Non-Collinear Points</title>
 	            <p>An early topic that lends itself well to this sort of exercise is finding the equation of the plane determined by three non-collinear points.</p>
-          <!-->      <exercises>
+          <!--      <exercises>
                 <exercise>  -->
                 <exploration>
                         <statement>
@@ -435,47 +450,66 @@
 						a clear view of the plane with the three points on it. Use the <alert>Print Plot</alert> menu option on the <alert>File</alert> menu at the top left corner
 						of the CalcPlot3D app to print out your resulting view and hand this printout in with this assignment.</p>
 						</statement>
-						<answer><p>Answer: The plane equation is: <m>z = (22 – 10x – 13y)/2</m></p></answer>
-           <!-->     </exercise>
+						<answer><sidebyside><stack><p>Answer: The plane equation is: <m>z = (22 – 10x – 13y)/2</m></p>
+						<interactive calcplot3d="type=z;z=(22-10x-13y)/2;visible=true;umin=-2;umax=2;vmin=-2;vmax=2;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=point;point=(2,0,1);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(-1,2,3);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(0,2,-2);visible=true;color=rgb(0,0,0);size=4&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-9.045084971874711,-2.938926261462361,3.0901699437494745,1;focus=0,0,0,1;up=0,0,2,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.4;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.45;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
+							<static>
+								<image width="50%" source="images/threepointplanelarge.png"><description>Plane thru 3 points</description></image>
+							</static>
+						</interactive>
+			<!--			<image width="50%" source="images/threepointplanelarge.png"><description>Plane thru 3 points</description></image> -->
+						</stack></sidebyside></answer>
+           <!--     </exercise>
                 </exercises>  -->
                 </exploration>
             </subsection>
 	    </section>
 	    <section>
 	         <title>Vector-Valued Functions</title>
+	         <p></p>
 	    </section>
         <section>
 	         <title>Contour Plots</title>
+	         <p></p>
 	    </section>
 	    <section>
 	         <title>Level Surfaces</title>
+	         <p></p>
 	    </section>
 	    <section>
 	         <title>Partial Derivatives</title>
+	         <p></p>
 	    </section>
 	    <section>
 	         <title>Directional Derivatives</title>
+	         <p></p>
 	    </section>
 	    <section>
 	         <title>Tangent Planes</title>
+	         <p></p>
 	    </section>
 	    <section>
 	         <title>Taylor Polynomials in Two-Variables</title>
+	         <p></p>
 	    </section>
 	    <section>
 	         <title>Gradients</title>
+	         <p></p>
 	    </section>
 	    <section>
 	         <title>Lagrange Multipliers</title>
+	         <p></p>
 	    </section>
 	    <section>
 	         <title>Regions of Integration</title>
+	         <p></p>
 	    </section>
 	    <section>
 	         <title>Vector Fields</title>
+	         <p></p>
 	    </section>
 	    <section>
 	         <title>Line Integrals for Work</title>
+	         <p></p>
 	    </section>
 </chapter>
 
@@ -485,28 +519,33 @@
         	<title>Using CalcPlot3D</title>
 			 <subsection>
 				 <title>Visualizing Systems of Differential Equations</title>
+				 <p></p>
 			 </subsection>
 	    </section>
         <section>
 	         <title>Using the DirectionField app</title>
 	         <subsection>
 				 <title>Visualizing 1st-order Differential Equations</title>
+				 <p></p>
 			 </subsection>
 	    </section>    
 </chapter>
 
 <chapter>
     <title>Creating STL Files for 3D Printing</title>
+    <p></p>
 </chapter>
 
 <backmatter xml:id="backmatter">
     <title>Appendices</title>
-<appendix>
-     <title>Creating Dynamic Figures</title>
-</appendix>
-<appendix>
-     <title>Creating Scripts</title>
-</appendix>
+	<appendix>
+		 <title>Creating Dynamic Figures</title>
+		 <p></p>
+	</appendix>
+	<appendix>
+		 <title>Creating Scripts</title>
+		 <p></p>
+	</appendix>
 </backmatter>
 
 </book>
