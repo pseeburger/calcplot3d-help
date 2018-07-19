@@ -685,8 +685,72 @@
 </chapter>
 
 <chapter>
-    <title>*Creating STL Files for 3D Printing</title>
-    <p></p>
+    <title>Creating STL Files for 3D Printing</title>
+    <p>One of the CalcPlot3D's newest features is its ability to save a surface to an STL file.
+    This STL file can then be used to print a solid 3D surface model using a 3D printer, sometimes called a rapid prototyping machine.
+    For example, here are the saddle, <m>z = x^2 – y^2</m>, and the parametric surface I call the Big Knot.</p>
+    <sidebyside widths="51% 49%">
+    <figure>
+        <caption>3D print of saddle surface, <m>z = x^2 – y^2</m></caption>
+        <image width="50%" source="images/saddle3Dprint.png"><description>3D printed saddle surface</description></image>
+    </figure>
+    
+    <figure>
+        <caption>3D print of Big Knot, a parametric surface</caption>
+        <image width="50%" source="images/bigknot3Dprint.png"><description>3D printed big knot</description></image>
+    </figure>
+    </sidebyside>
+    
+    <p>In order for the STL file to work well with the 3D printer, the surface must be given sufficient thickness.
+    To address this issue, CalcPlot3D will automatically give the thickness you specify to a surface before creating the STL file.
+    The app must create a closed solid to represent the surface if you wish it to print on a 3D printer.</p>
+    <p>To give this feature a try, first find a surface that you would like to print to a 3D printer and graph it with CalcPlot3D.</p>
+    <p><ol><li>Open <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/"><alert>CalcPlot3D</alert></url>.</li>
+		<li><p>From the File menu select Create an STL file from the plot.  
+		A dialog will appear like the one below.</p>
+		<figure>
+			<caption>STL dialog in CalcPlot3D</caption>
+			<image width="50%" source="images/STLfileDialog.png"><description>STL dialog in CalcPlot3D</description></image>
+		</figure>
+		</li>
+		<li>Enter the name you wish to give to the solid, and then enter the approximate size you expect to print it at and the desired thickness.
+		These will be used together with the dimensions of the 3D plot window to determine the approximate correct thickness to use with the surface
+		to account for the scaling to be done in the printer application.
+		You may need to experiment a little with these values and your 3D printer software to get the thickness just right.</li>
+		<li>If the surface you wish to print is already a closed 3D surface like a sphere or a torus, you can specify that no thickness be given to
+		the surface before printing, or you can still use a thickness, depending on how you desire the printer to fill the void inside the closed surface.
+		In this case, if you choose to give the closed surface a thickness, you will need to choose between using the <alert>Opposite Normals</alert> direction
+		(generally inside the closed solid), the <alert>Normal Direction</alert> (generally outside the closed surface), or the <alert>Half-and-Half</alert> option, which goes
+		both directions half the thickness and creates two new shells with the same basic shape.</li>
+		<li>The <alert>Half-and-Half</alert> option is always best for surfaces that flip orientation in the middle of a surface like a Möbius Strip or a Klein Bottle.</li>
+		<li>Use the <alert>View Solid</alert> button to see what the surface/solid will look like before saving the STL file.
+		Note that this can take a little while, during which the cursor will remain a hand.
+		The more faces you have in the plot (for a more accurate printed solid), the longer this processing will take.</li>
+		<li>For regular surfaces given by functions of two variables like the saddle above, I prefer the <alert><m>z</m>-shift down</alert> option since it preserves
+		the exact shape of the surface on the bottom as well as the top of the printed surface.
+		But you need to compensate for the fact that the thickness will vary over the surface and be least thick where the surface is steepest in the <m>z</m>-direction.</li>
+		<li>Once you see the solid in the plot, you can click on the plot and then type the n-key to view the surface normals of every triangular face in the plot.
+		This can look a little busy, but can be helpful to check, as it is generally preferred (and possibly required) that the normal vectors
+		of all faces point outwards.  Sometimes this may require you to adjust the parameterization of a parameterized surface, for example.</li>
+		<li>Before saving the STL file, note that you can select either a <alert>Binary STL file</alert> (the default) or an <alert>ASCII STL file</alert>.
+		The benefit of the Binary STL file is that it is much smaller than the ASCII STL file (about 1/5 the size).
+		The benefit of the ASCII STL file is that you can actually read it to view the normal and vertices of each face.</li>
+		<li>Once you are ready, click on the <alert>Create File</alert> button.  You should see the file downloading to your default download folder (in Chrome)
+		or may need to choose to download it in some browsers.</li>
+		<li>Once you have created the file, you will need to check it out in the 3D printer software (slicer) you plan to use.
+		It may also be helpful to download an STL viewer like <em>MeshLab</em> or <em>Blender</em>.
+		These allow you to check the surface for thickness and for other possible problems before you print it.
+		They can also usually be used to fix these problems.  See tutorials online.</li>
+		<li>Now you should be ready to print to the 3D printer using the 3D printer’s software.
+		There is still some room to play with the surface in this software, scaling it appropriately and choosing how you want to fill
+		the surface and how much support material to use.  Ask your local expert to help you with this step.  
+		By the way, it can take a long time to print one of these surfaces, depending on the solid’s size and the printer and material being used to print it.
+		My 6 in. x 6 in. saddle surface above took 13 hours to print and the 4 in. x 4 in. knot took almost 9 hours.
+		But 3D printers are getting faster and less expensive all the time.</li>
+	</ol></p>
+	<p>If you’d like to share your favorite 3D print-tested STL files along with an image of the solid/surface,
+	along with any activities you may have developed to accompany them,
+	please send them to me at <email>pseeburger@monroecc.edu</email>.</p>
 </chapter>
 
 <backmatter xml:id="backmatter">
