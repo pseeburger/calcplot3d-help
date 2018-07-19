@@ -9,9 +9,30 @@
 <book xml:id="calcplot3d-help">
 <title>CalcPlot3D Help</title>
 
+<frontmatter xml:id="index">
+<titlepage>
+	<author>
+	  <personname>Paul Seeburger</personname>
+	  <department>Professor of Mathematics</department>
+	  <institution>Monroe Community College</institution>
+	  <email>pseeburger@monroecc.edu</email>
+	</author>
+
+   <date>Last updated: <today />, <timeofday /></date>
+</titlepage>
+</frontmatter>
+
 <chapter xml:id="chapter-overview"><title>Overview</title>
     <introduction>
-    <p>First let’s cover some of the basic functionality of the CalcPlot3D app.</p>
+    <p>This is a help manual for using <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/"><alert>CalcPlot3D</alert></url>,
+	 an interactive JavaScript app for visualizing multivariable calculus, differential equations, physics, and more!</p>
+	 <figure xml:id="figure-calcplot3d-defaultview">
+		<caption>CalcPlot3D Default View</caption>
+		<image width="100%" source="images/CalcPlot3Dopen.png">
+			<description>Default view of CalcPlot3D</description>
+		</image>
+	 </figure>
+    <p>First, let’s cover some of the basic functionality of the CalcPlot3D app.</p>
     </introduction>
     <section>
         <title>Rotating the 3D Plot <ampersand/> Key Shortcuts</title>
