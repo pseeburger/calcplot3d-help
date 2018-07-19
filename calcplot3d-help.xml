@@ -582,7 +582,7 @@
 	    </section>
 	    <section>
 	         <title>Level Surfaces</title>
-	         <p>It is difficult to draw many interesting level surfaces by hand, but CalcPlot3D can help us explore them easily.</p>
+	         <p>It is difficult to draw many interesting level surfaces by hand, but CalcPlot3D helps us explore them easily.</p>
 	         <p>There are actually two ways to enter and graph the level surface equations for a particular function of three variables in CalcPlot3D:
                  <ol><li>Solve each equation for <m>z</m> in terms of <m>x</m>, <m>y</m>, and <m>C</m> and enter the level surface using one or two functions of <m>x</m> and <m>y</m>, or</li>
                      <li>Graph the level surface equation by adding an <alert>Implicit Surface</alert> from the <alert>Add to graph</alert> menu and entering the equation for the level surface.</li>
@@ -595,7 +595,7 @@
 					<p>Let <m>f(x,y,z) = z^2 –x^2 +y^2</m>.</p>
 					<p>Determine equations for the level surfaces for this function with <m>C = -2</m> and <m>C = 2</m>
 					and plot them separately in CalcPlot3D.</p>
-					<p><m>\textbf{Solution: Method 1}</m></p>
+					<p><m>\large\textbf{Solution: Method 1:}</m> Solving for <m>z</m> and graphing both parts of the level surface</p>
 					<p>Setting <m>f (x, y, z) = z^2 – x^2 + y^2 = C</m>, and solving for <m>z</m>, we obtain the following equations:</p>
 					<p><md>
 							<mrow>z &amp;= \sqrt{C + x^2 - y^2}</mrow>
@@ -604,27 +604,53 @@
 					<p>In a form for us to enter in CalcPlot3D these are:</p>
 					<p>z = sqrt(C + x^2 - y^2)</p>
 					<p>z = -sqrt(C + x^2 - y^2)</p>
-					<p>For C = -2, we enter:</p>
+					<p>For <m>C = -2</m>, we enter:</p>
 					<p>z = sqrt(-2 + x^2 - y^2) in the 1st function and z = -sqrt(-2 + x^2 - y^2) in a 2nd function.</p>
 				
 					<figure>
 						<caption>Level surface, <m>C = -2</m></caption>
-						<interactive calcplot3d="type=z;z=-sqrt(-2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=z;z=sqrt(-2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-8.270108132492869,17.434097758282633,5.259044288794762,1;focus=0,0,0,1;up=0.06540861657849147,-0.14679188379427732,0.9870024598395972,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.45;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;xscale=2;yscale=2;zscale=2;zcmin=-8;zcmax=8;zoom=0.2;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
+						<interactive calcplot3d="type=z;z=-sqrt(-2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=reversed;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=z;z=sqrt(-2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=reversed;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-8.270108132492869,17.434097758282633,5.259044288794762,1;focus=0,0,0,1;up=0.06540861657849147,-0.14679188379427732,0.9870024598395972,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.45;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;xscale=2;yscale=2;zscale=2;zcmin=-8;zcmax=8;zoom=0.2;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
 							<static>
-								<image width="50%" source="images/planeintersection.png"><description>Level surface, C = -2</description></image>
+								<image width="50%" source="images/LevelSurfaceC-2.png"><description>Level surface, C = -2</description></image>
 							</static>
 						</interactive>
 					</figure>
-				    <p>For C = 2, we enter:</p>
+				    <p>For <m>C = 2</m>, we enter:</p>
 					<p>z = sqrt(2 + x^2 - y^2) in the 1st function and z = -sqrt(2 + x^2 - y^2) in a 2nd function.</p>
 					<figure>
 						<caption>Level surface, <m>C = 2</m></caption>
-						<interactive calcplot3d="type=z;z=-sqrt(2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=z;z=sqrt(2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-8.270108132492869,17.434097758282633,5.259044288794762,1;focus=0,0,0,1;up=0.06540861657849147,-0.14679188379427732,0.9870024598395972,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.45;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;xscale=2;yscale=2;zscale=2;zcmin=-8;zcmax=8;zoom=0.2;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
+						<interactive calcplot3d="type=z;z=-sqrt(2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=reversed;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=z;z=sqrt(2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=reversed;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-8.270108132492869,17.434097758282633,5.259044288794762,1;focus=0,0,0,1;up=0.06540861657849147,-0.14679188379427732,0.9870024598395972,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.45;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;xscale=2;yscale=2;zscale=2;zcmin=-8;zcmax=8;zoom=0.2;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
 							<static>
-								<image width="50%" source="images/planeintersection.png"><description>Level surface, C = 2</description></image>
+								<image width="50%" source="images/LevelSurfaceC2.png"><description>Level surface, C = 2</description></image>
 							</static>
 						</interactive>
-					</figure>                    
+					</figure>       
+					
+					
+					<p><m>\large\textbf{Solution: Method 2}</m> Using an Implicit Surface</p>
+					<p>Setting <m>f (x, y, z) = z^2 – x^2 + y^2 = C</m>, we can write a single implicit equation for each level surface.</p>
+					<p>For <m>C = -2</m>, we will plot the implicit equation: <m> z^2 - x^2 + y^2 = -2</m></p>
+					<p>For <m>C = 2</m>, we will plot the implicit equation:  <m>z^2 - x^2 + y^2 = 2</m></p>
+					<p>To do this,
+					   <ol>
+					       <li>We clear the screen by clicking on the clear screen button.</li>
+					       <li>Then we select to add an <alert>Implicit Surface</alert> from the <alert>Add to graph</alert> menu.</li>
+					       <li>Enter z^2 - x^2 + y^2 = -2 in the corresponding textbox and select the checkbox (or press enter) to plot it.
+					       This is the level surface for <m>C = -2</m>.</li>
+					       <li>Print it out, if desired, using the <alert>Print Plot</alert> option on the app main menu.</li>
+					       <li>To view the level surface for <m>C = 2</m>, just change the <m>-2</m> on the right side of the equation to a <m>2</m>.</li>
+					   </ol>
+				    </p>
+				    <sidebyside widths="50% 50%">
+						<figure>
+							<caption>Level surface, <m>C = -2</m></caption>
+							<image width="50%" source="images/LevelSurfaceC-2imp.png"><description>Level surface, C = -2</description></image>
+						</figure>
+						<figure>
+							<caption>Level surface, <m>C = 2</m></caption>
+							<image width="50%" source="images/LevelSurfaceC2imp.png"><description>Level surface, C = 2</description></image>
+						</figure> 
+					</sidebyside>               
                 </statement>
             </exploration>
 	    </section>
