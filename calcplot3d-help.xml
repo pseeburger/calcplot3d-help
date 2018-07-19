@@ -513,7 +513,7 @@
 						<p>Answer: The plane equation is: <m>z = (22 – 10x – 13y)/2</m></p>
 						<figure>
 					        <caption>Solution plot for <xref ref="exploration-3pointplane" /></caption>
-							<interactive calcplot3d="type=z;z=(22-10x-13y)/2;visible=true;umin=-2;umax=2;vmin=-2;vmax=2;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=point;point=(2,0,1);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(-1,2,3);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(0,2,-2);visible=true;color=rgb(0,0,0);size=4&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-9.045084971874711,-2.938926261462361,3.0901699437494745,1;focus=0,0,0,1;up=0,0,2,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.4;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.65;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="100%">
+							<interactive calcplot3d="type=z;z=(22-10x-13y)/2;visible=true;umin=-2;umax=2;vmin=-2;vmax=2;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=point;point=(2,0,1);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(-1,2,3);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(0,2,-2);visible=true;color=rgb(0,0,0);size=4&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-9.045084971874711,-2.938926261462361,3.0901699437494745,1;focus=0,0,0,1;up=0,0,2,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.4;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.65;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
 								<static>
 									<image width="50%" source="images/threepointplane.png"><description>Plane thru 3 points</description></image>
 								</static>
@@ -557,7 +557,7 @@
 					   
 					    <figure>
 					        <caption>Solution plot for <xref ref="exploration-plane-intersection" /></caption>
-							<interactive calcplot3d="type=z;z=(2x+y-5)/2;visible=true;umin=-4;umax=4;usteps=100;vmin=-4;vmax=4;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=z;z=(3x-6y-15)/2;visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=reversed;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=spacecurve;spacecurve=curve;x=3+14t;y=-1+2t;z=15t;visible=true;tmin=-10;tmax=10;tsteps=100;color=rgb(255,0,0);showtrace=false;tval=0;constcol=true;twod=false;showpt=true;trace=true;vel=true;acc=true;osc=false;k=false;repeat=false;bounce=false;showtvector=false;shownvector=false;showbvector=false;showtnbeqs=false;showtnblabels=false;showoscplane=false;showrectplane=false;shownormplane=false&amp;type=window;hsrmode=0;nomidpts=false;anaglyph=-1;center=-18.18893923225377,0.9865403460673894,8.257676897950827,1;focus=0,0,0,1;up=0.4151197357615459,0.05010330209904306,0.9083860765665863,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.4;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;xscale=2;yscale=2;zscale=2;zcmin=-8;zcmax=8;zoom=0.315333;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="100%">
+							<interactive calcplot3d="type=z;z=(2x+y-5)/2;visible=true;umin=-4;umax=4;usteps=100;vmin=-4;vmax=4;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=z;z=(3x-6y-15)/2;visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=reversed;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=spacecurve;spacecurve=curve;x=3+14t;y=-1+2t;z=15t;visible=true;tmin=-10;tmax=10;tsteps=100;color=rgb(255,0,0);showtrace=false;tval=0;constcol=true;twod=false;showpt=true;trace=true;vel=true;acc=true;osc=false;k=false;repeat=false;bounce=false;showtvector=false;shownvector=false;showbvector=false;showtnbeqs=false;showtnblabels=false;showoscplane=false;showrectplane=false;shownormplane=false&amp;type=window;hsrmode=0;nomidpts=false;anaglyph=-1;center=-18.18893923225377,0.9865403460673894,8.257676897950827,1;focus=0,0,0,1;up=0.4151197357615459,0.05010330209904306,0.9083860765665863,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.4;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;xscale=2;yscale=2;zscale=2;zcmin=-8;zcmax=8;zoom=0.2;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
 								<static>
 									<image width="50%" source="images/planeintersection.png"><description>Line of Intersection of Two Planes</description></image>
 								</static>
@@ -572,13 +572,61 @@
 	         <title>*Vector-Valued Functions</title>
 	         <p></p>
 	    </section>
+	    <section>
+	         <title>*Intersections of General Surfaces</title>
+	         <p></p>
+	    </section>
         <section>
 	         <title>*Contour Plots</title>
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>*Level Surfaces</title>
-	         <p></p>
+	         <title>Level Surfaces</title>
+	         <p>It is difficult to draw many interesting level surfaces by hand, but CalcPlot3D can help us explore them easily.</p>
+	         <p>There are actually two ways to enter and graph the level surface equations for a particular function of three variables in CalcPlot3D:
+                 <ol><li>Solve each equation for <m>z</m> in terms of <m>x</m>, <m>y</m>, and <m>C</m> and enter the level surface using one or two functions of <m>x</m> and <m>y</m>, or</li>
+                     <li>Graph the level surface equation by adding an <alert>Implicit Surface</alert> from the <alert>Add to graph</alert> menu and entering the equation for the level surface.</li>
+                 </ol>
+             </p>
+             <p>If the surfaces are complicated enough, you may not have a choice. If you are not able to solve for <m>z</m>, you will need to use the <alert>Implicit Surface</alert> option.</p>
+            <exploration xml:id="exploration-level-surfaces">
+                <statement>
+					<p>Here is an example shown both ways.</p>
+					<p>Let <m>f(x,y,z) = z^2 –x^2 +y^2</m>.</p>
+					<p>Determine equations for the level surfaces for this function with <m>C = -2</m> and <m>C = 2</m>
+					and plot them separately in CalcPlot3D.</p>
+					<p><m>\textbf{Solution: Method 1}</m></p>
+					<p>Setting <m>f (x, y, z) = z^2 – x^2 + y^2 = C</m>, and solving for <m>z</m>, we obtain the following equations:</p>
+					<p><md>
+							<mrow>z &amp;= \sqrt{C + x^2 - y^2}</mrow>
+							<mrow>z &amp;= -\sqrt{C + x^2 - y^2}</mrow>
+						</md></p>
+					<p>In a form for us to enter in CalcPlot3D these are:</p>
+					<p>z = sqrt(C + x^2 - y^2)</p>
+					<p>z = -sqrt(C + x^2 - y^2)</p>
+					<p>For C = -2, we enter:</p>
+					<p>z = sqrt(-2 + x^2 - y^2) in the 1st function and z = -sqrt(-2 + x^2 - y^2) in a 2nd function.</p>
+				
+					<figure>
+						<caption>Level surface, <m>C = -2</m></caption>
+						<interactive calcplot3d="type=z;z=-sqrt(-2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=z;z=sqrt(-2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-8.270108132492869,17.434097758282633,5.259044288794762,1;focus=0,0,0,1;up=0.06540861657849147,-0.14679188379427732,0.9870024598395972,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.45;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;xscale=2;yscale=2;zscale=2;zcmin=-8;zcmax=8;zoom=0.2;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
+							<static>
+								<image width="50%" source="images/planeintersection.png"><description>Level surface, C = -2</description></image>
+							</static>
+						</interactive>
+					</figure>
+				    <p>For C = 2, we enter:</p>
+					<p>z = sqrt(2 + x^2 - y^2) in the 1st function and z = -sqrt(2 + x^2 - y^2) in a 2nd function.</p>
+					<figure>
+						<caption>Level surface, <m>C = 2</m></caption>
+						<interactive calcplot3d="type=z;z=-sqrt(2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=z;z=sqrt(2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-8.270108132492869,17.434097758282633,5.259044288794762,1;focus=0,0,0,1;up=0.06540861657849147,-0.14679188379427732,0.9870024598395972,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.45;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;xscale=2;yscale=2;zscale=2;zcmin=-8;zcmax=8;zoom=0.2;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
+							<static>
+								<image width="50%" source="images/planeintersection.png"><description>Level surface, C = 2</description></image>
+							</static>
+						</interactive>
+					</figure>                    
+                </statement>
+            </exploration>
 	    </section>
 	    <section>
 	         <title>*Partial Derivatives</title>
