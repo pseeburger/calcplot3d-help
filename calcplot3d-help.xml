@@ -220,7 +220,7 @@
 </chapter>
 
 <chapter xml:id="chapter-objects">
-    <title>CalcPlot3D Objects</title>
+    <title>*CalcPlot3D Objects</title>
     <introduction>
     <p>
     There are a number of objects that can be added to the plot window in CalcPlot3D using the <alert>Add to graph</alert> drop-down menu.  This chapter will explain each of these objects and how to use them.
@@ -333,7 +333,10 @@
     </section>
     <section>
         <title>Trace points on the 2D Trace Plane</title>
-			<p></p>
+			<p>By default, clicking on the 2D trace plane will display the corresponding point on the first surface shown in the 3D plot.</p>
+			<p>Dragging the input point around in the 2D plot will also move the corresponding function point around on the surface, 
+			helping you to see how they are related.  The coordinates of the function point are shown both in the green display above the 3D plot
+			and on the plot itself, in the upper left corner.</p>
     </section>
     <section>
         <title>Trace Plane Menu Options</title>
@@ -348,54 +351,89 @@
         </introduction>
         <subsection>
             <title>Enter trace point</title>
-            <p></p>
+            <p>This option allows you to enter a trace point as an ordered pair.  Once entered,
+            the point will be plotted on the 2D trace plane and the corresponding point will be shown
+            on the surface in the 3D plot.</p>
         </subsection>
         <subsection>
             <title>Show trace point only</title>
-            <p></p>
+            <p>This option is to return to the default of only showing a trace point after viewing one of the other objects on this list.</p>
         </subsection>
         <subsection>
             <title>Show tangent plane at point</title>
-            <p></p>
+            <p>Choosing this option will allow you to see the tangent plane to the first plotted surface
+             at any given point you click on in the 2D trace plane.</p>
+             <p>You can click and drag the input point around in the trace plane to see the corresponding tangent plane
+             move about on the surface.</p>
         </subsection>
         <subsection>
             <title>Show gradient at point on surface</title>
-            <p></p>
+            <p>There are two options to display the gradient vector to the surface.</p>
+            <p>This one displays the gradient vector at the corresponding point on the surface
+            as well as in the 2D trace plane at the input point.</p>
         </subsection>
         <subsection>
             <title>Show gradient at input point</title>
-            <p></p>
+            <p>This one displays the gradient vector at the input point in the <m>xy</m>-plane in the 3D plot
+            as well as at the input point in the 2D trace plane.</p>
         </subsection>
         <subsection>
             <title>Show normal vector at point</title>
-            <p></p>
+            <p>Use this option to display a normal vector on the surface at the selected input point in the 2D trace plane.</p>
+            <p>Again, you can click-and-drag the input point around in the 2D trace plane to see how the
+            normal vector moves around on the surface in the 3D plot.</p>
         </subsection>
         <subsection>
             <title>Show fx trace/tangent line</title>
-            <p></p>
+            <p>Choose this option to display a trace curve of the surface at the selected input point that keeps the <m>y</m>-coordinate fixed
+            and varies the <m>x</m>-coordinates.</p>
+            <p>A tangent line to this trace curve will also be displayed at the input point, and the partial derivative of the function with respect to <m>x</m>
+            will be displayed in the green display above the 3D plot.
+            This value corresponds to the slope of the trace curve (and the surface) at the trace point in the <em>positive</em> <m>x</m>-direction.</p>
+            <p>Note that the corresponding point on the surface is also displayed in the upper-left corner of the 3D plot.</p>
+            <p>Also notice that you can use the sliders or textboxes below the 2D trace plane to vary the input point and see how the slopes change
+            as you move along a single trace curve, as you vary <m>x</m>, or how the trace curve and slope change as you vary <m>y</m>.</p>
         </subsection>
         <subsection>
             <title>Show fy trace/tangent line</title>
-            <p></p>
+            <p>Select this option to display a trace curve of the surface at the selected input point that keeps the <m>x</m>-coordinate fixed
+            and varies the <m>y</m>-coordinates.</p>
+            <p>A tangent line to this trace curve will also be displayed at the input point, and the partial derivative of the function with respect to <m>y</m>
+            will be displayed in the green display above the 3D plot.
+            This value corresponds to the slope of the trace curve (and the surface) at the trace point in the <em>positive</em> <m>y</m>-direction.</p>
+            <p>Note that the corresponding point on the surface is also displayed in the upper-left corner of the 3D plot.</p>
+            <p>Also notice that you can use the sliders or textboxes below the 2D trace plane to vary the input point and see how the slopes change
+            as you move along a single trace curve, as you vary <m>y</m>, or how the trace curve and slope change as you vary <m>x</m>.</p>
         </subsection>
         <subsection>
             <title>Show dir derivative trace</title>
-            <p></p>
+            <p>This option will display a trace curve of the surface at the selected input point that is aligned with the displayed direction vector.</p>
+            <p>A tangent line to this trace curve is displayed at the input point, and the value of the directional derivative
+            of the function in the direction of the direction vector will be displayed in the green display above the 3D plot.
+            This value corresponds to the slope of the trace curve (and the surface) at the trace point in the direction of the direction vector.</p>
+            <p>The corresponding point on the surface is also displayed in the upper-left corner of the 3D plot.</p>
+            <p>In the 2D trace plane, you will see two vectors in addition to the input point.</p>
+            <p>The red vector is the gradient vector to the surface at the selected input point.</p>
+            <p>The green vector is the normalized (unit length) current direction vector to the surface at the selected input point.</p>
+            <p>To change the direction of the direction vector, either right-click and drag it around in the 2D trace plane,
+            vary the slider for the angle theta shown below the 2D trace plane, or select the option to enter a direction vector using it's components.</p>
+            <p>Again, note that there is a slider that allows you to vary only the position of the tangent line along the current trace curve.</p>
         </subsection>
         <subsection>
             <title>Enter a direction vector</title>
-            <p></p>
+            <p>This option allows you to enter a 2D direction vector (from the <m>xy</m>-plane)
+            for use with the <alert>Show dir derivative trace</alert> option above.</p>
         </subsection>
         <subsection>
             <title>Hide all objects</title>
-            <p></p>
+            <p>Select this option to hide all trace objects in both the 2D trace plane and in the 3D plot.</p>
         </subsection>
     </section>
 </chapter>
 
 
 <chapter>
-<title>CalcPlot3D Menus <ampersand /> Options</title>
+<title>*CalcPlot3D Menus <ampersand /> Options</title>
 <section>
 	<title>File menu</title>
 	<p></p>
@@ -426,22 +464,22 @@
 <chapter>
     <title>Exploring Multivariable Calculus</title>
         <section>
-	         <title>Vector Explorations</title>
+	         <title>*Vector Explorations</title>
 	         <p></p>
 	    </section>
 	    <section>
 	         <title>Points, Lines <ampersand/> Planes in Space</title>
 	         <subsection>
 	            <title>Plane through Three Non-Collinear Points</title>
-	            <p>An early topic that lends itself well to this sort of exercise is finding the equation of the plane determined by three non-collinear points.</p>
+	      <!--      <p>Finding the equation of the plane determined by three non-collinear points and visually verifying that the plane contains these three points.</p>  -->
           <!--      <exercises>
                 <exercise>  -->
-                <exploration>
+                <exploration xml:id="exploration-3pointplane">
                         <statement>
 						<p>a. Find the equation of the plane containing the points <m>(2, 0, 1)</m>, <m>(-1, 2, 3)</m>, and <m>(0, 2, -2)</m>.</p>
 						<p>b. Graph this plane along with the three points to verify that all three
-						points lie on the plane. To do this, first solve the plane equation for z and graph the plane, 
-						entering it in the provided function box on the left. To see it graph, either press enter on the function or click the <alert>Graph</alert> button.
+						points lie on the plane. To do this, first solve the plane equation for <m>z</m> and graph the plane, 
+						entering it in the provided function box on the left. To see its graph, either press enter on the function or click the <alert>Graph</alert> button.
 						Just above this function there should be a dropdown menu labeled: <alert>Add to graph</alert>.  
 						Select to <alert>add a Point (x, y, z)</alert>, entering the coordinates of one of the points. You can use the default size and colors.
 						(If you wish to vary these settings, be sure the points still show up well in the printout.)
@@ -450,71 +488,117 @@
 						a clear view of the plane with the three points on it. Use the <alert>Print Plot</alert> menu option on the <alert>File</alert> menu at the top left corner
 						of the CalcPlot3D app to print out your resulting view and hand this printout in with this assignment.</p>
 						</statement>
-						<answer><sidebyside><stack><p>Answer: The plane equation is: <m>z = (22 – 10x – 13y)/2</m></p>
-						<interactive calcplot3d="type=z;z=(22-10x-13y)/2;visible=true;umin=-2;umax=2;vmin=-2;vmax=2;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=point;point=(2,0,1);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(-1,2,3);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(0,2,-2);visible=true;color=rgb(0,0,0);size=4&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-9.045084971874711,-2.938926261462361,3.0901699437494745,1;focus=0,0,0,1;up=0,0,2,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.4;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.45;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
-							<static>
-								<image width="50%" source="images/threepointplanelarge.png"><description>Plane thru 3 points</description></image>
-							</static>
-						</interactive>
+						<answer>
+						<p>Answer: The plane equation is: <m>z = (22 – 10x – 13y)/2</m></p>
+						<figure>
+					        <caption>Solution plot for <xref ref="exploration-3pointplane" /></caption>
+							<interactive calcplot3d="type=z;z=(22-10x-13y)/2;visible=true;umin=-2;umax=2;vmin=-2;vmax=2;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=point;point=(2,0,1);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(-1,2,3);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(0,2,-2);visible=true;color=rgb(0,0,0);size=4&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-9.045084971874711,-2.938926261462361,3.0901699437494745,1;focus=0,0,0,1;up=0,0,2,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.4;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.65;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="100%">
+								<static>
+									<image width="50%" source="images/threepointplane.png"><description>Plane thru 3 points</description></image>
+								</static>
+							</interactive>
+						</figure>
 			<!--			<image width="50%" source="images/threepointplanelarge.png"><description>Plane thru 3 points</description></image> -->
-						</stack></sidebyside></answer>
+						
+						</answer>
            <!--     </exercise>
                 </exercises>  -->
                 </exploration>
             </subsection>
+            <subsection>
+                <title>The Line of Intersection of Two Planes</title>
+                <exploration xml:id="exploration-plane-intersection">
+                    <statement>
+                        <p>a. Determine the line of intersection of the following two planes. Write the parametric equations for this line, showing all work.</p>
+						<p><me>2x + y – 2z = 5 \quad\text{and}\quad 3x – 6y – 2z = 15</me></p>
+						<p>b. Use the <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/">CalcPlot3D app</url> to display these two planes.
+						To do this, solve each planar equation for <m>z</m>, and enter them in the app, using two function objects.
+						There is one there when you open the app, and you can add another by selecting <alert>Function: <m>z = f(x, y)</m></alert> on the <alert>Add to graph</alert> menu.
+						Zoom out a couple times (if necessary) until you can see both planes along with their intersection.
+						Now add the line of intersection. (To do this, choose <alert>Space Curve: r(t)</alert> from the <alert>Add to graph</alert> menu,
+						and enter the parametric equations for the line.) Rotate the 3D view to verify that your line is indeed the intersection of the two planes.
+						Rotate until you have a good view of the two planes and the line of intersection.
+						Use the <alert>Print Plot</alert> menu option on the <alert>File</alert> menu at the top left corner of the CalcPlot3D app
+						to print out your resulting view and hand this printout in with this assignment.</p>
+                    </statement>
+					<answer>
+					     <p>Answer Line:</p>
+					     <p><md>
+							<mrow>x &amp;= 3 + 14t</mrow>
+							<mrow>y &amp;=-1+ 2t</mrow>
+							<mrow>z &amp;=15t</mrow>
+                         </md></p>
+						<p>Here are the plane equations, solved for <m>z</m>:</p>
+						<p><md>
+						    <mrow>z &amp;= (2x + y – 5)/2</mrow>
+						    <mrow>z &amp;= (3x – 6y – 15)/2</mrow>
+					    </md></p>
+					   
+					    <figure>
+					        <caption>Solution plot for <xref ref="exploration-plane-intersection" /></caption>
+							<interactive calcplot3d="type=z;z=(2x+y-5)/2;visible=true;umin=-4;umax=4;usteps=100;vmin=-4;vmax=4;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=z;z=(3x-6y-15)/2;visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=reversed;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=spacecurve;spacecurve=curve;x=3+14t;y=-1+2t;z=15t;visible=true;tmin=-10;tmax=10;tsteps=100;color=rgb(255,0,0);showtrace=false;tval=0;constcol=true;twod=false;showpt=true;trace=true;vel=true;acc=true;osc=false;k=false;repeat=false;bounce=false;showtvector=false;shownvector=false;showbvector=false;showtnbeqs=false;showtnblabels=false;showoscplane=false;showrectplane=false;shownormplane=false&amp;type=window;hsrmode=0;nomidpts=false;anaglyph=-1;center=-18.18893923225377,0.9865403460673894,8.257676897950827,1;focus=0,0,0,1;up=0.4151197357615459,0.05010330209904306,0.9083860765665863,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.4;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;xscale=2;yscale=2;zscale=2;zcmin=-8;zcmax=8;zoom=0.315333;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="100%">
+								<static>
+									<image width="50%" source="images/planeintersection.png"><description>Line of Intersection of Two Planes</description></image>
+								</static>
+							</interactive>
+						</figure>
+		<!--			<image width="50%" source="images/threepointplanelarge.png"><description>Plane thru 3 points</description></image> -->
+					</answer>
+                </exploration>
+            </subsection>
 	    </section>
 	    <section>
-	         <title>Vector-Valued Functions</title>
+	         <title>*Vector-Valued Functions</title>
 	         <p></p>
 	    </section>
         <section>
-	         <title>Contour Plots</title>
+	         <title>*Contour Plots</title>
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>Level Surfaces</title>
+	         <title>*Level Surfaces</title>
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>Partial Derivatives</title>
+	         <title>*Partial Derivatives</title>
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>Directional Derivatives</title>
+	         <title>*Directional Derivatives</title>
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>Tangent Planes</title>
+	         <title>*Tangent Planes</title>
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>Taylor Polynomials in Two-Variables</title>
+	         <title>*Taylor Polynomials in Two-Variables</title>
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>Gradients</title>
+	         <title>*Gradients</title>
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>Lagrange Multipliers</title>
+	         <title>*Lagrange Multipliers</title>
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>Regions of Integration</title>
+	         <title>*Regions of Integration</title>
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>Vector Fields</title>
+	         <title>*Vector Fields</title>
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>Line Integrals for Work</title>
+	         <title>*Line Integrals for Work</title>
 	         <p></p>
 	    </section>
 </chapter>
 
 <chapter>
-    <title>Exploring Differential Equations</title>
+    <title>*Exploring Differential Equations</title>
         <section>
         	<title>Using CalcPlot3D</title>
 			 <subsection>
@@ -532,18 +616,18 @@
 </chapter>
 
 <chapter>
-    <title>Creating STL Files for 3D Printing</title>
+    <title>*Creating STL Files for 3D Printing</title>
     <p></p>
 </chapter>
 
 <backmatter xml:id="backmatter">
     <title>Appendices</title>
 	<appendix>
-		 <title>Creating Dynamic Figures</title>
+		 <title>*Creating Dynamic Figures</title>
 		 <p></p>
 	</appendix>
 	<appendix>
-		 <title>Creating Scripts</title>
+		 <title>*Creating Scripts</title>
 		 <p></p>
 	</appendix>
 </backmatter>
