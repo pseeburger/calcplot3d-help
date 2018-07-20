@@ -2,8 +2,12 @@
 <mathbook>
 
 <docinfo>
-<brandlogo url="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/" 
-           source="images/hyperboloid-small.png" />
+	<brandlogo url="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/" 
+			   source="images/hyperboloid-small.png" />
+	<html>
+		<!-- Expects favicon/favicon-32x32.png, and favicon/favicon-16x16.png -->
+		<favicon/>
+	</html>
 </docinfo>
 
 <book xml:id="calcplot3d-help">
