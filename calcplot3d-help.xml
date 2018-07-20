@@ -238,10 +238,18 @@
 		<sidebyside widths="7% 80%"><image width="7%" source="images/gridmenu.png"><description>Show Gridlines Menu</description></image><p>Show/hide the gridlines menu.</p></sidebyside>
 		<sidebyside widths="7% 80%"><image width="7%" source="images/tracePlane.png"><description>Show/hide 2D Traceplane</description></image><p>Show/hide the 2D traceplane and its options. See <xref ref="chapter-traceplane" />.</p></sidebyside>
     </section>
+    <section xml:id="section-formataxes">
+        <title>*Using the Format Axes dialog</title>
+    	<p></p>
+    </section>
+    <section xml:id="section-gridlinesmenu">
+        <title>*Using the Gridlines menu</title>
+    	<p></p>
+    </section>
 </chapter>
 
 <chapter xml:id="chapter-objects">
-    <title>*CalcPlot3D Objects</title>
+    <title>CalcPlot3D Objects</title>
     <introduction>
     <p>
     There are a number of objects that can be added to the plot window in CalcPlot3D using the <alert>Add to graph</alert> drop-down menu.  This chapter will explain each of these objects and how to use them.
@@ -252,7 +260,35 @@
 	<title>Functions of Two-Variables</title>
 	    <subsection>
 	       <title>Functions in the form <m>z = f(x, y)</m></title>
-	       <p></p>
+	       <p>This is the type of function object that is provided by CalcPlot3D when it opens. But to add a new one,
+	       just select the first option, <c>Function: z = f(x,y)</c>, on the <alert>Add to graph</alert> drop-down menu,
+	       located just below the control panel toolbar buttons.</p>
+	       <sidebyside widths="70%">
+		      <image width="50%" source="images/functionfxy.png"><description>Function z = f(x,y) object</description></image>
+		   </sidebyside>
+	       <p><ul>
+	       <li>You can enter any function of <m>x</m> and <m>y</m> that you wish or select functions from the drop-down menu.
+	       See the list of available functions in <xref ref="appendix-availablefunctions" />.</li>
+	       <li>When you are ready to plot it, either select the check box on the top left of the object dialog,
+	       press enter on the function you typed in the textbox, or click the <alert>Graph</alert> button.</li>
+	       <li><p>The range of values for <m>x</m> and <m>y</m> that is just below the function textbox determines
+	       the restricted domain (a rectangle) for this function.  Note that unless you change this, it will automatically
+	       update to align with the restricted domain of the view window in the plot.</p>
+	       <p>So if you were to change these values to something other than the ranges for the <m>x</m>- and <m>y</m>-axes in the <alert>Format Axes</alert> dialog (see how to use the Format Axes dialog in <xref ref="section-formataxes" />),
+	       this function would keep its independent domain even when you zoom in and out using the respective toolbar buttons.</p>
+	       <p>To realign this function with the axes in the plot, simply adjust the ranges for <m>x</m> and <m>y</m> for this function to match those in the plot (and Format Axes dialog).</p></li>
+	       <li><p>You can vary the <em>number of gridlines</em> used to make the mesh finer or wider.  The larger the number of gridlines used,
+	       the closer the surface will get to the true graph of the function, but also the more polygons it will take to create it,
+	       thus slowing down the plot and rotation process.</p>
+	       <p>Note that you can actually enter two numbers separated by a comma to specify the number of gridlines
+	        in both the <m>x</m>- and <m>y</m>-directions.  So you could enter, for example, <c>10, 15</c>.
+	        This would create this surface plot using 10 gridlines in the <m>x</m>-direction and 15 gridlines in the <m>y</m>-direction.</p>
+	       <p>When only one number is used, the same number of gridlines is used in both directions.</p></li>
+	       <li><sidebyside widths="7% 85%"><image width="7%" source="images/contourplotbutton.png"><description>Contour plot button</description></image>
+			   <p>Use the contour plot button to create a contour plot for this surface.  For more details on Contour Plots see <xref ref="section-contourplots" />.</p>
+	       </sidebyside></li>
+	       <li>Use the settings button, ⚙, to adjust function settings.  For a discussion of the options, see <xref ref="section-functionsettings" />.</li>
+	       </ul></p>
         </subsection>
         <subsection>
 	       <title>Functions in the form <m>x = f(y, z)</m></title>
@@ -273,32 +309,32 @@
 	</section>
 
 	<section xml:id="section-space-curves">
-	<title>Space Curves</title>
+	<title>*Space Curves</title>
 		<p></p>
 	</section>
 
 	<section xml:id="section-vectorfields">
-	<title>Vector Fields</title>
+	<title>*Vector Fields</title>
 		<p></p>
 	</section>
 
 	<section xml:id="section-points">
-	<title>Points</title>
+	<title>*Points</title>
 		<p></p>
 	</section>
 	
 	<section xml:id="section-vectors">
-	<title>Vectors</title>
+	<title>*Vectors</title>
 		<p></p>
 	</section>
 	
 	<section xml:id="section-textlabels">
-	<title>Text Labels</title>
+	<title>*Text Labels</title>
 		<p></p>
 	</section>
 
 	<section xml:id="section-implicit-surfaces">
-	<title>Implicit Surfaces</title>
+	<title>*Implicit Surfaces</title>
 	
 	    <subsection>
 			<title>Cartesian Coordinates</title>
@@ -316,18 +352,32 @@
 	</section>
 
 	<section xml:id="section-parametric-surfaces">
-	<title>Parametric Surfaces</title>
+	<title>*Parametric Surfaces</title>
 		<p></p>
 	</section>
 	
     <section xml:id="section-regions">
-	<title>Regions</title>
+	<title>*Regions</title>
 		<p></p>
 	</section>
 	
 	<section xml:id="section-sliders">
-	<title>Parameter Sliders</title>
+	<title>*Parameter Sliders</title>
 		<p></p>
+	</section>
+	<section xml:id="section-functionsettings">
+		<title>*Function Settings, ⚙</title>
+		<p>Function settings are the same for the following objects:
+		  <ul>
+		    <li><c>Function: z = f(x,y)</c></li>
+		    <li><c>Function: x = f(y,z)</c></li>
+		    <li><c>Function: y = f(x,z)</c></li>
+		    <li><c>Implicit Surface</c></li>
+		    <li><c>Parametric Surface</c></li>
+		    <li><c>Region</c></li>
+		    <li><c>Function: r = f(θ,z)</c></li>
+		  </ul>
+		</p>
 	</section>
 </chapter>
 
@@ -455,28 +505,36 @@
 
 <chapter>
 <title>*CalcPlot3D Menus <ampersand /> Options</title>
+<introduction>
+   <sidebyside widths="90% 7%">
+   <p>This chapter explains how to use each of the options on CalcPlot3D's main menu.  
+   To access this main menu, click or tap on the menu icon located at the upper left corner of the app, on the green bar.
+   It looks like the image to the right.</p>
+   <image width="50%" source="images/mainmenu.png"><description>App Main Menu icon</description></image>
+   </sidebyside>
+</introduction>
 <section>
-	<title>File menu</title>
+	<title>*File menu</title>
 	<p></p>
 </section>
 <section>
-	<title>Scripts</title>
+	<title>*Scripts menu</title>
 	<p></p>
 </section>
 <section>
-	<title>Print Plot</title>
+	<title>*Print Plot option</title>
 	<p></p>
 </section>
 <section xml:id="section-3doptions">
-	<title>3D Options</title>
+	<title>*3D Options menu</title>
 	<p></p>
 </section>
 <section>
-	<title>View Settings</title>
+	<title>*View Settings menu</title>
 	<p></p>
 </section>
 <section>
-	<title>Examples</title>
+	<title>*Examples menu</title>
 	<p></p>
 </section>
 </chapter>
@@ -576,7 +634,7 @@
 	         <title>*Intersections of General Surfaces</title>
 	         <p></p>
 	    </section>
-        <section>
+        <section xml:id="section-contourplots">
 	         <title>*Contour Plots</title>
 	         <p></p>
 	    </section>
@@ -695,14 +753,14 @@
 <chapter>
     <title>*Exploring Differential Equations</title>
         <section>
-        	<title>Using CalcPlot3D</title>
+        	<title>*Using CalcPlot3D</title>
 			 <subsection>
 				 <title>Visualizing Systems of Differential Equations</title>
 				 <p></p>
 			 </subsection>
 	    </section>
         <section>
-	         <title>Using the DirectionField app</title>
+	         <title>*Using the DirectionField app</title>
 	         <subsection>
 				 <title>Visualizing 1st-order Differential Equations</title>
 				 <p></p>
@@ -712,80 +770,148 @@
 
 <chapter>
     <title>Creating STL Files for 3D Printing</title>
-    <p>One of the CalcPlot3D's newest features is its ability to save a surface to an STL file.
-    This STL file can then be used to print a solid 3D surface model using a 3D printer, sometimes called a rapid prototyping machine.
-    For example, here are the saddle, <m>z = x^2 – y^2</m>, and the parametric surface I call the Big Knot.</p>
-    <sidebyside widths="51% 49%">
-    <figure>
-        <caption>3D print of saddle surface, <m>z = x^2 – y^2</m></caption>
-        <image width="50%" source="images/saddle3Dprint.png"><description>3D printed saddle surface</description></image>
-    </figure>
-    
-    <figure>
-        <caption>3D print of Big Knot, a parametric surface</caption>
-        <image width="50%" source="images/bigknot3Dprint.png"><description>3D printed big knot</description></image>
-    </figure>
-    </sidebyside>
-    
-    <p>In order for the STL file to work well with the 3D printer, the surface must be given sufficient thickness.
-    To address this issue, CalcPlot3D will automatically give the thickness you specify to a surface before creating the STL file.
-    The app must create a closed solid to represent the surface if you wish it to print on a 3D printer.</p>
-    <p>To give this feature a try, first find a surface that you would like to print to a 3D printer and graph it with CalcPlot3D.</p>
-    <p><ol><li>Open <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/"><alert>CalcPlot3D</alert></url>.</li>
-		<li><p>From the File menu select Create an STL file from the plot.  
-		A dialog will appear like the one below.</p>
+    <section xml:id="section-stlfile">
+        <title>STL file Creation in CalcPlot3D</title>
+		<p>One of the CalcPlot3D's newest features is its ability to save a surface to an STL file.
+		This STL file can then be used to print a solid 3D surface model using a 3D printer, sometimes called a rapid prototyping machine.
+		For example, here are the saddle, <m>z = x^2 – y^2</m>, and the parametric surface I call the Big Knot.</p>
+		<sidebyside widths="51% 49%">
 		<figure>
-			<caption>STL dialog in CalcPlot3D</caption>
-			<image width="50%" source="images/STLfileDialog.png"><description>STL dialog in CalcPlot3D</description></image>
+			<caption>3D print of saddle surface, <m>z = x^2 – y^2</m></caption>
+			<image width="50%" source="images/saddle3Dprint.png"><description>3D printed saddle surface</description></image>
 		</figure>
-		</li>
-		<li>Enter the name you wish to give to the solid, and then enter the approximate size you expect to print it at and the desired thickness.
-		These will be used together with the dimensions of the 3D plot window to determine the approximate correct thickness to use with the surface
-		to account for the scaling to be done in the printer application.
-		You may need to experiment a little with these values and your 3D printer software to get the thickness just right.</li>
-		<li>If the surface you wish to print is already a closed 3D surface like a sphere or a torus, you can specify that no thickness be given to
-		the surface before printing, or you can still use a thickness, depending on how you desire the printer to fill the void inside the closed surface.
-		In this case, if you choose to give the closed surface a thickness, you will need to choose between using the <alert>Opposite Normals</alert> direction
-		(generally inside the closed solid), the <alert>Normal Direction</alert> (generally outside the closed surface), or the <alert>Half-and-Half</alert> option, which goes
-		both directions half the thickness and creates two new shells with the same basic shape.</li>
-		<li>The <alert>Half-and-Half</alert> option is always best for surfaces that flip orientation in the middle of a surface like a Möbius Strip or a Klein Bottle.</li>
-		<li>Use the <alert>View Solid</alert> button to see what the surface/solid will look like before saving the STL file.
-		Note that this can take a little while, during which the cursor will remain a hand.
-		The more faces you have in the plot (for a more accurate printed solid), the longer this processing will take.</li>
-		<li>For regular surfaces given by functions of two variables like the saddle above, I prefer the <alert><m>z</m>-shift down</alert> option since it preserves
-		the exact shape of the surface on the bottom as well as the top of the printed surface.
-		But you need to compensate for the fact that the thickness will vary over the surface and be least thick where the surface is steepest in the <m>z</m>-direction.</li>
-		<li>Once you see the solid in the plot, you can click on the plot and then type the n-key to view the surface normals of every triangular face in the plot.
-		This can look a little busy, but can be helpful to check, as it is generally preferred (and possibly required) that the normal vectors
-		of all faces point outwards.  Sometimes this may require you to adjust the parameterization of a parameterized surface, for example.</li>
-		<li>Before saving the STL file, note that you can select either a <alert>Binary STL file</alert> (the default) or an <alert>ASCII STL file</alert>.
-		The benefit of the Binary STL file is that it is much smaller than the ASCII STL file (about 1/5 the size).
-		The benefit of the ASCII STL file is that you can actually read it to view the normal and vertices of each face.</li>
-		<li>Once you are ready, click on the <alert>Create File</alert> button.  You should see the file downloading to your default download folder (in Chrome)
-		or may need to choose to download it in some browsers.</li>
-		<li>Once you have created the file, you will need to check it out in the 3D printer software (slicer) you plan to use.
-		It may also be helpful to download an STL viewer like <em>MeshLab</em> or <em>Blender</em>.
-		These allow you to check the surface for thickness and for other possible problems before you print it.
-		They can also usually be used to fix these problems.  See tutorials online.</li>
-		<li>Now you should be ready to print to the 3D printer using the 3D printer’s software.
-		There is still some room to play with the surface in this software, scaling it appropriately and choosing how you want to fill
-		the surface and how much support material to use.  Ask your local expert to help you with this step.  
-		By the way, it can take a long time to print one of these surfaces, depending on the solid’s size and the printer and material being used to print it.
-		My 6 in. x 6 in. saddle surface above took 13 hours to print and the 4 in. x 4 in. knot took almost 9 hours.
-		But 3D printers are getting faster and less expensive all the time.</li>
-	</ol></p>
-	<p>If you’d like to share your favorite 3D print-tested STL files along with an image of the solid/surface,
-	along with any activities you may have developed to accompany them,
-	please send them to me at <email>pseeburger@monroecc.edu</email>.</p>
+	
+		<figure>
+			<caption>3D print of Big Knot, a parametric surface</caption>
+			<image width="50%" source="images/bigknot3Dprint.png"><description>3D printed big knot</description></image>
+		</figure>
+		</sidebyside>
+	
+		<p>In order for the STL file to work well with the 3D printer, the surface must be given sufficient thickness.
+		To address this issue, CalcPlot3D will automatically give the thickness you specify to a surface before creating the STL file.
+		The app must create a closed solid to represent the surface if you wish it to print on a 3D printer.</p>
+		<p>To give this feature a try, first find a surface that you would like to print to a 3D printer and graph it with CalcPlot3D.</p>
+		<p><ol><li>Open <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/"><alert>CalcPlot3D</alert></url>.</li>
+			<li><p>From the File menu select Create an STL file from the plot.  
+			A dialog will appear like the one below.</p>
+			<figure>
+				<caption>STL dialog in CalcPlot3D</caption>
+				<image width="50%" source="images/STLfileDialog.png"><description>STL dialog in CalcPlot3D</description></image>
+			</figure>
+			</li>
+			<li>Enter the name you wish to give to the solid, and then enter the approximate size you expect to print it at and the desired thickness.
+			These will be used together with the dimensions of the 3D plot window to determine the approximate correct thickness to use with the surface
+			to account for the scaling to be done in the printer application.
+			You may need to experiment a little with these values and your 3D printer software to get the thickness just right.</li>
+			<li>If the surface you wish to print is already a closed 3D surface like a sphere or a torus, you can specify that no thickness be given to
+			the surface before printing, or you can still use a thickness, depending on how you desire the printer to fill the void inside the closed surface.
+			In this case, if you choose to give the closed surface a thickness, you will need to choose between using the <alert>Opposite Normals</alert> direction
+			(generally inside the closed solid), the <alert>Normal Direction</alert> (generally outside the closed surface), or the <alert>Half-and-Half</alert> option, which goes
+			both directions half the thickness and creates two new shells with the same basic shape.</li>
+			<li>The <alert>Half-and-Half</alert> option is always best for surfaces that flip orientation in the middle of a surface like a Möbius Strip or a Klein Bottle.</li>
+			<li>Use the <alert>View Solid</alert> button to see what the surface/solid will look like before saving the STL file.
+			Note that this can take a little while, during which the cursor will remain a hand.
+			The more faces you have in the plot (for a more accurate printed solid), the longer this processing will take.</li>
+			<li>For regular surfaces given by functions of two variables like the saddle above, I prefer the <alert><m>z</m>-shift down</alert> option since it preserves
+			the exact shape of the surface on the bottom as well as the top of the printed surface.
+			But you need to compensate for the fact that the thickness will vary over the surface and be least thick where the surface is steepest in the <m>z</m>-direction.</li>
+			<li>Once you see the solid in the plot, you can click on the plot and then type the n-key to view the surface normals of every triangular face in the plot.
+			This can look a little busy, but can be helpful to check, as it is generally preferred (and possibly required) that the normal vectors
+			of all faces point outwards.  Sometimes this may require you to adjust the parameterization of a parameterized surface, for example.</li>
+			<li>Before saving the STL file, note that you can select either a <alert>Binary STL file</alert> (the default) or an <alert>ASCII STL file</alert>.
+			The benefit of the Binary STL file is that it is much smaller than the ASCII STL file (about 1/5 the size).
+			The benefit of the ASCII STL file is that you can actually read it to view the normal and vertices of each face.</li>
+			<li>Once you are ready, click on the <alert>Create File</alert> button.  You should see the file downloading to your default download folder (in Chrome)
+			or may need to choose to download it in some browsers.</li>
+			<li>Once you have created the file, you will need to check it out in the 3D printer software (slicer) you plan to use.
+			It may also be helpful to download an STL viewer like <em>MeshLab</em> or <em>Blender</em>.
+			These allow you to check the surface for thickness and for other possible problems before you print it.
+			They can also usually be used to fix these problems.  See tutorials online.</li>
+			<li>Now you should be ready to print to the 3D printer using the 3D printer’s software.
+			There is still some room to play with the surface in this software, scaling it appropriately and choosing how you want to fill
+			the surface and how much support material to use.  Ask your local expert to help you with this step.  
+			By the way, it can take a long time to print one of these surfaces, depending on the solid’s size and the printer and material being used to print it.
+			My 6 in. x 6 in. saddle surface above took 13 hours to print and the 4 in. x 4 in. knot took almost 9 hours.
+			But 3D printers are getting faster and less expensive all the time.</li>
+		</ol></p>
+		<p>If you’d like to share your favorite 3D print-tested STL files along with an image of the solid/surface,
+		along with any activities you may have developed to accompany them,
+		please send them to me at <email>pseeburger@monroecc.edu</email>.</p>
+	</section>
 </chapter>
 
 <backmatter xml:id="backmatter">
     <title>Appendices</title>
-	<appendix>
+	<appendix xml:id="appendix-availablefunctions">
+	    <title>List of Available Functions</title>
+	    <sidebyside>
+	        <tabular halign="center" top="major">
+				<col width="20%"/>
+				<col width="20%" />
+				<col width="20%" />	
+				<row valign="top" bottom="none">
+					<cell><p>ln()</p></cell>
+					<cell><p>log()</p></cell>
+					<cell><p>e^()</p></cell>
+				</row>
+				<row valign="top" bottom="none">
+					<cell><p>cos()</p></cell>
+					<cell><p>arccos()</p></cell>
+					<cell><p>cosh()</p></cell>
+				</row>
+				<row valign="top" bottom="none">
+					<cell><p>sin()</p></cell>
+					<cell><p>arcsin()</p></cell>
+					<cell><p>sinh()</p></cell>
+				</row>
+				<row valign="top" bottom="none">
+					<cell><p>tan()</p></cell>
+					<cell><p>arctan()</p></cell>
+					<cell><p>tanh()</p></cell>
+				</row>
+				<row valign="top" bottom="none">
+					<cell><p>cot()</p></cell>
+					<cell><p>arccot()</p></cell>
+					<cell><p>coth()</p></cell>
+				</row>
+                <row valign="top" bottom="none">
+					<cell><p>sec()</p></cell>
+					<cell><p>arcsec()</p></cell>
+					<cell><p>sech()</p></cell>
+				</row>
+				<row valign="top" bottom="none">
+					<cell><p>csc()</p></cell>
+					<cell><p>arccsc()</p></cell>
+					<cell><p>csch()</p></cell>
+				</row>
+				<row valign="top" bottom="none">
+					<cell><p>floor()</p></cell>
+					<cell><p>int()</p></cell>
+					<cell><p>ceil()</p></cell>
+				</row>
+				<row valign="top" bottom="major">
+					<cell><p>abs()</p></cell>
+					<cell><p>sign()</p></cell>
+					<cell><p>sqrt()</p></cell>
+				</row>
+			</tabular>
+		</sidebyside>
+
+		<p><ol>
+			<li>For absolute value, you can use |x| instead of abs(x).</li>
+			<li>Factorial can be entered using !, e.g. 5! which is 5(4)(3)(2)(1).</li>
+			<li>The exponential function e^(x) can also be entered exp(x).</li>
+			<li>The sign function can also be entered as sgn().  It returns 1, if the input is positive, 0 if the input is 0, and -1, if the input is negative.</li>
+			<li>For Spanish speakers, sin(x) can also be entered sen(x).  
+			Similarly, arcsin(x) = arcsen(x) and sinh(x) = senh(x).</li>
+			</ol>
+		</p>
+	</appendix>
+	<appendix xml:id="appendix-dynamicfigures">
 		 <title>*Creating Dynamic Figures</title>
 		 <p></p>
 	</appendix>
-	<appendix>
+	<appendix xml:id="appendix-creatingscripts">
 		 <title>*Creating Scripts</title>
 		 <p></p>
 	</appendix>
