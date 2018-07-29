@@ -250,6 +250,38 @@
         <title>*Using the Gridlines menu</title>
     	<p></p>
     </section>
+    <section xml:id="section-toptips">
+        <title>Did you know?</title>
+    	<p>This section includes a list of highlighted tips for using the CalcPlot3D app.  Most can be found elsewhere in this manual, 
+    	but this section may help you find some useful features of CalcPlot3D.</p>
+    	<p><ol>
+    	    <li><p><alert>You can save the current view to the URL.</alert></p>
+    	       <p>You can create a URL that includes codes for the current view in the CalcPlot3D plot.  This allows you to save this URL to your browser Favorites, place it as a hyperlink, or send it to a student or colleague.</p>
+    	       <p>For more information on how to do this, see <xref ref="subsection-savetourl" />.</p>
+    	    </li>
+    	    <li><p><alert>You can even save a series of views in a script file and load it into CalcPlot3D at a later time.</alert></p>
+    	       <p>For a project, demonstration, or exploration, or just to show a friend something cool you are exploring in CalcPlot3D, you can create a script file
+    	       with 1 or more steps/views in it and save it to your computer to be loaded into the app at a later time.</p>
+    	       <p>For more information on how to do this, see <xref ref="chapter-creatingscripts" />.</p>
+    	    </li>
+    	    <li><p><alert>CalcPlot3D allows you to enter most functions you might want to use.</alert></p>
+    	       <p>See <xref ref="appendix-availablefunctions" /> for available functions.</p>
+    	    </li>
+    	    <li><p><alert>You can use parameters to animate most objects.</alert></p>
+    	       <p>The letters <c>a</c>, <c>b</c>, <c>c</c>, <c>d</c>, and <c>t</c> can all be used at parameters in functions to show what happens when we vary
+    	       certain aspects of a function.</p>
+    	       <p>For example, we can enter the following function in the default function object:</p>
+    	       <p><m>z =</m><c>a(x-c)^2 + b(y-d)^2 + t</c></p>
+    	       <p>Sliders for each parameter we just used will automatically appear (if they are not already visible).
+    	       We can then vary any one of these parameters and observe the effect on the shape of the surface.</p>
+    	       <p>See <xref ref="section-sliders" /> for more information and examples.</p>
+    	    </li>
+            <li><p><alert>You can graph parametric equations in CalcPlot3D.</alert></p>
+                <p>CalcPlot3D allows you to explore parametric equations in the plane or in space.</p>
+    	       <p>See the Space Curve object in <xref ref="section-space-curves" /> for details.</p>
+    	    </li>
+    	</ol></p>
+    </section>
 </chapter>
 
 <chapter xml:id="chapter-objects">
@@ -370,18 +402,73 @@
 		<p></p>
 	</section>
 	<section xml:id="section-functionsettings">
-		<title>*Function Settings, ⚙</title>
-		<p>Function settings are the same for the following objects:
-		  <ul>
-		    <li><c>Function: z = f(x,y)</c></li>
-		    <li><c>Function: x = f(y,z)</c></li>
-		    <li><c>Function: y = f(x,z)</c></li>
-		    <li><c>Implicit Surface</c></li>
-		    <li><c>Parametric Surface</c></li>
-		    <li><c>Region</c></li>
-		    <li><c>Function: r = f(θ,z)</c></li>
-		  </ul>
-		</p>
+		<title>Surface Settings, ⚙</title>
+		<introduction>
+			<sidebyside widths="50% 50%">
+			<p>Function settings are the same for the following objects:
+			  <ul>
+				<li><c>Function: z = f(x,y)</c></li>
+				<li><c>Function: x = f(y,z)</c></li>
+				<li><c>Function: y = f(x,z)</c></li>
+				<li><c>Implicit Surface</c></li>
+				<li><c>Parametric Surface</c></li>
+				<li><c>Region</c></li>
+				<li><c>Function: r = f(θ,z)</c></li>
+			  </ul>
+			</p>
+			<image width="50%" source="images/surfacesettings.png"><description>Surface Settings Menu</description></image>
+			</sidebyside>
+
+			<p>You can find this settings menu by clicking on the settings button, ⚙, for the surface object whose settings you wish to adjust.</p>
+			<p>Using these settings, you can then adjust these formatting options for this surface only, leaving settings for other surfaces unaffected.</p>
+		</introduction>
+		<subsection>
+			<title>Transparency</title>
+			<sidebyside widths="92% 7%">
+			    <p>You can adjust the transparency of the whole plot with the <alert>Toggle Transparency</alert> button.</p>
+				<image width="7%" source="images/search.png"><description>Contour plot button</description></image>
+	       </sidebyside>
+			<p>But in the <em>Surface Settings</em> menu, you can adjust the transparency of a single surface so that it is not affected by the general transparency setting.</p>
+			<p>The initial transparency value of <c>-1</c> forces the surface to use the default plot transparency mentioned above.</p>
+			<p>Adjusting this value using the scrollbar or by entering a value from 0 (fully invisible) to 255 (fully opaque) will set the transparency value for this surface,
+			and make it not follow the plot transparency setting.</p>
+		</subsection>
+		<subsection>
+			<title>Hide my edges</title>
+			<sidebyside widths="92% 7%">
+			    <p>Similar to transparency, you can adjust whether the polygon edges are displayed in the whole plot with the <alert>Toggle Edges</alert> button.</p>
+				<image width="7%" source="images/edgesbutton.png"><description>Toggle Edges button</description></image>
+	       </sidebyside>
+			<p>But in the <em>Surface Settings</em> menu, you can hide the polygon edges of a single surface so that it is not affected by the general edge display setting.</p>
+			<p>This is a checkbox, that is unchecked by default.  Selecting this option will force the edges of this surface to be hidden without affecting any other surfaces in the plot.</p>
+		</subsection>
+		<subsection>
+			<title>Coloring the surface faces</title>
+			<p>These options allow you to change the coloring setting for a single surface.</p>
+			<p>By default, the colors of surface faces are determined by the three components of a normal vector to the face.</p>
+			<p>When two intersecting surfaces are plotted together one of them is automatically set to <alert>Reversed colors</alert> so the intersection of the surfaces is easier to see.
+			Note that when two or more surfaces intersect in the plot, the Hidden Surface Mode is also automatically changed to BSP Tree Mode (not triangulated) to improve the resolution of the intersection.</p>
+			<p>But in the <em>Surface Settings</em> menu, you can adjust the way the faces of a single surface are colored.</p>
+			<p></p>
+			<p>Now let's look at each of the options for coloring the surface faces.</p>
+			<p><ul>
+			    <li><alert>Normal appearance:</alert> The default coloring scheme based on the components of the normal vector to each face.</li>
+			    <li><alert>Reversed colors:</alert> Each face is colored using the same coloring scheme but using the components of the negative of the normal vector.
+			                                        This results in coloring the top of the surface as the bottom would have been colored in the <alert>Normal appearance</alert> mode
+			                                        and coloring the bottom as if it were the top.</li>
+			    <li><alert>Wireframe only:</alert> All faces for this surface are hidden and the surface is displayed as a wireframe.  
+			    Note that using the <alert>Toggle Faces</alert> button will Hide/Show faces for the whole plot.  
+			    But changing the coloring setting in <em>Surface Settings</em> will lock this surface to be displayed as indicated here.</li>
+			    <li>
+			    <sidebyside widths="70% 30%">
+			    <p><alert>Constant color:</alert> Selecting this option will cause a color picker panel to appear just below these surface coloring options
+			    and will color the surface red (or the last selected color).
+			    You can then use the color picker to select a desired color for both sides of the entire surface.</p>
+				<image width="30%" source="images/surfacecoloring.png"><description>Surface color picker</description></image>
+	            </sidebyside>
+			    </li>
+			</ul></p>
+		</subsection>
 	</section>
 </chapter>
 
@@ -519,7 +606,11 @@
 </introduction>
 <section>
 	<title>*File menu</title>
-	<p></p>
+	<introduction><p></p></introduction>
+	<subsection xml:id="subsection-savetourl">
+	<title>Save the current view to a URL</title>
+	   <p></p>
+	</subsection>
 </section>
 <section>
 	<title>*Scripts menu</title>
@@ -756,20 +847,76 @@
 
 <chapter>
     <title>*Exploring Differential Equations</title>
+    <introduction><p>When students can visualize the concepts they are learning, 
+	 they will understand these concepts more deeply, and find it easier to remember them and connect them to related topics. 
+	 In differential equations, we have a number of opportunities to visualize the topics we study.</p>
+	</introduction>
+	    <section>
+	         <title>Using the Direction Field Explorer app</title>
+	         <subsection>
+				 <title>Visualizing 1st-order Differential Equations</title>
+				 <p>In differential equations we begin by studying many applications of first-order differential equations.
+				 We learn how these equations are derived from the language of the problems, and then we examine the direction fields
+				 associated with each equation to make predictions, consider equilibria and to analyze the situations.</p>
+				 <p>We can use the <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/DirectionField/"><alert>Direction Field Explorer app</alert></url>
+				 to visually explore the direction fields associated with
+				 any first order differential equation that can be solved for the first derivative.</p>
+				 <p>We can also visually verify the general solution to these first-order differential equations.</p>
+				 <image width="100%" source="images/directionFieldapp.png"><description>Direction Field Explorer image</description></image>
+				 <p>To do so, follow the steps below:</p>
+				 <p>
+				 <ol>
+				 <li>Enter the differential equation, solved for dy/dx to see the associated direction field.</li>
+				 <li>Then enter the general solution to this differential equation (including the integration parameter C).</li>
+				 <li>Next we can verify that the solution curves generated for various values of the parameter C all fit nicely through the field
+				  no matter what value of C is used.  A slider is provided to allow this parameter to be quickly and smoothly varied through a broad range of values.</li>
+				  </ol>
+                  </p>
+                  <p>The variables of the problem can be changed, and the range of values for each variable can be set to whatever
+                is most appropriate for the problem being explored. If the range of values for one variable is much larger than for another,
+                a non-uniform grid can be used to more easily view these situations.</p>
+                <p>Clicking at a point on the direction field causes a solution curve to be drawn in that passes through the indicated point.</p>
+			 </subsection>
+	    </section>
         <section>
         	<title>*Using CalcPlot3D</title>
 			 <subsection>
 				 <title>Visualizing Systems of Differential Equations</title>
-				 <p></p>
+				 <p>When we study systems of 1st-order differential equations, it is helpful to be able to visualize the phase plots associated with these systems,
+				 and to see that no matter what values we use for the two (or three) parameters we obtain in the solution, 
+				 the general solution (expressed parametrically) will always pass through the vectors in the (two or three dimensional)
+				 phase plot just as the solution curves to 1st-order differential equations pass nicely through the corresponding direction fields
+				 for any given value of the single parameter C.</p>
+				 <p>Let's do a 2 x 2 system of differential equations example!</p>
+				 <exploration xml:id="exploration-phaseplots">
+				     <statement>
+				        <p>a. First, clear the view by clicking on the clear plot button or by deleting the function object by clicking the small x in the upper-right corner of the object.</p>
+				        <p>b. Then select <alert>Vector Field</alert> on the <alert>Add to graph</alert> menu.</p>
+				        <p>c. Click the checkbox labeled, "Show system of DEs notation", so that it looks like the system we are entering.</p>
+				        <p>d. Now enter the equations of the following system of 1st-order differential equations to see its phase plot.</p>
+				        <p><md>
+							<mrow>\frac{dx}{dt} &amp;= -2x + y</mrow>
+							<mrow>\frac{dy}{dt} &amp;= -0.5x - y</mrow>
+							<mrow>\frac{dz}{dt} &amp;= 0</mrow>
+                        </md></p>
+                        <p>e. Since this is a 2 x 2 system, let's <alert>Restrict the view to 2D</alert> by checking this checkbox.</p>
+                        <p>f. Clicking on a point on the phase plot generates a solution curve. As you drag this point around the plot, the curve dynamically adjusts to fit the field.</p>
+                        <p>The CalcPlot3D app should look something like this:
+                        <image width="100%" source="images/2x2system1a.png"><description>Phase Plot for a 2 x 2 System</description></image>
+                        </p>
+                        <p>g. Clicking on the <alert>Animate</alert> button by the <m>t</m>- parameter animates a point along this path.  
+                        This shows not only the direction of travel of an object traveling through this phase portrait from the chosen starting point, 
+                        but also the speeds at which it travels as time passes.</p>
+                        <p>f. By adding a <alert>Space Curve</alert> to the plot, we can also verify the general solution of this differential equation (in parametric form), using parameters <c>a</c> and <c>b</c>.</p>
+                        <p>The general solution for this system is: <m>\vec{X} = c_1 e^{-3t/2}\left[\begin{pmatrix}1\\1\end{pmatrix}\cos{\frac{t}{2}}-\begin{pmatrix}-1\\0\end{pmatrix}\sin{\frac{t}{2}}\right]+
+                        c_2 e^{-3t/2}\left[\begin{pmatrix}-1\\0\end{pmatrix}\cos{\frac{t}{2}}+\begin{pmatrix}1\\1\end{pmatrix}\sin{\frac{t}{2}}\right]</m>
+                        </p>
+                        <p>The parameters <c>a</c> and <c>b</c> can then be varied using their respective sliders to see how the solution curves given by this general solution always fit the system's phase plot.</p>
+				     </statement>
+				 </exploration>
 			 </subsection>
 	    </section>
-        <section>
-	         <title>*Using the DirectionField app</title>
-	         <subsection>
-				 <title>Visualizing 1st-order Differential Equations</title>
-				 <p></p>
-			 </subsection>
-	    </section>    
+        
 </chapter>
 
 <chapter>
@@ -843,7 +990,10 @@
 		please send them to me at <email>pseeburger@monroecc.edu</email>.</p>
 	</section>
 </chapter>
-
+<chapter xml:id="chapter-creatingscripts">
+	 <title>*Creating Scripts</title>
+	 <p></p>
+</chapter>
 <backmatter xml:id="backmatter">
     <title>Appendices</title>
 	<appendix xml:id="appendix-availablefunctions">
@@ -913,10 +1063,6 @@
 	</appendix>
 	<appendix xml:id="appendix-dynamicfigures">
 		 <title>*Creating Dynamic Figures</title>
-		 <p></p>
-	</appendix>
-	<appendix xml:id="appendix-creatingscripts">
-		 <title>*Creating Scripts</title>
 		 <p></p>
 	</appendix>
 </backmatter>
