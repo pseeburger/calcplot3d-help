@@ -205,6 +205,8 @@
 			</stack>
 		</sidebyside>
     </section>
+    
+    
     <section>
         <title>Using 3D Glasses</title>
         <sidebyside widths="7% 85%"><image width="7%" source="images/3DGlasses.png"><description>Image of 3D glasses</description></image>
@@ -225,7 +227,8 @@
         For more details on the other options see the help page in <xref ref="section-3doptions" /> for this submenu.</p>
     </section>
     
-    <section>
+    
+    <section xml:id="section-other-toolbar-actions">
 		<title>Other Toolbar Actions</title>
 		<p>Here is a description of each of the other toolbar buttons at the top of the CalcPlot3D control panel.</p>    
 		<sidebyside widths="7% 80%"><image width="7%" source="images/reset.png"><description>Reset button</description></image><p>Resets the app to the original view.</p></sidebyside>
@@ -242,42 +245,90 @@
 		<sidebyside widths="7% 80%"><image width="7%" source="images/gridmenu.png"><description>Show Gridlines Menu</description></image><p>Show/hide the gridlines menu.</p></sidebyside>
 		<sidebyside widths="7% 80%"><image width="7%" source="images/tracePlane.png"><description>Show/hide 2D Traceplane</description></image><p>Show/hide the 2D traceplane and its options. See <xref ref="chapter-traceplane" />.</p></sidebyside>
     </section>
+    
+    
     <section xml:id="section-formataxes">
-        <title>*Using the Format Axes dialog</title>
-    	<p></p>
+        <title>Using the Format Axes dialog</title>
+    	<sidebyside widths="93% 7%">
+		   <p>Open the Format Axes dialog by clicking on the <alert>Format Axes</alert> toolbar button</p>
+		   <image width="7%" source="images/formatAxes.png"><description>Format Axes button</description></image>
+	   </sidebyside>
+<!--	   <sidebyside widths="60% 40%"> -->
+	   <figure>
+	      <caption>The format axes dialog showing all full plot options.</caption>
+	      <image width="50%" source="images/formataxesdialog.png"><description>Format Axes dialog</description></image>
+	   </figure>
+<!--       </sidebyside>  -->
+       <p>While the Zoom In and Zoom Out buttons allow you to quickly adjust the axes ranges by halving or doubling all values, 
+           this dialog allows you to fine tune and adjust the axes ranges, tick mark units, scalefactors, z-clipping, and focus point.</p>
+       <p>Pressing enter on any of these textbox values should update the plot accordingly.</p>
+       <paragraphs>
+           <title>Axes ranges</title>
+           <p>Adjust these values to set the axes ranges on the 3D plot (and the associated traceplane).</p>
+       </paragraphs>
+       <paragraphs>
+           <title>Tick marks</title>
+           <p>The <m>x</m>-, <m>y</m>-, and <m>z</m>-tick marks indicate a unit to use for spacing the tick marks and associated number labels along each axis.
+           These tick marks and labels will start at the minimum value of the respective axis range.</p>
+       </paragraphs>
+       <paragraphs>
+           <title>Scalefactors</title>
+           <p>The <m>x</m>-, <m>y</m>-, and <m>z</m>-scalefactors will scale the plot by the given scalefactor in along the given axis.
+           This allows you to create plots where some dimensions are much larger or smaller than others, i.e., 
+           this allows the scaling to be non-uniform in the various directions.</p>
+       </paragraphs>
+       <paragraphs>
+           <title><m>z</m>-clipping</title>
+           <p>The <m>z</m>-clipping values will hide all parts of the surface above the upper <m>z</m>-clip value or below the lower <m>z</m>-clip value.</p>
+       </paragraphs>
+       <paragraphs>
+           <title>Focus Point</title>
+           <p>The focus point is the point about which the plot rotates.  By default, this point is the origin, 
+           but this option allows you to change this pivot/focus point to something else.</p>
+       </paragraphs>
+       <paragraphs>
+            <title>Quick Views</title>
+            <sidebyside widths="60% 40%">
+               <p>The <alert>Quick Views Menu</alert> allows you to quickly adjust the plot axes ranges to one of the listed options.</p>
+			   <figure>
+				  <caption>Quickviews menu options.</caption>
+				  <image width="50%" source="images/quickviews.png"><description>Quickviews menu</description></image>
+			   </figure>
+	       </sidebyside>
+	   </paragraphs>
     </section>
+    
+    
     <section xml:id="section-gridlinesmenu">
         <title>Using the Gridlines menu</title>
-    	<introduction>
-		   <sidebyside widths="93% 7%">
-			   <p>This menu allows you to modify the way the axes, box, and gridline planes display.
-    	        You access this menu by clicking on the <alert>Gridlines Menu</alert> button.</p>
-			   <image width="7%" source="images/gridmenu.png"><description>Grid Menu button</description></image>
-		   </sidebyside>
-		   <sidebyside widths="60% 30%">
-		      <image width="60%" source="images/gridmenubutton-toolbar.png"><description>Grid Menu button in toolbar</description></image>
-		      <image width="30%" source="images/gridmenumenu.png"><description>Grid Menu button</description></image>
-		   </sidebyside>
-		<!--   <sidebyside widths="80% 20%">  -->
-		   <p>The menu (shown with default options selected on the right) contains the following options:
-		   <ul>
-		   <li><alert>Show <m>xy</m>-gridlines:</alert> Shows gridlines in the <m>xy</m>-plane or on the box (if this option is selected).</li>
-		   <li><alert>Show <m>xz</m>-gridlines:</alert> Shows gridlines in the <m>xz</m>-plane or on the box (if this option is selected).</li>
-		   <li><alert>Show <m>yz</m>-gridlines:</alert> Shows gridlines in the <m>yz</m>-plane or on the box (if this option is selected).</li>
-		   <li><alert>Show gridlines on box:</alert> Moves the visible gridlines from the actual axes-planes to the bounding box.</li>
-		   <li><alert>Show planes with grids:</alert> Displays planes with the gridlines so they are easier to see.</li>
-		   <li><alert>Show box:</alert> Indicates whether to display the plot bounding box or not.  The b-key also toggles the presence of this box.</li>
-		   <li><alert>Show axes:</alert> Indicates whether to display the coordinate axes or not.  The a-key also toggles the presence of the axes.</li>
-		   <li><alert>Show Ticks <ampersand /> Labels:</alert> Indicates whether to display the tick marks and numbers labeling the axes.</li>
-		   </ul></p>
-		   <figure xml:id="figure-gridlines-example">
-		       <caption>An example plot with the gridlines shown on all three coordinate planes, shown on the box with planes to make them more visible.</caption>
-		       <image width="100%" source="images/gridlinesplotexamplesmall.png"><description>Grid Menu button</description></image>
-		   </figure>
 
-	<!--	   </sidebyside>  -->
-	   </introduction>
+	   <sidebyside widths="93% 7%">
+		   <p>This menu allows you to modify the way the axes, box, and gridline planes display.
+			You access this menu by clicking on the <alert>Gridlines Menu</alert> button.</p>
+		   <image width="7%" source="images/gridmenu.png"><description>Grid Menu button</description></image>
+	   </sidebyside>
+	   <sidebyside widths="60% 30%">
+		  <image width="60%" source="images/gridmenubutton-toolbar.png"><description>Grid Menu button in toolbar</description></image>
+		  <image width="30%" source="images/gridmenumenu.png"><description>Grid Menu button</description></image>
+	   </sidebyside>
+	   <p>The menu (shown with default options selected on the right) contains the following options:
+	   <ul>
+	   <li><alert>Show <m>xy</m>-gridlines:</alert> Shows gridlines in the <m>xy</m>-plane or on the box (if this option is selected).</li>
+	   <li><alert>Show <m>xz</m>-gridlines:</alert> Shows gridlines in the <m>xz</m>-plane or on the box (if this option is selected).</li>
+	   <li><alert>Show <m>yz</m>-gridlines:</alert> Shows gridlines in the <m>yz</m>-plane or on the box (if this option is selected).</li>
+	   <li><alert>Show gridlines on box:</alert> Moves the visible gridlines from the actual axes-planes to the bounding box.</li>
+	   <li><alert>Show planes with grids:</alert> Displays planes with the gridlines so they are easier to see.</li>
+	   <li><alert>Show box:</alert> Indicates whether to display the plot bounding box or not.  The b-key also toggles the presence of this box.</li>
+	   <li><alert>Show axes:</alert> Indicates whether to display the coordinate axes or not.  The a-key also toggles the presence of the axes.</li>
+	   <li><alert>Show Ticks <ampersand /> Labels:</alert> Indicates whether to display the tick marks and numbers labeling the axes.</li>
+	   </ul></p>
+	   <figure xml:id="figure-gridlines-example">
+		   <caption>An example plot with the gridlines shown on all three coordinate planes, shown on the box with planes to make them more visible.</caption>
+		   <image width="100%" source="images/gridlinesplotexamplesmall.png"><description>Grid Menu button</description></image>
+	   </figure>
     </section>
+    
+    
     <section xml:id="section-toptips">
         <title>Did you know?</title>
     	<p>This section includes a list of highlighted tips for using the CalcPlot3D app.  Most can be found elsewhere in this manual, 
@@ -311,6 +362,8 @@
     	</ol></p>
     </section>
 </chapter>
+
+
 
 <chapter xml:id="chapter-objects">
     <title>CalcPlot3D Objects</title>
