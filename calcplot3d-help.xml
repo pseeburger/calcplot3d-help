@@ -247,8 +247,36 @@
     	<p></p>
     </section>
     <section xml:id="section-gridlinesmenu">
-        <title>*Using the Gridlines menu</title>
-    	<p></p>
+        <title>Using the Gridlines menu</title>
+    	<introduction>
+		   <sidebyside widths="93% 7%">
+			   <p>This menu allows you to modify the way the axes, box, and gridline planes display.
+    	        You access this menu by clicking on the <alert>Gridlines Menu</alert> button.</p>
+			   <image width="7%" source="images/gridmenu.png"><description>Grid Menu button</description></image>
+		   </sidebyside>
+		   <sidebyside widths="60% 30%">
+		      <image width="60%" source="images/gridmenubutton-toolbar.png"><description>Grid Menu button in toolbar</description></image>
+		      <image width="30%" source="images/gridmenumenu.png"><description>Grid Menu button</description></image>
+		   </sidebyside>
+		<!--   <sidebyside widths="80% 20%">  -->
+		   <p>The menu (shown with default options selected on the right) contains the following options:
+		   <ul>
+		   <li><alert>Show <m>xy</m>-gridlines:</alert> Shows gridlines in the <m>xy</m>-plane or on the box (if this option is selected).</li>
+		   <li><alert>Show <m>xz</m>-gridlines:</alert> Shows gridlines in the <m>xz</m>-plane or on the box (if this option is selected).</li>
+		   <li><alert>Show <m>yz</m>-gridlines:</alert> Shows gridlines in the <m>yz</m>-plane or on the box (if this option is selected).</li>
+		   <li><alert>Show gridlines on box:</alert> Moves the visible gridlines from the actual axes-planes to the bounding box.</li>
+		   <li><alert>Show planes with grids:</alert> Displays planes with the gridlines so they are easier to see.</li>
+		   <li><alert>Show box:</alert> Indicates whether to display the plot bounding box or not.  The b-key also toggles the presence of this box.</li>
+		   <li><alert>Show axes:</alert> Indicates whether to display the coordinate axes or not.  The a-key also toggles the presence of the axes.</li>
+		   <li><alert>Show Ticks <ampersand /> Labels:</alert> Indicates whether to display the tick marks and numbers labeling the axes.</li>
+		   </ul></p>
+		   <figure xml:id="figure-gridlines-example">
+		       <caption>An example plot with the gridlines shown on all three coordinate planes, shown on the box with planes to make them more visible.</caption>
+		       <image width="100%" source="images/gridlinesplotexamplesmall.png"><description>Grid Menu button</description></image>
+		   </figure>
+
+	<!--	   </sidebyside>  -->
+	   </introduction>
     </section>
     <section xml:id="section-toptips">
         <title>Did you know?</title>
@@ -846,7 +874,7 @@
 </chapter>
 
 <chapter>
-    <title>*Exploring Differential Equations</title>
+    <title>Exploring Differential Equations</title>
     <introduction><p>When students can visualize the concepts they are learning, 
 	 they will understand these concepts more deeply, and find it easier to remember them and connect them to related topics. 
 	 In differential equations, we have a number of opportunities to visualize the topics we study.</p>
@@ -862,7 +890,10 @@
 				 to visually explore the direction fields associated with
 				 any first order differential equation that can be solved for the first derivative.</p>
 				 <p>We can also visually verify the general solution to these first-order differential equations.</p>
-				 <image width="100%" source="images/directionFieldapp.png"><description>Direction Field Explorer image</description></image>
+				 <figure xml:id="figure-directionFieldapp">
+                    <caption>Direction Field Explorer app</caption>
+				    <image width="100%" source="images/directionFieldapp.png"><description>Direction Field Explorer image</description></image>
+				 </figure>
 				 <p>To do so, follow the steps below:</p>
 				 <p>
 				 <ol>
@@ -879,7 +910,7 @@
 			 </subsection>
 	    </section>
         <section>
-        	<title>*Using CalcPlot3D</title>
+        	<title>Using CalcPlot3D</title>
 			 <subsection>
 				 <title>Visualizing Systems of Differential Equations</title>
 				 <p>When we study systems of 1st-order differential equations, it is helpful to be able to visualize the phase plots associated with these systems,
@@ -901,18 +932,36 @@
                         </md></p>
                         <p>e. Since this is a 2 x 2 system, let's <alert>Restrict the view to 2D</alert> by checking this checkbox.</p>
                         <p>f. Clicking on a point on the phase plot generates a solution curve. As you drag this point around the plot, the curve dynamically adjusts to fit the field.</p>
-                        <p>The CalcPlot3D app should look something like this:
-                        <image width="100%" source="images/2x2system1a.png"><description>Phase Plot for a 2 x 2 System</description></image>
-                        </p>
+                        <p>The CalcPlot3D app should look something like this:</p>
+                        <figure xml:id="figure-2x2system1a">
+                            <caption>Phase plot for this 2 x 2 system</caption>
+                            <image width="100%" source="images/2x2system1a.png"><description>Phase Plot for a 2 x 2 System</description></image>
+                        </figure>
+                        
                         <p>g. Clicking on the <alert>Animate</alert> button by the <m>t</m>- parameter animates a point along this path.  
                         This shows not only the direction of travel of an object traveling through this phase portrait from the chosen starting point, 
                         but also the speeds at which it travels as time passes.</p>
-                        <p>f. By adding a <alert>Space Curve</alert> to the plot, we can also verify the general solution of this differential equation (in parametric form), using parameters <c>a</c> and <c>b</c>.</p>
-                        <p>The general solution for this system is: <m>\vec{X} = c_1 e^{-3t/2}\left[\begin{pmatrix}1\\1\end{pmatrix}\cos{\frac{t}{2}}-\begin{pmatrix}-1\\0\end{pmatrix}\sin{\frac{t}{2}}\right]+
-                        c_2 e^{-3t/2}\left[\begin{pmatrix}-1\\0\end{pmatrix}\cos{\frac{t}{2}}+\begin{pmatrix}1\\1\end{pmatrix}\sin{\frac{t}{2}}\right]</m>
+                        <p>f. Now add a <alert>Space Curve</alert> representing the general solution of this system (in parametric form) to the plot, using parameters <c>a</c> and <c>b</c>.. We can use it to visually verify this general solution.</p>
+                    </statement>
+                    <answer>
+                        <p>The general solution for this system is: <me>\vec{X} = c_1 e^{-3t/2}\left[\begin{pmatrix}1\\1\end{pmatrix}\cos{\scriptsize\frac{t}{2}}-\begin{pmatrix}-1\\0\end{pmatrix}\sin{\scriptsize\frac{t}{2}}\right]</me>
+                        <me>+ \quad c_2 e^{-3t/2}\left[\begin{pmatrix}-1\\0\end{pmatrix}\cos{\scriptsize\frac{t}{2}}+\begin{pmatrix}1\\1\end{pmatrix}\sin{\scriptsize\frac{t}{2}}\right]</me>
                         </p>
+                        <p>This can then be written in parametric form as:</p>
+                        <p><md>
+							<mrow>x(t) &amp;= e^{-3t/2}\left[ c_1\left(\cos{\scriptsize{\frac{t}{2}}} + \sin{\scriptsize{\frac{t}{2}}} \right) + c_2\left(\sin{\scriptsize{\frac{t}{2}}} - \cos{\scriptsize\frac{t}{2}}\right)\right]</mrow>
+							<mrow>y(t) &amp;= e^{-3t/2}\left(c_1\cos{\scriptsize\frac{t}{2}} + c_2 \sin{\scriptsize\frac{t}{2}} \right)</mrow>
+							<mrow>z(t) &amp;= 0</mrow>
+                        </md></p>
+                        <p>Now replacing <m>c_1</m> with <c>a</c> and <m>c_2</m> with <c>b</c>, we can enter the following equations in the Space Curve object and graph it.</p>
+                        <p><md>
+							<mrow>x(t) &amp;= e^{-3t/2}\left[\textbf{a}\left(\cos{\scriptsize{\frac{t}{2}}} + \sin{\scriptsize{\frac{t}{2}}} \right) + \textbf{b}\left(\sin{\scriptsize{\frac{t}{2}}} - \cos{\scriptsize\frac{t}{2}}\right)\right]</mrow>
+							<mrow>y(t) &amp;= e^{-3t/2}\left(\textbf{a}\cos{\scriptsize\frac{t}{2}} + \textbf{b} \sin{\scriptsize\frac{t}{2}} \right)</mrow>
+							<mrow>z(t) &amp;= 0</mrow>
+                        </md></p>
                         <p>The parameters <c>a</c> and <c>b</c> can then be varied using their respective sliders to see how the solution curves given by this general solution always fit the system's phase plot.</p>
-				     </statement>
+                        <p>Animate the motion along this curve to see that the orientation is also correct.  The motion should go in the direction of the vectors in the plot.</p>
+				     </answer>
 				 </exploration>
 			 </subsection>
 	    </section>
