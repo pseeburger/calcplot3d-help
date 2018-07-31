@@ -994,7 +994,7 @@
                         <p>g. Clicking on the <alert>Animate</alert> button by the <m>t</m>- parameter animates a point along this path.  
                         This shows not only the direction of travel of an object traveling through this phase portrait from the chosen starting point, 
                         but also the speeds at which it travels as time passes.</p>
-                        <p>f. Now add a <alert>Space Curve</alert> representing the general solution of this system (in parametric form) to the plot, using parameters <c>a</c> and <c>b</c>.. We can use it to visually verify this general solution.</p>
+                        <p>h. Now add a <alert>Space Curve</alert> representing the general solution of this system (in parametric form) to the plot, using parameters <c>a</c> and <c>b</c>. We can use it to visually verify this general solution.</p>
                     </statement>
                     <answer>
                         <p>The general solution for this system is: <me>\vec{X} = c_1 e^{-3t/2}\left[\begin{pmatrix}1\\1\end{pmatrix}\cos{\scriptsize\frac{t}{2}}-\begin{pmatrix}-1\\0\end{pmatrix}\sin{\scriptsize\frac{t}{2}}\right]</me>
@@ -1014,6 +1014,10 @@
                         </md></p>
                         <p>The parameters <c>a</c> and <c>b</c> can then be varied using their respective sliders to see how the solution curves given by this general solution always fit the system's phase plot.</p>
                         <p>Animate the motion along this curve to see that the orientation is also correct.  The motion should go in the direction of the vectors in the plot.</p>
+				        <figure xml:id="figure-phaseportrait1a">
+                            <caption>Phase portrait for this 2 x 2 system, showing the definition of the space curve object on the left.</caption>
+                            <image width="100%" source="images/phaseportrait1.png"><description>Phase Portrait for a 2 x 2 System</description></image>
+                        </figure>
 				     </answer>
 				 </exploration>
 			 </subsection>
