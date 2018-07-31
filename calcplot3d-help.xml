@@ -909,7 +909,7 @@
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>*Lagrange Multipliers</title>
+	         <title>*Lagrange Multiplier Optimization</title>
 	         <p></p>
 	    </section>
 	    <section>
@@ -1164,8 +1164,259 @@
 		</p>
 	</appendix>
 	<appendix xml:id="appendix-dynamicfigures">
-		 <title>*Creating Dynamic Figures</title>
-		 <p></p>
+		 <title>Creating Dynamic Figures</title>
+		 <introduction><p>Dynamic figures can be created using CalcPlot3D and placed in online OER textbooks or webpages.
+		 These figures can be rotatable 3D plots or 2D plots with or without slider controls.  
+		 Typically only the plot window is displayed, while the menus and controls from the CalcPlot3D app are hidden.</p>
+		 <p>Depending on the context, the exact HTML code used to embed them will vary.</p>
+		 <p>These dynamic figures are already being used in OER textbooks in the LibreTexts platform,
+		 in PreTeXt OER textbooks and articles (like this one), in Geogebra books, and more.</p></introduction>
+		 <section>
+		     <title>Dynamic Figures with No Controls</title>
+			 <p>These figures can be rotated if they are 3D, and can be manipulated in other ways with the mouse and keystrokes, just as if they were in the full CalcPlot3D app.</p>
+			 <p>But in this type of dynamic figure only the 3D plot window is displayed, while all the menus and controls of the CalcPlot3D app are hidden.  See <xref ref="figure-dynamicfigure1" /> below.</p>
+			 <figure xml:id="figure-dynamicfigure1">
+				<caption>A dynamic figure</caption>
+				<interactive calcplot3d="type=z;z=7xy/e^(x^2+y^2);visible=false;umin=0;umax=10;usteps=100;vmin=0;vmax=10;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);contourcolor=red&amp;type=spacecurve;spacecurve=curve;x=t+7;y=2t+5;z=1.5t+1;visible=true;tmin=-10;tmax=10;tsteps=100;color=rgb(17,109,192);showtrace=false;tval=2.4000000000000004;constcol=true;twod=false;showpt=true;trace=true;vel=true;acc=true;osc=false;k=false;repeat=false;bounce=false;showtvector=false;shownvector=false;showbvector=false;showtnbeqs=false;showtnblabels=false;showoscplane=false;showrectplane=false;shownormplane=false&amp;type=vector;vector=%3C1,2,1.5%3E;visible=true;color=rgb(255,0,0);size=2;initialpt=(0,0,0)&amp;type=point;point=(7.4,5.8,1.6);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(9.4,9.8,4.6);visible=true;color=rgb(0,0,0);size=4&amp;type=text;text=%20%20%20%20%20P%20~%20(x%3Csub%3E0%3C%2Fsub%3E%2C%20y%3Csub%3E0%3C%2Fsub%3E%2C%20z%3Csub%3E0%3C%2Fsub%3E);visible=true;point=(7.4,5.8,1.6);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;bold=false;italic=false;fontmath=true;align=Center-right&amp;type=text;text=%20%20%20%20Q%20~%20(x%2C%20y%2C%20z);visible=true;point=(9.4,9.8,4.6);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;bold=false;italic=false;fontmath=true;align=Center-right&amp;type=text;text=v%3Charpoon%3E%20~%20%3Ca%2C%20b%2C%20c%3E;visible=true;point=(1,2,2.25);color=rgb(255,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=false;italic=true;fontmath=true;align=Center&amp;type=window;hsrmode=1;anaglyph=-1;center=17.139439715453594,10.377939594400079,5.155621864146323,1;focus=5,5,5,1;up=-0.2866219643580234,-0.12700640150211873,0.9495879230092552,1;transparent=false;alpha=140;edgeson=true;faceson=true;showbox=false;showaxes=true;showticks=false;perspective=true;centerxpercent=0.4;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=true;yzgrid=true;xzgrid=true;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=0;xmax=10;ymin=0;ymax=10;zmin=0;zmax=10;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.15;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
+					<static>
+						<image source="images/staticline3d.png" width="50%"/>
+					</static>
+				</interactive>
+			</figure>
+		
+			<p>To create this type of dynamic figure:
+			<ol><li>Create the plot you desire to display in the dynamic figure using CalcPlot3D.</li>
+			<li><p>Then save the view to the URL using the option on the File menu.  (See <xref ref="subsection-savetourl"/>.)
+			You'll get a URL something like this:</p>
+			<sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/?type=z;z=7xy/e^(x^2+y^2);visible=false;umin=0;umax=10;usteps=100;vmin=0;vmax=10;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);contourcolor=red&amp;type=spacecurve;spacecurve=curve;x=t+7;y=2t+5;z=1.5t+1;visible=true;tmin=-10;tmax=10;tsteps=100;color=rgb(17,109,192);showtrace=false;tval=2.4000000000000004;constcol=true;twod=false;showpt=true;trace=true;vel=true;acc=true;osc=false;k=false;repeat=false;bounce=false;showtvector=false;shownvector=false;showbvector=false;showtnbeqs=false;showtnblabels=false;showoscplane=false;showrectplane=false;shownormplane=false&amp;type=vector;vector=%3C1,2,1.5%3E;visible=true;color=rgb(255,0,0);size=2;initialpt=(0,0,0)&amp;type=point;point=(7.4,5.8,1.6);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(9.4,9.8,4.6);visible=true;color=rgb(0,0,0);size=4&amp;type=text;text=%20%20%20%20%20P%20~%20(x%3Csub%3E0%3C%2Fsub%3E%2C%20y%3Csub%3E0%3C%2Fsub%3E%2C%20z%3Csub%3E0%3C%2Fsub%3E);visible=true;point=(7.4,5.8,1.6);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;bold=false;italic=false;fontmath=true;align=Center-right&amp;type=text;text=%20%20%20%20Q%20~%20(x%2C%20y%2C%20z);visible=true;point=(9.4,9.8,4.6);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;bold=false;italic=false;fontmath=true;align=Center-right&amp;type=text;text=v%3Charpoon%3E%20~%20%3Ca%2C%20b%2C%20c%3E;visible=true;point=(1,2,1.5);color=rgb(255,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=false;italic=true;fontmath=true;align=Center-left&amp;type=window;hsrmode=1;anaglyph=-1;center=17.139439715453594,10.377939594400079,5.155621864146323,1;focus=5,5,5,1;up=-0.2866219643580234,-0.12700640150211873,0.9495879230092552,1;transparent=false;alpha=140;edgeson=true;faceson=true;showbox=false;showaxes=true;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=true;yzgrid=true;xzgrid=true;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=0;xmax=10;ymin=0;ymax=10;zmin=0;zmax=10;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.305882;xscalefactor=1;yscalefactor=1;zscalefactor=1
+			
+			</input></program></sidebyside>
+			</li>
+			
+			<li>Copy the part of the URL after the question mark to paste into the appropriate HTML code shown below.</li>
+			<li>Now typically we need to place the dynamic figure in an <c>iframe</c>, although this is hidden from the user in PreTeXt.
+			Copy and paste the code below, depending on your situation.</li>
+			</ol></p>
+			<paragraphs>
+			   <title>LibreTexts and many other HTML web pages</title>
+			   <p>In order to get a dynamic figure that hides all the menus and controls of the CalcPlot3D app, we need to use a slightly different URL.</p>
+			   <p>The URL for a dynamic figure with <alert>no controls</alert> is:</p> 
+			   <sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/
+			   
+			   </input></program></sidebyside>
+			   <p>Note that the data for the figure is encoded in a query string by CalcPlot3D.  This means that we will need a question mark (?) just after the URL above
+			   and then we'll paste the data copied from the CalcPlot3D-generated URL.  If we were to enter this new URL and query string in the browser directly,
+			   we would get the dynamic figure by itself on the page.</p>
+			   <p>To get the figure(s) on a page, especially if you might wish to place more than one of these dynamic figures on the same page,
+			   it is useful to embed each dynamic figure in an <c>iframe</c> (so they won't interfere with each other).
+			   I choose to make the width of this <c>iframe</c> 90% or less so there is still space on each side to scroll up and down past the figure.</p>
+			   <p>Below you can see a listing of the code for <xref ref="figure-dynamicfigure1" /> when it is displayed in LibreTexts or a generic webpage.</p>
+			   <sidebyside>
+			      <program language="html">
+			          <input>
+			               <![CDATA[<p style="text-align:center">
+			               <iframe frameborder="0" height="480px" 
+			                       src="https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/?type=
+			                       z;z=7xy/e^(x^2+y^2);visible=false;umin=0;umax=10;usteps=100;vmin=0;vmax=10;grid=30;
+			                       format=normal;alpha=-1;constcol=rgb(255,0,0);contourcolor=red&amp;
+			                       type=spacecurve;spacecurve=curve;x=t+7;y=2t+5;z=1.5t+1;visible=true;tmin=-10;tmax=10;
+			                       tsteps=100;color=rgb(17,109,192);showtrace=false;tval=2.4000000000000004;constcol=true;
+			                       twod=false;showpt=true;trace=true;vel=true;acc=true;osc=false;k=false;repeat=false;
+			                       bounce=false;showtvector=false;shownvector=false;showbvector=false;showtnbeqs=false;
+			                       showtnblabels=false;showoscplane=false;showrectplane=false;shownormplane=false&amp;
+			                       type=vector;vector=%3C1,2,1.5%3E;visible=true;color=rgb(255,0,0);size=2;initialpt=(0,0,0)&amp;
+			                       type=point;point=(7.4,5.8,1.6);visible=true;color=rgb(0,0,0);size=4&amp;
+			                       type=point;point=(9.4,9.8,4.6);visible=true;color=rgb(0,0,0);size=4&amp;
+			                       type=text;text=%20%20%20%20%20P%20~%20(x%3Csub%3E0%3C%2Fsub%3E%2C%20y%3Csub%3E0%3C%2Fsub%3E%2C%20z%3Csub%3E0%3C%2Fsub%3E);
+			                       visible=true;point=(7.4,5.8,1.6);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;
+			                       bold=false;italic=false;fontmath=true;align=Center-right&amp;
+			                       type=text;text=%20%20%20%20Q%20~%20(x%2C%20y%2C%20z);visible=true;point=(9.4,9.8,4.6);
+			                       color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;bold=false;italic=false;
+			                       fontmath=true;align=Center-right&amp;
+			                       type=text;text=v%3Charpoon%3E%20~%20%3Ca%2C%20b%2C%20c%3E;
+			                       visible=true;point=(1,2,1.5);color=rgb(255,0,0);font=Times%20New%20Roman;fontsize=14pt;
+			                       bold=false;italic=true;fontmath=true;align=Center-left&amp;
+			                       type=window;hsrmode=1;anaglyph=-1;center=17.139439715453594,10.377939594400079,5.155621864146323,1;
+			                       focus=5,5,5,1;up=-0.2866219643580234,-0.12700640150211873,0.9495879230092552,1;
+			                       transparent=false;alpha=140;edgeson=true;faceson=true;showbox=false;showaxes=true;
+			                       showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;
+			                       autospin=true;xygrid=true;yzgrid=true;xzgrid=true;gridsonbox=true;gridplanes=false;
+			                       gridcolor=rgb(128,128,128);xmin=0;xmax=10;ymin=0;ymax=10;zmin=0;zmax=10;xscale=1;
+			                       yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.305882;xscalefactor=1;yscalefactor=1;zscalefactor=1"
+			                       width="90%">
+			               </iframe>
+			               </p>]]>
+					  </input>
+				  </program>
+			   </sidebyside>
+
+		    </paragraphs>
+			<paragraphs>
+			   <title>PreTeXt</title>
+			   <p>When inserting a dynamic figure created with CalcPlot3D into a PreTeXt document, we need to use the following PreTeXt construction.</p>
+			   <sidebyside><program><input>
+			       <![CDATA[<figure>
+			          <caption>dynamic figure</caption>
+			          <interactive calcplot3d="Querystring from CalcPlot3D" 
+			                       variant="minimal" 
+			                       width="90%">
+			             <static>
+			                <image source="location of a static image of the dynamic figure for PDF output" width="50%" />
+			             </static>
+			          </interactive>
+			       </figure>
+			       ]]>
+			   </input></program></sidebyside>
+			   
+			   <p>For the example shown in <xref ref="figure-dynamicfigure1" /> above, this construction looks like:</p>
+			   <sidebyside><program><input>
+			       <![CDATA[<figure>
+			          <caption>dynamic figure</caption>
+			          <interactive calcplot3d="type=z;z=7xy/e^(x^2+y^2);visible=false;umin=0;umax=10;usteps=100;vmin=0;vmax=10;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);contourcolor=red&amp;type=spacecurve;spacecurve=curve;x=t+7;y=2t+5;z=1.5t+1;visible=true;tmin=-10;tmax=10;tsteps=100;color=rgb(17,109,192);showtrace=false;tval=2.4000000000000004;constcol=true;twod=false;showpt=true;trace=true;vel=true;acc=true;osc=false;k=false;repeat=false;bounce=false;showtvector=false;shownvector=false;showbvector=false;showtnbeqs=false;showtnblabels=false;showoscplane=false;showrectplane=false;shownormplane=false&amp;type=vector;vector=%3C1,2,1.5%3E;visible=true;color=rgb(255,0,0);size=2;initialpt=(0,0,0)&amp;type=point;point=(7.4,5.8,1.6);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(9.4,9.8,4.6);visible=true;color=rgb(0,0,0);size=4&amp;type=text;text=%20%20%20%20%20P%20~%20(x%3Csub%3E0%3C%2Fsub%3E%2C%20y%3Csub%3E0%3C%2Fsub%3E%2C%20z%3Csub%3E0%3C%2Fsub%3E);visible=true;point=(7.4,5.8,1.6);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;bold=false;italic=false;fontmath=true;align=Center-right&amp;type=text;text=%20%20%20%20Q%20~%20(x%2C%20y%2C%20z);visible=true;point=(9.4,9.8,4.6);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;bold=false;italic=false;fontmath=true;align=Center-right&amp;type=text;text=v%3Charpoon%3E%20~%20%3Ca%2C%20b%2C%20c%3E;visible=true;point=(1,2,2.25);color=rgb(255,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=false;italic=true;fontmath=true;align=Center&amp;type=window;hsrmode=1;anaglyph=-1;center=17.139439715453594,10.377939594400079,5.155621864146323,1;focus=5,5,5,1;up=-0.2866219643580234,-0.12700640150211873,0.9495879230092552,1;transparent=false;alpha=140;edgeson=true;faceson=true;showbox=false;showaxes=true;showticks=false;perspective=true;centerxpercent=0.4;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=true;yzgrid=true;xzgrid=true;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=0;xmax=10;ymin=0;ymax=10;zmin=0;zmax=10;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.15;xscalefactor=1;yscalefactor=1;zscalefactor=1"
+			                       variant="minimal"
+			                       width="60%">
+					      <static>
+						     <image source="images/staticline3d.png" width="50%"/>
+					      </static>
+			          </interactive>
+			       </figure>
+			       ]]>
+			   </input></program></sidebyside>		   
+		    </paragraphs>
+
+        </section>
+
+        <section>
+             <title>Dynamic Figures with Controls</title>
+			 <p>It is possible to create dynamic figures that do show some parameter sliders and sometimes also the 2D trace plot.  These dynamic figures use a different base URL:</p>
+			 <sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigureWCP/</input></program></sidebyside>
+			 <p>If there are sliders in these dynamic figures with controls, they can be given new labels and used to vary the associated parameters in the plot.
+			 See an example in <xref ref="figure-dynamicfigure2"/> below. Note that you can click on the 2D trace plane and see a corresponding trace point on the 3D surface.
+			 You can also move the sliders or enter values from 1 to 3 in each textbox to see the number of peaks/valleys change.</p>
+			 <figure xml:id="figure-dynamicfigure2">
+				<caption>A dynamic figure with controls</caption>
+				<interactive calcplot3d="type=jaxlabel;position=middle;math=%255Cpsi_%257Bn_x%252Cn_y%257D(x%252Cy);textonly=false&amp;type=z;z=sin(api*x)sin(bpi*y);visible=true;umin=0;umax=1;vmin=0;vmax=1;grid=50;format=normal;alpha=200;constcol=rgb(255,0,0);view=0;contourcolor=rgb(255,0,0);contourplot=true;showcontourplot=true;firstvalue=-1;stepsize=0.2;numlevels=11;xnum=75;ynum=75;show2d=false;hidesurface=false;hidelabels=false;showprojections=false;surfacecontours=true;projectioncolor=rgba(51,153,0,1);showxygrid=false;showxygridonbox=false&amp;type=slider;slider=a;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_x&amp;type=slider;slider=b;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_y&amp;type=text;text=0;visible=true;point=(0,0,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=15pt;bold=true;italic=false;fontmath=true;align=Center-left&amp;type=text;text=L;visible=true;point=(1,-0.025,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=L;visible=true;point=(-0.05,1,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=x;visible=true;point=(0.5,-0.07,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=y;visible=true;point=(-0.08,0.5,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=window;hsrmode=3;anaglyph=-1;center=-7.447051206708178,-2.790794355991455,3.71998429905919,1;focus=0.5,0.5,0.5,1;up=0.39804763218685024,0.14521777837291014,0.9057979241281567,1;transparent=true;alpha=140;twoviews=false;unlinkviews=false;axisextension=0;xaxislabel=%20;yaxislabel=%20;zaxislabel=%20;edgeson=false;faceson=true;showbox=false;showaxes=false;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.4;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=false;gridplanes=true;gridcolor=rgb(128,128,128);xmin=0;xmax=1;ymin=0;ymax=1;zmin=0;zmax=1;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=3.0;xscalefactor=1;yscalefactor=1;zscalefactor=0.5;hidexysliders=true;hidetracevalue=true;" variant="controls" width="100%" aspect="3:2">
+					<static>
+						<image source="images/staticprobabilitydensity.png" width="100%"/>
+					</static>
+				</interactive>
+			</figure>
+
+            <p>To create a dynamic figure with controls there are a few more steps to take:
+			<ol><li>Create the plot you desire to display in the dynamic figure using CalcPlot3D.  In order to have controls, it will need to make use of parameter sliders or include a contour plot.
+			As time goes on, more options may become available.  (Let me know what you'd like to use, and I'll try to implement it.)</li>
+			<li><p>Then save the view to the URL using the option on the File menu.  (See <xref ref="subsection-savetourl"/>.)
+			You'll get a URL something like this:</p>
+			<sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/?type=jaxlabel;position=middle;math=%255Cpsi_%257Bn_x%252Cn_y%257D(x%252Cy);textonly=false&amp;type=z;z=sin(api*x)sin(bpi*y);visible=true;umin=0;umax=1;vmin=0;vmax=1;grid=50;format=normal;alpha=200;constcol=rgb(255,0,0);view=0;contourcolor=rgb(255,0,0);contourplot=true;showcontourplot=true;firstvalue=-1;stepsize=0.2;numlevels=11;xnum=75;ynum=75;show2d=false;hidesurface=false;hidelabels=false;showprojections=false;surfacecontours=true;projectioncolor=rgba(51,153,0,1);showxygrid=false;showxygridonbox=false&amp;type=slider;slider=a;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_x&amp;type=slider;slider=b;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_y&amp;type=text;text=0;visible=true;point=(0,0,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=15pt;bold=true;italic=false;fontmath=true;align=Center-left&amp;type=text;text=L;visible=true;point=(1,-0.025,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=L;visible=true;point=(-0.05,1,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=x;visible=true;point=(0.5,-0.07,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=y;visible=true;point=(-0.08,0.5,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=window;hsrmode=3;anaglyph=-1;center=-7.447051206708178,-2.790794355991455,3.71998429905919,1;focus=0.5,0.5,0.5,1;up=0.39804763218685024,0.14521777837291014,0.9057979241281567,1;transparent=true;alpha=140;twoviews=false;unlinkviews=false;axisextension=0;xaxislabel=%20;yaxislabel=%20;zaxislabel=%20;edgeson=false;faceson=true;showbox=false;showaxes=false;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.4;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=false;gridplanes=true;gridcolor=rgb(128,128,128);xmin=0;xmax=1;ymin=0;ymax=1;zmin=0;zmax=1;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=3.543529;xscalefactor=1;yscalefactor=1;zscalefactor=0.5;hidexysliders=true;hidetracevalue=true;
+			
+			</input></program></sidebyside>
+			</li>
+			<li><p>Now you have a few options that you may wish to alter in the query string by hand.
+			    <ul>
+			        <li><p>You can add a <c>name</c> attribute and/or a <c>noanimate</c> attribute to any sliders.  For example, "noanimate=true;name=n_x".  Note that each object, including the sliders, starts with "type=" in the query string.</p>
+			            <p>The <c>name</c> attribute changes the label of the slider to the supplied name, using MathJAX to format the supplied name.  This means you can use LaTeX in the name.</p>
+			            <p>The <c>noanimate</c> attribute allows you to hide the Animate button on the slider control, if you wish.</p></li>
+			        <li><p>You can add one or more of the following attributes to the window element at the very end of the query string: 
+			        "hidexysliders=true;hidetracevalue=true;"</p>
+			            <p>Here the <c>hidexysliders</c> tag allows you to hide the <m>x</m>- and <m>y</m>-sliders that appear below the 2D trace plane by default.</p>
+			            <p>The <c>hidetracevalue</c> tag allows you to hide the trace value normally displayed on the 3D plot when moving a trace point around on the
+			            2D trace plane (and 3D surface).</p></li>
+			    </ul></p>
+			</li>
+			<li>Copy the part of the URL after the question mark to paste into the appropriate HTML code shown below.</li>
+			<li>Now typically we need to place the dynamic figure in an <c>iframe</c>, although this is hidden from the user in PreTeXt.
+			Copy and paste the code below, depending on your situation.</li>
+			</ol></p>
+			<paragraphs>
+			   <title>LibreTexts and many other HTML web pages</title>
+			   <p>In order to get a dynamic figure that hides all the menus and controls of the CalcPlot3D app, we need to use a slightly different URL.</p>
+			   <p>The URL for a dynamic figure with <alert>no controls</alert> is:</p> 
+			   <sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/</input></program></sidebyside>
+			   <p>Note that the data for the figure is encoded in a query string by CalcPlot3D.  This means that we will need a question mark (?) just after the URL above
+			   and then we'll paste the data copied from the CalcPlot3D-generated URL.  If we were to enter this new URL and query string in the browser directly,
+			   we would get the dynamic figure by itself on the page.</p>
+			   <p>To get the figure(s) on a page, especially if you might wish to place more than one of these dynamic figures on the same page,
+			   it is useful to embed each dynamic figure in an <c>iframe</c> (so they won't interfere with each other).
+			   I choose to make the width of this <c>iframe</c> 90% or less so there is still space on each side to scroll up and down past the figure.
+			   For dynamic figures with controls, you may wish to adjust the height so that the width will always be larger than the height.
+			   Some adjustment may be required to accomodate the control sliders and 2D trace plane (when present).</p>
+			   <p>Below you can see a listing of the code for <xref ref="figure-dynamicfigure2" /> when it is displayed in LibreTexts or a generic webpage.
+			   Note that you can see the modified code elements I mentioned above.  The sliders each have the <c>name</c> and <c>noanimate</c> attributes,
+			   and the <c>hidexysliders</c> and <c>hidetracevalue</c> attributes are in the last line of the query string.</p>
+			   <sidebyside>
+			      <program language="html">
+			          <input>
+			               <![CDATA[<p style="text-align:center">
+			               <iframe frameborder="0" height="480px" src="https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigureWCP/?
+			               type=jaxlabel;position=middle;math=%255Cpsi_%257Bn_x%252Cn_y%257D(x%252Cy);textonly=false&amp;
+			               type=z;z=sin(api*x)sin(bpi*y);visible=true;umin=0;umax=1;vmin=0;vmax=1;grid=50;format=normal;alpha=200;
+			                 constcol=rgb(255,0,0);view=0;contourcolor=rgb(255,0,0);contourplot=true;showcontourplot=true;firstvalue=-1;
+			                 stepsize=0.2;numlevels=11;xnum=75;ynum=75;show2d=false;hidesurface=false;hidelabels=false;showprojections=false;
+			                 surfacecontours=true;projectioncolor=rgba(51,153,0,1);showxygrid=false;showxygridonbox=false&amp;
+			               type=slider;slider=a;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_x&amp;
+			               type=slider;slider=b;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_y&amp;
+			               type=text;text=0;visible=true;point=(0,0,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=15pt;bold=true;italic=false;
+			                 fontmath=true;align=Center-left&amp;
+			               type=text;text=L;visible=true;point=(1,-0.025,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;
+			                 fontmath=true;align=Center&amp;
+			               type=text;text=L;visible=true;point=(-0.05,1,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;
+			                 fontmath=true;align=Center&amp;
+			               type=text;text=x;visible=true;point=(0.5,-0.07,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;
+			                 fontmath=true;align=Center&amp;
+			               type=text;text=y;visible=true;point=(-0.08,0.5,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;
+			                 fontmath=true;align=Center&amp;
+			               type=window;hsrmode=3;anaglyph=-1;center=-7.447051206708178,-2.790794355991455,3.71998429905919,1;
+			                 focus=0.5,0.5,0.5,1;up=0.39804763218685024,0.14521777837291014,0.9057979241281567,1;transparent=true;alpha=140;twoviews=false;
+			                 unlinkviews=false;axisextension=0;xaxislabel=%20;yaxislabel=%20;zaxislabel=%20;edgeson=false;faceson=true;showbox=false;
+			                 showaxes=false;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.4;rotationsteps=30;autospin=true;
+			                 xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=false;gridplanes=true;gridcolor=rgb(128,128,128);
+			                 xmin=0;xmax=1;ymin=0;ymax=1;zmin=0;zmax=1;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=3.543529;
+			                 xscalefactor=1;yscalefactor=1;zscalefactor=0.5;
+			                 hidexysliders=true;hidetracevalue=true;" 
+			               width="90%"></iframe></p>]]>
+					  </input>
+				  </program>
+			   </sidebyside>
+
+		    </paragraphs>
+			<paragraphs>
+			   <title>PreTeXt</title>
+			   <p>When inserting a dynamic figure created with CalcPlot3D into a PreTeXt document, we need to use the following PreTeXt construction.</p>
+			   <sidebyside><program><input>
+			       <![CDATA[<figure>
+			          <caption>dynamic figure</caption>
+			          <interactive calcplot3d="Querystring from CalcPlot3D" 
+			                       variant="controls" 
+			                       width="90%"
+			                       aspect="3:2">
+			             <static>
+			                <image source="location of a static image of the dynamic figure for PDF output" width="100%" />
+			             </static>
+			          </interactive>
+			       </figure>
+			       ]]>
+			   </input></program></sidebyside>
+			   <p>Note that we changed the <c>variant</c> attribute from "minimal" to "controls".  We also added an <c>aspect</c> attribute.
+			   This forces the viewport to the given aspect ratio, making it wider than it is tall and accommodating the control panel on the left.</p>
+			   <p>For the example shown in <xref ref="figure-dynamicfigure2" /> above, this construction looks like:</p>
+			   <sidebyside><program><input>
+			       <![CDATA[<figure xml:id="figure-dynamicfigure2">
+						<caption>A dynamic figure with controls</caption>
+						<interactive calcplot3d="type=jaxlabel;position=middle;math=%255Cpsi_%257Bn_x%252Cn_y%257D(x%252Cy);textonly=false&amp;type=z;z=sin(api*x)sin(bpi*y);visible=true;umin=0;umax=1;vmin=0;vmax=1;grid=50;format=normal;alpha=200;constcol=rgb(255,0,0);view=0;contourcolor=rgb(255,0,0);contourplot=true;showcontourplot=true;firstvalue=-1;stepsize=0.2;numlevels=11;xnum=75;ynum=75;show2d=false;hidesurface=false;hidelabels=false;showprojections=false;surfacecontours=true;projectioncolor=rgba(51,153,0,1);showxygrid=false;showxygridonbox=false&amp;type=slider;slider=a;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_x&amp;type=slider;slider=b;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_y&amp;type=text;text=0;visible=true;point=(0,0,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=15pt;bold=true;italic=false;fontmath=true;align=Center-left&amp;type=text;text=L;visible=true;point=(1,-0.025,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=L;visible=true;point=(-0.05,1,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=x;visible=true;point=(0.5,-0.07,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=y;visible=true;point=(-0.08,0.5,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=window;hsrmode=3;anaglyph=-1;center=-7.447051206708178,-2.790794355991455,3.71998429905919,1;focus=0.5,0.5,0.5,1;up=0.39804763218685024,0.14521777837291014,0.9057979241281567,1;transparent=true;alpha=140;twoviews=false;unlinkviews=false;axisextension=0;xaxislabel=%20;yaxislabel=%20;zaxislabel=%20;edgeson=false;faceson=true;showbox=false;showaxes=false;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.4;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=false;gridplanes=true;gridcolor=rgb(128,128,128);xmin=0;xmax=1;ymin=0;ymax=1;zmin=0;zmax=1;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=3.0;xscalefactor=1;yscalefactor=1;zscalefactor=0.5;hidexysliders=true;hidetracevalue=true;"
+						             variant="controls" 
+						             width="100%" 
+						             aspect="3:2">
+							<static>
+								<image source="images/staticprobabilitydensity.png" width="100%"/>
+							</static>
+						</interactive>
+			       </figure>
+			       ]]>
+			   </input></program></sidebyside>		   
+		    </paragraphs>
+            
+		</section>
+
 	</appendix>
 </backmatter>
 
