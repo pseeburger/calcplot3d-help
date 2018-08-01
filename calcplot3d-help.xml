@@ -262,40 +262,32 @@
        <p>While the Zoom In and Zoom Out buttons allow you to quickly adjust the axes ranges by halving or doubling all values, 
            this dialog allows you to fine tune and adjust the axes ranges, tick mark units, scalefactors, z-clipping, and focus point.</p>
        <p>Pressing enter on any of these textbox values should update the plot accordingly.</p>
-       <paragraphs>
-           <title>Axes ranges</title>
+       <p><dl width="narrow"><li><title>Axis ranges</title>
            <p>Adjust these values to set the axes ranges on the 3D plot (and the associated traceplane).</p>
-       </paragraphs>
-       <paragraphs>
-           <title>Tick marks</title>
+           </li>
+           <li><title>Tick marks</title>
            <p>The <m>x</m>-, <m>y</m>-, and <m>z</m>-tick marks indicate a unit to use for spacing the tick marks and associated number labels along each axis.
            These tick marks and labels will start at the minimum value of the respective axis range.</p>
-       </paragraphs>
-       <paragraphs>
-           <title>Scalefactors</title>
+           </li>
+           <li><title>Scalefactors</title>
            <p>The <m>x</m>-, <m>y</m>-, and <m>z</m>-scalefactors will scale the plot by the given scalefactor in along the given axis.
            This allows you to create plots where some dimensions are much larger or smaller than others, i.e., 
            this allows the scaling to be non-uniform in the various directions.</p>
-       </paragraphs>
-       <paragraphs>
-           <title><m>z</m>-clipping</title>
+           </li>
+           <li><title><m>z</m>-clips</title>
            <p>The <m>z</m>-clipping values will hide all parts of the surface above the upper <m>z</m>-clip value or below the lower <m>z</m>-clip value.</p>
-       </paragraphs>
-       <paragraphs>
-           <title>Focus Point</title>
+           </li>
+           <li><title>Focus Point</title>
            <p>The focus point is the point about which the plot rotates.  By default, this point is the origin, 
            but this option allows you to change this pivot/focus point to something else.</p>
-       </paragraphs>
-       <paragraphs>
-            <title>Quick Views</title>
+           </li>
+           <li><title>Quick Views</title>
             <sidebyside widths="60% 40%">
                <p>The <alert>Quick Views Menu</alert> allows you to quickly adjust the plot axes ranges to one of the listed options.</p>
-			   <figure>
-				  <caption>Quickviews menu options.</caption>
-				  <image width="50%" source="images/quickviews.png"><description>Quickviews menu</description></image>
-			   </figure>
+			   <image width="50%" source="images/quickviews.png"><description>Quickviews menu</description></image>
 	       </sidebyside>
-	   </paragraphs>
+	       </li>
+	    </dl></p>
     </section>
     
     
@@ -378,8 +370,8 @@
 	    <subsection>
 	       <title>Functions in the form <m>z = f(x, y)</m></title>
 	       <p>This is the type of function object that is provided by CalcPlot3D when it opens. But to add a new one,
-	       just select the first option, <c>Function: z = f(x,y)</c>, on the <alert>Add to graph</alert> drop-down menu,
-	       located just below the control panel toolbar buttons.</p>
+	       just select the first option <c>Function: z = f(x,y)</c> on the <alert>Add to graph</alert> drop-down menu,
+	       located just below the control panel toolbar buttons.  See an image of this object's dialog below.</p>
 	       <sidebyside widths="70%">
 		      <image width="50%" source="images/functionfxy.png"><description>Function z = f(x,y) object</description></image>
 		   </sidebyside>
@@ -409,30 +401,146 @@
         </subsection>
         <subsection>
 	       <title>Functions in the form <m>x = f(y, z)</m></title>
-	       <p></p>
+	       <p>To add a function of this type select the option <c>Function: x = f(y, z)</c> on the <alert>Add to graph</alert> drop-down menu,
+	       located just below the control panel toolbar buttons.  It's near the bottom of the list.</p>
+	       <sidebyside widths="70%">
+		      <image width="50%" source="images/functionfyz.png"><description>Function x = f(y,z) object</description></image>
+		   </sidebyside>
+		   <p>I find this object especially helpful for creating vertical planes to cut a surface defined by a function of <m>x</m> and <m>y</m>.</p>
+		   <p>The options are almost identical to those of the function of <m>x</m> and <m>y</m> described above, although there is no option to create a contour plot.</p>
         </subsection>
         <subsection>
 	       <title>Functions in the form <m>y = f(x, z)</m></title>
-	       <p></p>
+	       <p>To add a function of this type select the option <c>Function: y = f(x, z)</c> on the <alert>Add to graph</alert> drop-down menu,
+	       located just below the control panel toolbar buttons.  It's near the bottom of the list.</p>
+	       <sidebyside widths="70%">
+		      <image width="50%" source="images/functionfxz.png"><description>Function y = f(x,z) object</description></image>
+		   </sidebyside>
+		   <p>This object is also helpful for creating vertical planes to cut a surface defined by a function of <m>x</m> and <m>y</m>.</p>
+		   <p>The options are again almost identical to those of the function of <m>x</m> and <m>y</m> described above, although there is no option to create a contour plot.</p>
         </subsection>
 	    <subsection>
 	       <title>Functions in Cylindrical Coordinates</title>
-	       <p></p>
+	       <p>Only one of these is implemented so far, although note that any cylindrical or spherical function can already be graphed using
+	       an Implicit Surface.  See <xref ref="section-implicit-surfaces" />.</p>
+	       <p><ul><li>
+	             <p><alert>Functions of the form <m>r = f(\theta, z)</m></alert></p>
+	             <p>To add a function of this type select the option <c>Function: r = f(θ, z)</c> on the <alert>Add to graph</alert> drop-down menu,
+				   located just below the control panel toolbar buttons.</p>
+				 <sidebyside widths="75%">
+					  <image width="70%" source="images/functionfthetaz.png"><description>Function r = f(θ,z) object</description></image>
+				 </sidebyside>
+				 <p>Note that the ranges for <m>/theta</m> and <m>z</m> will not update for this type of function when you zoom in or out using the zooming buttons.</p>
+				 <p>The number of steps in each domain is important in determining the resolution of the cylindrical surface.</p>
+	          </li>
+		   </ul></p>
         </subsection>
         <subsection>
 	       <title>Functions in Spherical Coordinates</title>
-	       <p></p>
+	       <p>These are not yet implemented in CalcPlot3D.  But you can plot these functions already using an Implicit Surface.
+	       See <xref ref="section-implicit-surfaces" />.</p>
         </subsection>
 	</section>
 
 	<section xml:id="section-space-curves">
-	<title>*Space Curves</title>
-		<p></p>
+	    <title>Space Curves</title>
+		<introduction>
+		    <p>To add a space curve to the plot, select the option <c>Space Curve: r(t)</c> on the <alert>Add to graph</alert> drop-down menu,
+	        located just below the control panel toolbar buttons.  You'll see an object dialog appear like the following:</p>
+			<sidebyside widths="50% 45%">
+				  <figure>
+					 <caption>Space Curve dialog</caption>
+					 <image width="50%" source="images/spacecurveobject.png"><description>Space curve object</description></image>
+				  </figure>
+				  <figure xml:id="figure-helix">
+					 <caption>Helix space curve</caption>
+					 <image width="50%" source="images/helix.png"><description>Helix space curve</description></image>
+				  </figure>
+			</sidebyside>
+			<sidebyside widths="7% 90%">		   
+			   <image width="7%" source="images/clear.png"><description>Clear Plot button</description></image>
+			   <p>Clear the plot by clicking the clear plot button.</p>
+		   </sidebyside>
+		
+			<p>Then check the checkbox in the upper-left corner of this object to plot the default curve.</p>
+			<p>A multicolored helix should appear on the 3D plot as shown in <xref ref="figure-helix"/>. The color variation along the curve is meant to help viewers see the curve’s 3D features, clearly 
+			showing which parts of the curve are in front and which are in back.</p>
+			<p>Space curves can also benefit from the other 3D modes, but when using 3D glasses modes, 
+			it is helpful to choose the option <alert>Use Constant Primary Color</alert>.  The constant color is automatically selected when in 2D mode.</p>
+			<p>If you wish to view the a 2D plane curve on the <m>xy</m>-plane, select the <alert>Restrict view to 2D</alert> checkbox.</p>
+			<p>The range for <m>t</m> and the number of steps can each be adjusted.  More steps may be needed to make the curve smoother,
+			but the number of steps will also affect the speed of the animation of motion along the curve.</p>
+			<p>To animate the motion along the curve, click the <alert>Animate</alert> button.  This will cause a blue trace vector to
+			move along the curve from minimum <m>t</m>-value to maximum <m>t</m>-value.  By default the velocity vector (black) and
+			acceleration vector (green) are also displayed as the point moves along the space curve.</p>
+			<p>The slider or textbox can also be used to adjust the value of <m>t</m> and the position of the object on the curve.</p>
+		</introduction>
+		<subsection>
+		   <title>Space Curve Settings, ⚙</title>
+		   <p>Clicking on the settings button, ⚙, will open up the following menu.</p>
+		   <sidebyside widths="40%">
+		      <image width="50%" source="images/spacecurvesettings.png"><description>Space Curve settings</description></image>
+		   </sidebyside>
+		   <p><dl width="medium">
+		      <li><title>Show Trace Point:</title>
+		          <p>Indicates whether to display a point at the current position on the curve.   <em>Selected by default.</em></p>
+		      </li>
+		      <li><title>Show Trace Vector:</title>
+		          <p>Indicates whether to display the blue trace vector at the current position on the curve. <em>Selected by default.</em></p>
+		      </li>
+		      <li><title>Show Velocity Vector:</title>
+		          <p>Indicates whether to display black velocity vector at the current position on the curve. <em>Selected by default.</em></p>
+		      </li>
+		      <li><title>Show Acceleration Vector:</title>
+		          <p>Indicates whether to display the green acceleration vector at the current position on the curve. <em>Selected by default.</em></p>
+		      </li>
+		      <li><title>Show Osculating Circle:</title>
+		          <p>Indicates whether to display the osculating circle at the current position on the curve.</p>
+		      </li>
+		      <li><title>Show Curvature Value:</title>
+		          <p>Indicates whether to display the curvature value at the current position on the curve.</p>
+		      </li>
+		      <li><title>Show whole TNB-Frame:</title>
+		          <p>Indicates whether to display the entire TNB-Frame at the current position on the curve.  Selecting or deselecting this option
+		          will automatically select or deselect all the TNB-Frame options shown below.</p>
+		      </li>
+		      <li><title>TNB-Frame Options:</title>
+		          <p>Indicates whether to display individual parts of the TNB-Frame at the current position on the curve.
+		          You can either choose to select just a few items to begin or select the whole TNB-Frame above and then deselect a few items.</p>
+		      </li>
+		      <li><title>Animation Settings:</title>
+		         <p><ul>
+		            <li><alert>Continuous Animation</alert> - If selected, the animation will continue until stopped by the user.</li>
+		            <li><alert>Bounce over range</alert> - If selected along with continuous animation, the animation will go through the range
+		            of <m>t</m> values in reverse after reaching the maximum <m>t</m> value, and then reverse again once it reaches the minimum <m>t</m> value.</li>
+		         </ul>
+				 </p>
+		      </li>
+		      </dl>
+           </p>
+		</subsection>
+		
 	</section>
 
 	<section xml:id="section-vectorfields">
-	<title>*Vector Fields</title>
-		<p></p>
+	<title>Vector Fields</title>
+		<p>To add a vector field to the plot, select the option <c>Vector Field</c> on the <alert>Add to graph</alert> drop-down menu.
+	       You'll see an object dialog appear like the following:</p>
+			<sidebyside widths="50% 45%">
+				  <figure>
+					 <caption>Vector field dialog</caption>
+					 <image width="50%" source="images/vectorfielddialog.png"><description>vector field dialog</description></image>
+				  </figure>
+				  <figure xml:id="figure-vectorfield2Din3D">
+					 <caption>2D Vector Field in Space</caption>
+					 <image width="50%" source="images/2dvectorfield-in3d.png"><description>2D Vector Field in Space</description></image>
+				  </figure>
+			</sidebyside>
+			<sidebyside widths="7% 90%">		   
+			   <image width="7%" source="images/clear.png"><description>Clear Plot button</description></image>
+			   <p>Clear the plot by clicking the clear plot button.</p>
+		   </sidebyside>
+
 	</section>
 
 	<section xml:id="section-points">
