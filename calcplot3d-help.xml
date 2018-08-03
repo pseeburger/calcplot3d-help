@@ -523,34 +523,131 @@
 	</section>
 
 	<section xml:id="section-vectorfields">
-	<title>Vector Fields</title>
+	    <title>Vector Fields</title>
 		<p>To add a vector field to the plot, select the option <c>Vector Field</c> on the <alert>Add to graph</alert> drop-down menu.
 	       You'll see an object dialog appear like the following:</p>
-			<sidebyside widths="50% 45%">
-				  <figure>
-					 <caption>Vector field dialog</caption>
-					 <image width="50%" source="images/vectorfielddialog.png"><description>vector field dialog</description></image>
-				  </figure>
-				  <figure xml:id="figure-vectorfield2Din3D">
-					 <caption>2D Vector Field in Space</caption>
-					 <image width="50%" source="images/2dvectorfield-in3d.png"><description>2D Vector Field in Space</description></image>
-				  </figure>
-			</sidebyside>
-			<sidebyside widths="7% 90%">		   
-			   <image width="7%" source="images/clear.png"><description>Clear Plot button</description></image>
-			   <p>Clear the plot by clicking the clear plot button.</p>
-		   </sidebyside>
+		<sidebyside widths="50% 45%">
+			  <figure>
+				 <caption>Vector field dialog</caption>
+				 <image width="50%" source="images/vectorfielddialog.png"><description>vector field dialog</description></image>
+			  </figure>
+			  <figure xml:id="figure-vectorfield2din3d">
+				 <caption>2D vector field in space</caption>
+				 <image width="50%" source="images/2dvectorfield-in3d.png"><description>2D Vector Field in Space</description></image>
+			  </figure>
+	   </sidebyside>
+	   <sidebyside widths="7% 90%">		   
+		   <image width="7%" source="images/clear.png"><description>Clear Plot button</description></image>
+		   <p>Clear the plot by clicking the clear plot button.</p>
+	   </sidebyside>
+	   <p>Then check the checkbox in the upper-left corner of this object to plot the default vector field.</p>
+	   <p>This vector field happens to be a 2D vector field, but it is plotted in a 3D plot by default.  It should look like <xref ref="figure-vectorfield2din3d" />.
+	   To quickly change the view to be above the <m>xy</m>-plane, select the <alert>Restrict view to 2D</alert> option.
+	   Now your view should look like <xref ref="figure-vectorfield2din2d" />.
+	   Note that in 2D, the <alert>Use Constant Primary Color</alert> option is selected by default.
+	   When this option is not selected, the vectors are colored based on their three components similarly to the way faces
+	   of a surface are colored based on the three components of their normal vectors.</p>
+	   <sidebyside widths="58% 42%">
+			  <figure xml:id="figure-vectorfield2din2d">
+				 <caption>2D vector field in the <m>xy</m>-plane</caption>
+				 <image width="50%" source="images/2dvectorfield.png"><description>2D Vector Field in the Plane</description></image>
+			  </figure>
+			  <figure xml:id="figure-vectorfield2dfixed">
+				 <caption>2D vector field with fixed length vectors</caption>
+				 <image width="50%" source="images/fixedlengthvf.png"><description>2D Vector Field with Fixed Length Vectors</description></image>
+			  </figure>
+		</sidebyside>
+		<p>This vector field is still fairly easy to read, but sometimes the vectors may be very difficult to read because of how they overlap.</p>
+		<p>There are a couple options for dealing with this.  One option is to force all vectors in the vector field to have the same fixed length.
+		Select the checkbox labeled <alert>Use fixed length for all vectors</alert> to see how this looks.  It should appear like <xref ref="figure-vectorfield2dfixed"/>.</p>
+	    <p>Another way to vary the vector lengths in a vector field so that they do not overlap is to adjust the scalefactor, labeled <alert>Scale vectors by dividing by</alert>.
+	    By default, vectors in a vector field are divided by 4 to scale them down.  You can adjust this value to see how it affects the plot.
+	    To see all vectors in the vector field at the natural length, change this value to 1.</p>
+	    <p>The <alert>Number of vectors</alert> along each axis can be adjusted to change the appearance and refinement of the vector field.
+	    When in 2D mode, we just need to adjust the number of vectors along the <m>x</m>- and <m>y</m>-axes, and keep just one vector along the <m>z</m>-axis.
+	    But when in 3D mode, you'll want to change the number of levels along the <m>z</m>-axis to be more than one.</p>
+	    <p>Note that if you are considering a system of differential equations, you also have the option of changing the notation of the components of the vector field
+	    to use differential notation.  Select the option to <alert>Show system of DEs notation</alert> and the components of the vector field should look like those here:</p>
+	    <sidebyside widths="60%">
+	       <image width="60%" source="images/desystemdialog.png"><description>System of differential equations notation</description></image>
+	    </sidebyside>
 
+	    <p><m>\Large\textbf{3D Vector Fields:}</m></p>
+	    <p>To obtain a 3D vector field, deselect the option to <alert>Restrict view to 2D</alert> and change the number of vectors along the <m>z</m>-axis to be more than 1.
+	    For example, if you change this value to 4 and also deselect the option to <alert>Use Constant Primary Color</alert>, the view will look like <xref ref="figure-vectorfield3d" />.</p>
+	    <sidebyside widths="40% 60%">
+			  <figure xml:id="figure-vectorfield3d">
+				 <caption>3D vector field in space</caption>
+				 <image width="50%" source="images/3dvectorfield.png"><description>3D Vector Field in Space</description></image>
+			  </figure>
+			  <figure xml:id="figure-vectorfield3d2">
+				 <caption>3D vector field with a non-zero 3rd component</caption>
+				 <image width="50%" source="images/3dvectorfield2b.png"><description>3D Vector Field in Space</description></image>
+			  </figure>
+		</sidebyside>
+		<p>Changing the third component to be non-zero, say <m>P = z - x</m>, and rotating the view a little, we obtain a plot like <xref ref="figure-vectorfield3d2" />.
+		The definition of the vector field is now:</p>
+		<sidebyside widths="50%">
+	       <image width="50%" source="images/3dexamplevf.png"><description>3D vector field with non-zero 3rd component</description></image>
+	    </sidebyside>
+	    <p>Note that 3D Glasses mode would be quite helpful for 3D vector fields.  Give it a try!</p>
+	    <p><m>\Large\textbf{Vector Field Modes:}</m></p>
+		<p>Every vector field we've looked at so far has been in <alert>Rectangular Array</alert> mode.
+		Now let's consider the other mode options provided here.  Although these modes can be used in 2D mode, I think they are most useful when viewed in 3D.</p>
+		<p><dl width="narrow">
+		   <li><title>Spherical Array:</title>
+		   <p>Instead of showing vectors at a rectangular grid of points as is done in the <alert>Rectangular Array</alert> mode,
+		   <alert>Spherical Array</alert> mode places vectors at points on <alert>spheres</alert> (or circles in 2D).</p>
+		   <p>Instead of specifying the number of vectors in each axis direction, <alert>Spherical Array</alert> mode uses the number of vectors on each circle (parallel to the <m>xy</m>-plane),
+		   the number of concentric spheres (or concentric circles in 2D), and the number of circular steps in the vertical <m>z</m>-direction.</p>
+		   <sidebyside widths="50%">
+			   <image width="50%" source="images/vectorfieldsphericalranges.png"><description>Ranges for spherical mode</description></image>
+		   </sidebyside>
+		   <figure xml:id="figure-vectorfield3d2spherical">
+				 <caption>3D vector field in Spherical Array mode</caption>
+				 <image width="100%" source="images/3dvectorfield2bspherical.png"><description>3D vector field in spherical array mode</description></image>
+		   </figure>
+		   </li>
+		   <li><title>Cylindrical Array:</title>
+		   <p>In this mode places vectors at points on <alert>cylinders</alert> (or circles in 2D).</p>
+		   <p><alert>Cylindrical Array</alert> mode uses the number of vectors on each circle (parallel to the <m>xy</m>-plane),
+		   the number of concentric circles, and the number of levels in the vertical <m>z</m>-direction.</p>
+		   <sidebyside widths="50%">
+			   <image width="50%" source="images/vectorfieldcylindricalranges.png"><description>Ranges for cylindrical mode</description></image>
+		   </sidebyside>
+		   <figure xml:id="figure-vectorfield3d2cylindrical">
+				 <caption>3D vector field in Cylindrical Array mode</caption>
+				 <image width="100%" source="images/3dvectorfield2bcylindrical.png"><description>3D vector field in cylindrical array mode</description></image>
+		   </figure>
+		   </li>
+		</dl></p>
 	</section>
 
 	<section xml:id="section-points">
-	<title>*Points</title>
-		<p></p>
+	<title>Points</title>
+		<p>To add a point to the plot, select the option <c>Point: (x, y, z)</c> from the <alert>Add to graph</alert> menu.  The following dialog will appear:</p>
+		<figure>
+			 <caption>Point object dialog</caption>
+			 <image width="50%" source="images/pointobject.png"><description>Point object dialog</description></image>
+	    </figure>
+	    <p>Enter the coordinates of the point, select a color and enter a positive size value for the point.</p>
+	    <p>To plot the point, either press enter in one of the point textboxes or check the checkbox in the upper lefthand corner of the point object dialog.</p>
+	    <p></p>
+	    <p><em>Currently parameters are not yet allowed in points, although it is likely to be possible soon!</em></p>
 	</section>
 	
 	<section xml:id="section-vectors">
-	<title>*Vectors</title>
-		<p></p>
+	<title>Vectors</title>
+		<p>To add a vector to the plot, select the option <c>Vector: &lt;a, b, c&gt;</c> from the <alert>Add to graph</alert> menu.  The following dialog will appear:</p>
+		<figure>
+			 <caption>Vector object dialog</caption>
+			 <image width="50%" source="images/vectorobject.png"><description>Vector object dialog</description></image>
+	    </figure>
+	    <p>Enter the components of the vector, select a color and enter a positive width value for the vector.
+	    You can then also enter the coordinates of an initial point.  By default, the initial point is assumed to be the origin.</p>
+	    <p>To graph the vector, either press enter in one of the vector textboxes or check the checkbox in the upper lefthand corner of the vector object dialog.</p>
+	    <p></p>
+	    <p><em>Currently parameters are not yet allowed in vectors, although it is likely to be possible soon!</em></p>
 	</section>
 	
 	<section xml:id="section-textlabels">
@@ -924,6 +1021,11 @@
 	    </section>
 	    <section>
 	         <title>Level Surfaces</title>
+	         <p><dl width="narrow"><li>
+	               <title>Video:</title>
+	               <p>Here is a <url href="https://www.youtube.com/embed/lqiXsYYUb-I?rel=0"><alert>short video about Level Surfaces</alert></url> in CalcPlot3D created by Professor Larry Green of Lake Tahoe Community College.</p>
+	            </li></dl>
+			 </p>
 	         <p>It is difficult to draw many interesting level surfaces by hand, but CalcPlot3D helps us explore them easily.</p>
 	         <p>There are actually two ways to enter and graph the level surface equations for a particular function of three variables in CalcPlot3D:
                  <ol><li>Solve each equation for <m>z</m> in terms of <m>x</m>, <m>y</m>, and <m>C</m> and enter the level surface using one or two functions of <m>x</m> and <m>y</m>, or</li>
