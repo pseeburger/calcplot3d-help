@@ -445,6 +445,8 @@
 	<section xml:id="section-space-curves">
 	    <title>Space Curves</title>
 		<introduction>
+		    <p><dl width="narrow"><li><title>Examples:</title><p>See the list of example <alert>Space Curves</alert> on the Examples submenu of the CalcPlot3D main menu.
+		    See more about the Examples menu in <xref ref="section-examplesmenu"/>.</p></li></dl></p>
 		    <p>To add a space curve to the plot, select the option <c>Space Curve: r(t)</c> on the <alert>Add to graph</alert> drop-down menu,
 	        located just below the control panel toolbar buttons.  You'll see an object dialog appear like the following:</p>
 			<sidebyside widths="50% 45%">
@@ -524,6 +526,8 @@
 
 	<section xml:id="section-vectorfields">
 	    <title>Vector Fields</title>
+		<p><dl width="narrow"><li><title>Examples:</title><p>See the list of example <alert>Vector Fields</alert> on the Examples submenu of the CalcPlot3D main menu.
+		See more about the Examples menu in <xref ref="section-examplesmenu"/>.</p></li></dl></p>
 		<p>To add a vector field to the plot, select the option <c>Vector Field</c> on the <alert>Add to graph</alert> drop-down menu.
 	       You'll see an object dialog appear like the following:</p>
 		<sidebyside widths="50% 45%">
@@ -621,6 +625,7 @@
 		   </figure>
 		   </li>
 		</dl></p>
+		<p>Note that the Settings button ⚙ in Vector Fields does not yet do anything.</p>
 	</section>
 
 	<section xml:id="section-points">
@@ -651,31 +656,110 @@
 	</section>
 	
 	<section xml:id="section-textlabels">
-	<title>*Text Labels</title>
-		<p></p>
+	<title>Text Labels</title>
+		<p>To add a text label to the plot, select the option <c>Text Label</c> from the <alert>Add to graph</alert> menu.  The following dialog will appear:</p>
+		<figure>
+			 <caption>Text label object dialog</caption>
+			 <image width="50%" source="images/textobject.png"><description>Text label object dialog</description></image>
+	    </figure>
+	    <p>Enter the text you wish to use in the label and the coordinates of the point in the plot at which you want the text to appear.
+	    Then select a font, a font size, and a color from the provided dropdowns.</p>
+	    <p>The other options and their descriptions are below.</p>
+	    <p><dl width="narrow">
+	        <li><title>bold:</title><p>Makes the text bold</p></li>
+	        <li><title><em>italic:</em></title><p>Makes the text italic</p></li>
+	        <li><title>math-<em>xyz</em>:</title><p>Formats all variables as Times New Roman italics to make them stand out.</p></li>
+	        <li><title>Align:</title><p>Choose where the text should be placed with respect to the associated point.  Select the alignment you wish to use.</p></li>
+	        </dl>
+        </p>
+	    <p>To graph the text, either press enter in one of the text label textboxes or check the checkbox in the upper lefthand corner of the text label object dialog.</p>
+	    <p></p>
+	    <p><em>Currently parameters are not yet allowed in text labels, although it may be possible soon!</em></p>
+	    <p>Note that there is also the option to add up to three top titles at the left-top, center-top, and right-top.  These can even include LaTeX code (actually MathJax).
+	    See <xref ref="subsection-toptitles"/>.</p>
 	</section>
 
 	<section xml:id="section-implicit-surfaces">
-	<title>*Implicit Surfaces</title>
+	    <title>Implicit Surfaces</title>
+
+		<p><dl width="narrow"><li><title>Examples:</title><p>See the list of example <alert>Implicit Surfaces</alert> on the Examples submenu of the CalcPlot3D main menu.
+		See more about the Examples menu in <xref ref="section-examplesmenu"/>.</p></li></dl></p>
+		<p>To add an implicit surface to the plot, select the option <c>Implicit Surface</c> on the <alert>Add to graph</alert> drop-down menu.
+		You'll see an object dialog appear like the following:</p>
+		<sidebyside widths="50% 50%">
+		  <figure xml:id="figure-implicitsurfacedialog">
+			 <caption>Implicit surface object dialog</caption>
+			 <image width="50%" source="images/implicitsurfaceobject.png"><description>Implicit surface object dialog</description></image>
+		  </figure>
+		  <figure xml:id="figure-implicitsurface1">
+			 <caption>Implicit surface from equation: <m>x^2 + y^2 - z^2 = 1</m></caption>
+			 <image width="50%" source="images/implicitsurface1.png"><description>Implicit surface plot</description></image>
+		  </figure>
+		</sidebyside>
+		<sidebyside widths="7% 90%">		   
+		   <image width="7%" source="images/clear.png"><description>Clear Plot button</description></image>
+		   <p>Clear the plot by clicking the clear plot button.</p>
+	   </sidebyside>
 	
-	    <subsection>
-			<title>Cartesian Coordinates</title>
-				<p></p>
-		</subsection>
-	    <subsection>
-			<title>Cylindrical Coordinates</title>
-				<p></p>
-		</subsection>
-		<subsection>
-			<title>Spherical Coordinates</title>
-				<p></p>
-		</subsection>
-	
+	   <p>Then check the checkbox in the upper-left corner of this object to plot the default implicit surface
+	   for the implicit equation, <m>x^2 + y^2 - z^2 = 1</m>.  It should look like <xref ref="figure-implicitsurface1"/>.</p>
+
+	   <p>Implicit surfaces can be defined by implicit equations in any of the following coordinate systems.  
+	   Just use the corresponding variables.
+	   <dl width="narrow">
+			<li><title>Cartesian Coordinates</title>
+				<p>Enter equations using the variables <m>x</m>, <m>y</m>, and <m>z</m>.</p></li>
+	   <li><title>Cylindrical Coordinates</title>
+				<p>Enter equations using the variables <m>r</m>, <m>\theta</m>, and <m>z</m>.
+				Note that you can click on the button labeled <m>\theta</m> to enter this variable in your implicit equations.</p></li>
+	   <li><title>Spherical Coordinates</title>
+				<p>Enter equations using the variables <m>\rho</m>, <m>\theta</m>, and <m>\phi</m>.
+				Note that you can click on the buttons for <m>\rho</m>, <m>\theta</m>, and <m>\phi</m> to enter these variables in your implicit equations.</p></li>
+	   </dl></p>
+	   <p>Depending on which variables are in your implicit equation, ranges will be given for you to specify for each variable.</p>
+	   <p>The number of cubes per axis tells CalcPlot3D how many cubes to use in the marching cubes algorithm that is used to
+	   approximate the implicit surface.  As this value gets larger, the surface will look more and more smooth,
+	   but it will also take longer and longer to generate and even to rotate.</p>  
+	   <p></p>
+	   <p>Parameters are a great option to use with implicit surfaces.  
+	   See the <alert>Solution, Method 2</alert> in section on Level Surfaces in <xref ref="section-levelsurfaces"/>.</p>
 	</section>
 
 	<section xml:id="section-parametric-surfaces">
-	<title>*Parametric Surfaces</title>
-		<p></p>
+	    <title>Parametric Surfaces</title>
+		<p><dl width="narrow"><li><title>Examples:</title><p>See the list of example <alert>Parametric Surfaces</alert> on the Examples submenu of the CalcPlot3D main menu.
+		See more about the Examples menu in <xref ref="section-examplesmenu"/>.</p></li></dl></p>
+		<p>To add an parametric surface to the plot, select the option <c>Parametric Surface</c> on the <alert>Add to graph</alert> drop-down menu.
+		You'll see an object dialog appear like the following:</p>
+		<sidebyside widths="54% 46%">
+		  <figure xml:id="figure-parametricsurfacedialog">
+			 <caption>Parametric surface object dialog</caption>
+			 <image width="50%" source="images/parametricsurfaceobject.png"><description>Parametric surface object dialog</description></image>
+		  </figure>
+		  <figure xml:id="figure-parametricsurface1">
+			 <caption>Parametric surface plot</caption>
+			 <image width="50%" source="images/parametricsurface1.png"><description>Parametric surface plot</description></image>
+		  </figure>
+		</sidebyside>
+		<sidebyside widths="7% 90%">		   
+		   <image width="7%" source="images/clear.png"><description>Clear Plot button</description></image>
+		   <p>Clear the plot by clicking the clear plot button.</p>
+	   </sidebyside>
+	
+	   <p>Then check the checkbox in the upper-left corner of this object to plot the default parametric surface.
+	   It should look like <xref ref="figure-parametricsurface1"/>.</p>
+	   
+	   <p><m>\Large\textbf{Tracing a Parametric Surface on the 2D Traceplot:}</m></p>
+	   <p>When a parametric surface is the primary surface object in CalcPlot3D's 3D plot,
+	   the 2D Trace Plane will use the variables <m>u</m> and <m>v</m> to allow you to see the effect
+	   of varying these parameters on the location of the associated point on the parametric surface.</p>
+	   
+	   <sidebyside widths="93% 7%">
+	       <p>To see this feature, open the 2D Trace Plane using the toolbar button.</p>
+		   <image width="7%" source="images/tracePlane.png"><description>Trace Plane button</description></image>
+	   </sidebyside>
+	   <p></p>
+	   <p><em>The last option is not yet implemented.  It is intended to allow 4th dimensional parametric surfaces to be visualized, but it has not yet been worked out.</em></p>
 	</section>
 	
     <section xml:id="section-regions">
@@ -890,7 +974,7 @@
    <image width="50%" source="images/mainmenu.png"><description>App Main Menu icon</description></image>
    </sidebyside>
 </introduction>
-<section>
+<section xml:id="section-filemenu">
 	<title>*File menu</title>
 	<introduction><p></p></introduction>
 	<subsection xml:id="subsection-savetourl">
@@ -898,11 +982,11 @@
 	   <p></p>
 	</subsection>
 </section>
-<section>
+<section xml:id="section-scriptsmenu">
 	<title>*Scripts menu</title>
 	<p></p>
 </section>
-<section>
+<section xml:id="section-printplot">
 	<title>*Print Plot option</title>
 	<p></p>
 </section>
@@ -910,11 +994,17 @@
 	<title>*3D Options menu</title>
 	<p></p>
 </section>
-<section>
+<section xml:id="section-viewsettingsmenu">
 	<title>*View Settings menu</title>
-	<p></p>
+	<introduction>
+	   <p></p>
+	</introduction>
+	<subsection xml:id="subsection-toptitles">
+	    <title>Adding Top Titles</title>
+	    <p></p>
+	</subsection>
 </section>
-<section>
+<section xml:id="section-examplesmenu">
 	<title>*Examples menu</title>
 	<p></p>
 </section>
@@ -1019,7 +1109,7 @@
 	         <title>*Contour Plots</title>
 	         <p></p>
 	    </section>
-	    <section>
+	    <section xml:id="section-levelsurfaces">
 	         <title>Level Surfaces</title>
 	         <p><dl width="narrow"><li>
 	               <title>Video:</title>
