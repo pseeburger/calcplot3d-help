@@ -293,6 +293,11 @@
     
     <section xml:id="section-gridlinesmenu">
         <title>Using the Gridlines menu</title>
+        <p><dl width="narrow"><li>
+			   <title>Video:</title>
+			   <p>Here is a <url href="https://www.youtube.com/embed/ZHQvTyAwP7k?rel=0"><alert>short video about the Gridlines Menu</alert></url> in CalcPlot3D created by Professor Larry Green of Lake Tahoe Community College.</p>
+			</li></dl>
+		</p>
 
 	   <sidebyside widths="93% 7%">
 		   <p>This menu allows you to modify the way the axes, box, and gridline planes display.
@@ -351,6 +356,10 @@
                 <p>CalcPlot3D allows you to explore parametric equations in the plane or in space.</p>
     	       <p>See the Space Curve object in <xref ref="section-space-curves" /> for details.</p>
     	    </li>
+    	    <li><p><alert>If you plot a parametric surface in CalcPlot3D, you can do some really interesting things with the <m>uv</m>-trace plane.</alert></p>
+                <p>CalcPlot3D allows you to explore use a trace point with parametric surfaces and to vary the <m>uv</m>-domain rectangle directly by clicking-and-dragging the edges.</p>
+    	        <p>See <xref ref="section-parametric-surfaces"/> for details.</p>
+    	    </li>
     	</ol></p>
     </section>
 </chapter>
@@ -396,7 +405,7 @@
 	       <li><sidebyside widths="7% 85%"><image width="7%" source="images/contourplotbutton.png"><description>Contour plot button</description></image>
 			   <p>Use the contour plot button to create a contour plot for this surface.  For more details on Contour Plots see <xref ref="section-contourplots" />.</p>
 	       </sidebyside></li>
-	       <li>Use the settings button, ⚙, to adjust function settings.  For a discussion of the options, see <xref ref="section-functionsettings" />.</li>
+	       <li>Use the settings button, ⚙, to adjust surface settings.  For a discussion of the options, see <xref ref="section-surfacesettings" />.</li>
 	       </ul></p>
         </subsection>
         <subsection>
@@ -720,6 +729,7 @@
 	   <p>The number of cubes per axis tells CalcPlot3D how many cubes to use in the marching cubes algorithm that is used to
 	   approximate the implicit surface.  As this value gets larger, the surface will look more and more smooth,
 	   but it will also take longer and longer to generate and even to rotate.</p>  
+	   <p>Use the settings button, ⚙, to adjust surface settings.  For a discussion of the options, see <xref ref="section-surfacesettings" />.</p>
 	   <p></p>
 	   <p>Parameters are a great option to use with implicit surfaces.  
 	   See the <alert>Solution, Method 2</alert> in section on Level Surfaces in <xref ref="section-levelsurfaces"/>.</p>
@@ -748,6 +758,14 @@
 	
 	   <p>Then check the checkbox in the upper-left corner of this object to plot the default parametric surface.
 	   It should look like <xref ref="figure-parametricsurface1"/>.</p>
+	   <p>You can vary the ranges and the number of steps for both <m>u</m> and <m>v</m> to control the rectangular region of the <m>uv</m>-plane
+	   used to generate the parametric surface.</p>
+	   <p></p>
+	   
+	   
+	   <p>Use the settings button, ⚙, to adjust surface settings.  For a discussion of the options, see <xref ref="section-surfacesettings" />.</p>
+	   <p></p>
+	   <p><em>The last option is not yet implemented.  It is intended to allow 4th dimensional parametric surfaces to be visualized, but it has not yet been worked out.</em></p>
 	   
 	   <p><m>\Large\textbf{Tracing a Parametric Surface on the 2D Traceplot:}</m></p>
 	   <p>When a parametric surface is the primary surface object in CalcPlot3D's 3D plot,
@@ -758,8 +776,30 @@
 	       <p>To see this feature, open the 2D Trace Plane using the toolbar button.</p>
 		   <image width="7%" source="images/tracePlane.png"><description>Trace Plane button</description></image>
 	   </sidebyside>
-	   <p></p>
-	   <p><em>The last option is not yet implemented.  It is intended to allow 4th dimensional parametric surfaces to be visualized, but it has not yet been worked out.</em></p>
+	   <p>The traceplane should appear like <xref ref="figure-uvplanewithsliders"/></p>
+	   <figure xml:id="figure-uvplanewithsliders">
+	      <caption><m>uv</m>-plane with sliders</caption>
+	      <image width="50%" source="images/uvplanewithsliders.png"><description>uv-plane with sliders</description></image>
+	   </figure>
+	   <p>Now click on the trace plane and an input point will appear on the trace plane
+	   where you click and the corresponding trace point should appear on the parametric surface.
+	   The corresponding values of <m>u</m> and <m>v</m> are displayed in the textbox/sliders below the <m>uv</m>-plane.</p>
+	   <p>These sliders can be very helpful to show how varying each of these parameters corresponds to the points obtained on the parametric surface.</p>
+	   <p>See <xref ref="figure-uvplanewithpoint"/> and <xref ref="figure-parametricsurfacewithpoint"/>.</p>
+	   <sidebyside widths="44% 56%">
+		  <figure xml:id="figure-uvplanewithpoint">
+			 <caption><m>uv</m>-plane with an input point specified</caption>
+			 <image width="50%" source="images/uvplanetracedwithsliders.png"><description>uv-plane with an input point specified</description></image>
+		  </figure>
+		  <figure xml:id="figure-parametricsurfacewithpoint">
+			 <caption>Parametric surface plot with a trace point</caption>
+			 <image width="50%" source="images/parametricsurface1traced.png"><description>Parametric surface plot with a trace point</description></image>
+		  </figure>
+	   </sidebyside>
+	   <p>You can also see the coordinates of the corresponding trace point on the parametric surface in the green message line above the 3D plot.</p>
+	   <sidebyside widths="80%">
+	      <image width="50%" source="images/uvbannertraced.png"><description>Coordinates of the parametric surface trace point</description></image>
+	   </sidebyside>
 	</section>
 	
     <section xml:id="section-regions">
@@ -771,7 +811,7 @@
 	<title>*Parameter Sliders</title>
 		<p></p>
 	</section>
-	<section xml:id="section-functionsettings">
+	<section xml:id="section-surfacesettings">
 		<title>Surface Settings, ⚙</title>
 		<introduction>
 			<sidebyside widths="50% 50%">
