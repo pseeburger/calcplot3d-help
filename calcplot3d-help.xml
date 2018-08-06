@@ -249,6 +249,7 @@
     
     <section xml:id="section-formataxes">
         <title>Using the Format Axes dialog</title>
+        <idx><h>format axes</h></idx>
     	<sidebyside widths="93% 7%">
 		   <p>Open the Format Axes dialog by clicking on the <alert>Format Axes</alert> toolbar button</p>
 		   <image width="7%" source="images/formatAxes.png"><description>Format Axes button</description></image>
@@ -293,6 +294,7 @@
     
     <section xml:id="section-gridlinesmenu">
         <title>Using the Gridlines menu</title>
+        <idx><h>gridlines</h></idx>
         <p><dl width="narrow"><li>
 			   <title>Video:</title>
 			   <p>Here is a <url href="https://www.youtube.com/embed/ZHQvTyAwP7k?rel=0"><alert>short video about the Gridlines Menu</alert></url> in CalcPlot3D created by Professor Larry Green of Lake Tahoe Community College.</p>
@@ -329,8 +331,14 @@
     <section xml:id="section-toptips">
         <title>Did you know?</title>
     	<p>This section includes a list of highlighted tips for using the CalcPlot3D app.  Most can be found elsewhere in this manual, 
-    	but this section may help you find some useful features of CalcPlot3D.</p>
+    	but this section may help you find some useful features of CalcPlot3D that you may not have discovered yet.</p>
     	<p><ol>
+    	    <li><p><alert>CalcPlot3D allows you to enter most functions you might want to use.</alert></p>
+    	       <p>See <xref ref="appendix-availablefunctions" /> for available functions.</p>
+    	    </li>
+    	    <li><p><alert>For a given surface, you can visualize partial derivatives, the directional derivative, the gradient vector, the normal vector, and more.</alert></p>
+    	       <p>See <xref ref="section-traceplanemenu" /> for the 2D Trace Plane menu.</p>
+    	    </li>
     	    <li><p><alert>You can save the current view to the URL.</alert></p>
     	       <p>You can create a URL that includes codes for the current view in the CalcPlot3D plot.  This allows you to save this URL to your browser Favorites, place it as a hyperlink, or send it to a student or colleague.</p>
     	       <p>For more information on how to do this, see <xref ref="subsection-savetourl" />.</p>
@@ -340,9 +348,7 @@
     	       with 1 or more steps/views in it and save it to your computer to be loaded into the app at a later time.</p>
     	       <p>For more information on how to do this, see <xref ref="chapter-creatingscripts" />.</p>
     	    </li>
-    	    <li><p><alert>CalcPlot3D allows you to enter most functions you might want to use.</alert></p>
-    	       <p>See <xref ref="appendix-availablefunctions" /> for available functions.</p>
-    	    </li>
+    	    
     	    <li><p><alert>You can use parameters to animate most objects.</alert></p>
     	       <p>The letters <c>a</c>, <c>b</c>, <c>c</c>, <c>d</c>, and <c>t</c> can all be used at parameters in functions to show what happens when we vary
     	       certain aspects of a function.</p>
@@ -378,6 +384,7 @@
 	<title>Functions of Two-Variables</title>
 	    <subsection>
 	       <title>Functions in the form <m>z = f(x, y)</m></title>
+	       <idx><h>functions</h><h><m>z = f(x, y)</m></h></idx>
 	       <p>This is the type of function object that is provided by CalcPlot3D when it opens. But to add a new one,
 	       just select the first option <c>Function: z = f(x,y)</c> on the <alert>Add to graph</alert> drop-down menu,
 	       located just below the control panel toolbar buttons.  See an image of this object's dialog below.</p>
@@ -410,6 +417,7 @@
         </subsection>
         <subsection>
 	       <title>Functions in the form <m>x = f(y, z)</m></title>
+	       <idx><h>functions</h><h><m>x = f(y, z)</m></h></idx>
 	       <p>To add a function of this type select the option <c>Function: x = f(y, z)</c> on the <alert>Add to graph</alert> drop-down menu,
 	       located just below the control panel toolbar buttons.  It's near the bottom of the list.</p>
 	       <sidebyside widths="70%">
@@ -420,6 +428,7 @@
         </subsection>
         <subsection>
 	       <title>Functions in the form <m>y = f(x, z)</m></title>
+	       <idx><h>functions</h><h><m>y = f(x, z)</m></h></idx>
 	       <p>To add a function of this type select the option <c>Function: y = f(x, z)</c> on the <alert>Add to graph</alert> drop-down menu,
 	       located just below the control panel toolbar buttons.  It's near the bottom of the list.</p>
 	       <sidebyside widths="70%">
@@ -433,13 +442,14 @@
 	       <p>Only one of these is implemented so far, although note that any cylindrical or spherical function can already be graphed using
 	       an Implicit Surface.  See <xref ref="section-implicit-surfaces" />.</p>
 	       <p><ul><li>
-	             <p><alert>Functions of the form <m>r = f(\theta, z)</m></alert></p>
+	             <p><alert>Functions of the form <m>r = f(\theta, z)</m></alert><idx><h>functions</h><h><m>r = f(\theta, z)</m></h></idx></p>             
 	             <p>To add a function of this type select the option <c>Function: r = f(θ, z)</c> on the <alert>Add to graph</alert> drop-down menu,
 				   located just below the control panel toolbar buttons.</p>
 				 <sidebyside widths="75%">
 					  <image width="70%" source="images/functionfthetaz.png"><description>Function r = f(θ,z) object</description></image>
 				 </sidebyside>
-				 <p>Note that the ranges for <m>/theta</m> and <m>z</m> will not update for this type of function when you zoom in or out using the zooming buttons.</p>
+				 <p>To enter <m>\theta</m> in your functions, you can either enter <c>theta</c> or click the <c>θ</c> button in the middle of the range for theta.</p>
+				 <p>Note that the ranges for <m>\theta</m> and <m>z</m> will not update for this type of function when you zoom in or out using the zooming buttons.</p>
 				 <p>The number of steps in each domain is important in determining the resolution of the cylindrical surface.</p>
 	          </li>
 		   </ul></p>
@@ -453,6 +463,7 @@
 
 	<section xml:id="section-space-curves">
 	    <title>Space Curves</title>
+	    <idx><h>curves</h><h>plane</h></idx><idx><h>curves</h><h>space</h></idx>
 		<introduction>
 		    <p><dl width="narrow"><li><title>Examples:</title><p>See the list of example <alert>Space Curves</alert> on the Examples submenu of the CalcPlot3D main menu.
 		    See more about the Examples menu in <xref ref="section-examplesmenu"/>.</p></li></dl></p>
@@ -468,6 +479,7 @@
 					 <image width="50%" source="images/helix.png"><description>Helix space curve</description></image>
 				  </figure>
 			</sidebyside>
+			<p>Now let's plot the default space curve.</p> 
 			<sidebyside widths="7% 90%">		   
 			   <image width="7%" source="images/clear.png"><description>Clear Plot button</description></image>
 			   <p>Clear the plot by clicking the clear plot button.</p>
@@ -535,6 +547,7 @@
 
 	<section xml:id="section-vectorfields">
 	    <title>Vector Fields</title>
+	    <idx><h>vector fields</h></idx>
 		<p><dl width="narrow"><li><title>Examples:</title><p>See the list of example <alert>Vector Fields</alert> on the Examples submenu of the CalcPlot3D main menu.
 		See more about the Examples menu in <xref ref="section-examplesmenu"/>.</p></li></dl></p>
 		<p>To add a vector field to the plot, select the option <c>Vector Field</c> on the <alert>Add to graph</alert> drop-down menu.
@@ -549,6 +562,7 @@
 				 <image width="50%" source="images/2dvectorfield-in3d.png"><description>2D Vector Field in Space</description></image>
 			  </figure>
 	   </sidebyside>
+	   <p>Now let's plot the default vector field.</p> 
 	   <sidebyside widths="7% 90%">		   
 		   <image width="7%" source="images/clear.png"><description>Clear Plot button</description></image>
 		   <p>Clear the plot by clicking the clear plot button.</p>
@@ -639,6 +653,7 @@
 
 	<section xml:id="section-points">
 	<title>Points</title>
+	    <idx><h>points</h></idx>
 		<p>To add a point to the plot, select the option <c>Point: (x, y, z)</c> from the <alert>Add to graph</alert> menu.  The following dialog will appear:</p>
 		<figure>
 			 <caption>Point object dialog</caption>
@@ -652,6 +667,7 @@
 	
 	<section xml:id="section-vectors">
 	<title>Vectors</title>
+	    <idx><h>vectors</h></idx>
 		<p>To add a vector to the plot, select the option <c>Vector: &lt;a, b, c&gt;</c> from the <alert>Add to graph</alert> menu.  The following dialog will appear:</p>
 		<figure>
 			 <caption>Vector object dialog</caption>
@@ -665,7 +681,8 @@
 	</section>
 	
 	<section xml:id="section-textlabels">
-	<title>Text Labels</title>
+	    <title>Text Labels</title>
+	    <idx><h>text labels</h></idx>
 		<p>To add a text label to the plot, select the option <c>Text Label</c> from the <alert>Add to graph</alert> menu.  The following dialog will appear:</p>
 		<figure>
 			 <caption>Text label object dialog</caption>
@@ -690,12 +707,13 @@
 
 	<section xml:id="section-implicit-surfaces">
 	    <title>Implicit Surfaces</title>
-
+	    <idx><h>surfaces</h><h>implicit</h></idx><idx><h>implicit equations</h></idx>
+	    <p>Implicit Surfaces allow you to graph surfaces defined by any implicit equation in one of the three supported coordinate systems.</p>
 		<p><dl width="narrow"><li><title>Examples:</title><p>See the list of example <alert>Implicit Surfaces</alert> on the Examples submenu of the CalcPlot3D main menu.
 		See more about the Examples menu in <xref ref="section-examplesmenu"/>.</p></li></dl></p>
 		<p>To add an implicit surface to the plot, select the option <c>Implicit Surface</c> on the <alert>Add to graph</alert> drop-down menu.
 		You'll see an object dialog appear like the following:</p>
-		<sidebyside widths="50% 50%">
+		<sidebyside widths="60% 40%">
 		  <figure xml:id="figure-implicitsurfacedialog">
 			 <caption>Implicit surface object dialog</caption>
 			 <image width="50%" source="images/implicitsurfaceobject.png"><description>Implicit surface object dialog</description></image>
@@ -705,6 +723,7 @@
 			 <image width="50%" source="images/implicitsurface1.png"><description>Implicit surface plot</description></image>
 		  </figure>
 		</sidebyside>
+		<p>Now let's plot the default implicit surface.</p> 
 		<sidebyside widths="7% 90%">		   
 		   <image width="7%" source="images/clear.png"><description>Clear Plot button</description></image>
 		   <p>Clear the plot by clicking the clear plot button.</p>
@@ -720,10 +739,12 @@
 				<p>Enter equations using the variables <m>x</m>, <m>y</m>, and <m>z</m>.</p></li>
 	   <li><title>Cylindrical Coordinates</title>
 				<p>Enter equations using the variables <m>r</m>, <m>\theta</m>, and <m>z</m>.
-				Note that you can click on the button labeled <m>\theta</m> to enter this variable in your implicit equations.</p></li>
+				Note that you can click on the button labeled <m>\theta</m> to enter this variable in your implicit equations.</p>
+				<p>You can also enter <c>theta</c> as a word.</p></li>
 	   <li><title>Spherical Coordinates</title>
 				<p>Enter equations using the variables <m>\rho</m>, <m>\theta</m>, and <m>\phi</m>.
-				Note that you can click on the buttons for <m>\rho</m>, <m>\theta</m>, and <m>\phi</m> to enter these variables in your implicit equations.</p></li>
+				Note that you can click on the buttons for <m>\rho</m>, <m>\theta</m>, and <m>\phi</m> to enter these variables in your implicit equations.</p>
+				<p>You can also enter <c>rho</c>, <c>theta</c> or <c>phi</c> as words.</p></li>
 	   </dl></p>
 	   <p>Depending on which variables are in your implicit equation, ranges will be given for you to specify for each variable.</p>
 	   <p>The number of cubes per axis tells CalcPlot3D how many cubes to use in the marching cubes algorithm that is used to
@@ -732,14 +753,15 @@
 	   <p>Use the settings button, ⚙, to adjust surface settings.  For a discussion of the options, see <xref ref="section-surfacesettings" />.</p>
 	   <p></p>
 	   <p>Parameters are a great option to use with implicit surfaces.  
-	   See the <alert>Solution, Method 2</alert> in section on Level Surfaces in <xref ref="section-levelsurfaces"/>.</p>
+	   See the <alert>Solution, Method 2</alert> in the section on Level Surfaces in <xref ref="section-levelsurfaces"/>.</p>
 	</section>
 
 	<section xml:id="section-parametric-surfaces">
 	    <title>Parametric Surfaces</title>
+	    <idx><h>surfaces</h><h>parametric</h></idx>
 		<p><dl width="narrow"><li><title>Examples:</title><p>See the list of example <alert>Parametric Surfaces</alert> on the Examples submenu of the CalcPlot3D main menu.
 		See more about the Examples menu in <xref ref="section-examplesmenu"/>.</p></li></dl></p>
-		<p>To add an parametric surface to the plot, select the option <c>Parametric Surface</c> on the <alert>Add to graph</alert> drop-down menu.
+		<p>To add a parametric surface to the plot, select the option <c>Parametric Surface</c> on the <alert>Add to graph</alert> drop-down menu.
 		You'll see an object dialog appear like the following:</p>
 		<sidebyside widths="54% 46%">
 		  <figure xml:id="figure-parametricsurfacedialog">
@@ -751,6 +773,7 @@
 			 <image width="50%" source="images/parametricsurface1.png"><description>Parametric surface plot</description></image>
 		  </figure>
 		</sidebyside>
+		<p>Now let's plot the default parametric surface.</p> 
 		<sidebyside widths="7% 90%">		   
 		   <image width="7%" source="images/clear.png"><description>Clear Plot button</description></image>
 		   <p>Clear the plot by clicking the clear plot button.</p>
@@ -803,8 +826,169 @@
 	</section>
 	
     <section xml:id="section-regions">
-	<title>*Regions</title>
-		<p></p>
+	<title>Regions</title>
+	    <idx><h>regions</h></idx>
+	    <introduction>
+			<p>Regions allow you to consider the 3D regions above/below the 2D region of integration of a double integral
+			or the 3D region of integration of a triple integral.</p>
+			<p>To add a region to the plot, select the option <c>Region</c> on the <alert>Add to graph</alert> drop-down menu.
+			You'll see an object dialog appear like the following:</p>
+			<sidebyside widths="60% 40%">
+			  <figure xml:id="figure-regiondialogrect">
+				 <caption>Region object dialog</caption>
+				 <image width="50%" source="images/regionobjectrect.png"><description>Region object dialog</description></image>
+			  </figure>
+			  <figure xml:id="figure-region2dview">
+				 <caption>2D region plot</caption>
+				 <image width="50%" source="images/region2dview.png"><description>2D region plot</description></image>
+			  </figure>
+			</sidebyside>
+			<p>The 2D region in the <m>xy</m>-plane over which the region is defined is displayed in the 2D trace plot.  See <xref ref="figure-region2dview"/>.</p>
+			<p>This 2D region can be defined using two functions of <m>x</m> (top and bottom functions) and a range of <m>x</m>-values as shown above,
+			or you can select <m>x = f(y)</m> and enter left and right functions of <m>y</m> and a range of <m>y</m>-values as shown below.</p>
+			<sidebyside widths="60% 40%">
+			  <figure xml:id="figure-regiondialogrectxfy">
+				 <caption>Region object dialog with <m>x = f(y)</m></caption>
+				 <image width="50%" source="images/regiondialogxfy.png"><description>Region object dialog</description></image>
+			  </figure>
+			  <figure xml:id="figure-region2dviewxfy">
+				 <caption>2D region plot with <m>x = f(y)</m></caption>
+				 <image width="50%" source="images/2dregionfy.png"><description>2D region plot</description></image>
+			  </figure>
+			</sidebyside>
+			<p>In either mode, you can adjust the number of gridlines in each direction from the default of 25 x 25.</p>
+			<p>To define the top and bottom surfaces for the region, enter the functions of <m>x</m> and <m>y</m> in the corresponding textboxes near the bottom of this dialog.</p>
+			<p>Now let's plot the default region. If not already set, select the option <m>y = f(x)</m>.</p> 
+			<sidebyside widths="7% 90%">		   
+			   <image width="7%" source="images/clear.png"><description>Clear Plot button</description></image>
+			   <p>First clear the plot by clicking the clear plot button.</p>
+		   </sidebyside>
+		   <p>Then check the checkbox in the upper-left corner of this object to plot the default region.
+		   It should look like <xref ref="figure-regiondefault"/> shown on the left.
+		   In <xref ref="figure-regiondefaultfy"/> you can see the default region for the <m>x = f(y)</m> option.
+		   Compare the graphs of the base region in the <m>xy</m>-planes above with the regions shown here.</p>
+		   <sidebyside widths="50% 50%">
+			  <figure xml:id="figure-regiondefault">
+				 <caption>Region plot for <m>y = f(x)</m></caption>
+				 <image width="50%" source="images/regiondefault.png"><description>Region plot for y = f(x)</description></image>
+			  </figure>
+			  <figure xml:id="figure-regiondefaultfy">
+				 <caption>Region plot for <m>x = f(y)</m></caption>
+				 <image width="50%" source="images/regionfy.png"><description>Region plot for x = f(y)</description></image>
+			  </figure>
+		   </sidebyside>
+	   </introduction>
+	   
+	   <subsection xml:id="subsection-riemannprisms">
+	      <title>Show Riemann Prisms</title>
+	      <idx><h>Riemann prims</h></idx>
+<!--	   <p><m>\Large\textbf{Show Riemann Prisms}</m></p>  -->
+		   <p>Select the checkbox labeled, <em>Show Riemann Prisms</em>.  The region dialog should extend to show more options as shown in <xref ref="figure-regiondialogwithprisms"/> below.
+		   Note that if the region is already plotted, the prisms will automatically be added to the plot. <xref ref="figure-regiondefaultwithprisms"/> shows the current region with prisms.
+		   It is zoomed in once as well, using the Zoom-in button.</p>
+		   <sidebyside widths="50% 50%">
+			  <figure xml:id="figure-regiondialogwithprisms">
+				 <caption>Region dialog with prisms</caption>
+				 <image width="50%" source="images/regiondialogwithprisms.png"><description>Region dialog with prisms</description></image>
+			  </figure>
+			  <figure xml:id="figure-regiondefaultwithprisms">
+				 <caption>Region plot with prisms</caption>
+				 <image width="50%" source="images/regionwithprisms.png"><description>Region plot with prisms</description></image>
+			  </figure>
+		   </sidebyside>
+		   <p><xref ref="figure-2dregionprisms"/> shows how the bases of the prisms are shown in the 2D plot as well.</p>
+		   <sidebyside widths="50%">
+			  <figure xml:id="figure-2dregionprisms">
+				 <caption>2D region with prisms.</caption>
+				 <image source="images/2dregionprisms.png"><description>2D region with prisms</description></image>
+			  </figure>
+		   </sidebyside>
+		   <p>The number of prisms in each direction specify the number that would be used for an outer partition.
+		   The default partition type is an inner partition that only uses the prisms whose bases are fully contained inside the 2D region.</p>
+		   <p>You can vary the number of prisms to use in each direction using the textboxes or the sliders.</p>
+		   <p><alert>Partition type</alert> can be either Inner Partion (the default) or Outer Partition.</p>
+		   <p><alert>Height by</alert> specifies the point in the base of each prism that is to be used to determine the height of the prism on the surface.
+		   Options are: Midpoint, Upper-left, Upper-right, Lower-left, Lower-right.</p>
+		   <p>Select <alert>Show points used for heights</alert> to see these points shown in the <m>xy</m>-plane and the points on the surfaces above/below shown as well.</p>
+		   <p>Experiment with these options and see what each produces in the plot.</p>
+	   </subsection>
+	   
+	   <subsection xml:id="subsection-polarregions"><title>Polar Regions</title>
+	       <idx><h>polar regions</h></idx>
+<!--	   <p><m>\Large\textbf{Polar Regions and Polar Prisms}</m></p> -->
+		   <p>In addition to regions that use rectangular coordinates, CalcPlot3D also allows you to create regions in polar coordinates
+		   to help visualize double integrals in polar coordinates.</p>
+		   <p>To switch to plot a polar region, click the sideways oriented button labeled, <c>rect</c>.
+		   It should change to read <c>polar</c> and the dialog and traceplane should change to appear
+		   as in <xref ref="figure-regiondialogpolar"/> and <xref ref="figure-2dregionpolar"/>.</p>
+		   <sidebyside widths="60% 40%">
+			  <figure xml:id="figure-regiondialogpolar">
+				 <caption>Polar region dialog</caption>
+				 <image width="50%" source="images/regionobjectpolar.png"><description>Polar region dialog</description></image>
+			  </figure>
+			  <figure xml:id="figure-2dregionpolar">
+				 <caption>2D polar base region</caption>
+				 <image width="50%" source="images/region2dviewpolar.png"><description>2D polar base region</description></image>
+			  </figure>
+		   </sidebyside>
+		   <p>By default, the polar region is bounded by inside and outside functions of the form, <m>r = f(\theta)</m>, and a range of values for <m>\theta</m>.
+		   To use <m>\theta</m> in your functions, you can either type <c>theta</c> or you can click on the <c>θ</c> button while you are editing the inside or outside functions.</p>
+		   <p>Below you can see this region plotted in the 3D plot.</p>
+		   <sidebyside widths="50%">
+		      <figure xml:id="figure-regionpolar1">
+		          <caption>3D polar region plot</caption>
+		          <image source="images/regionpolar1.png"><description>3D polar region plot</description></image>
+		      </figure>
+           </sidebyside>
+		   
+		   <p>You can change the boundaries to be functions of the form, <m>\theta = f(r)</m> and specify a range for the values of <m>r</m>.
+		   Below you can see how the region dialog changes and the corresponding 2D base region in the <m>xy</m>-plane and 3D region plot.</p>
+		   <sidebyside widths="60% 40%">
+			  <figure xml:id="figure-regiondialogpolar1">
+				 <caption>Polar region dialog with boundaries of the form <m>\theta = f(r)</m></caption>
+				 <image source="images/regionobjectpolar2.png"><description>Polar region dialog</description></image>
+			  </figure>
+			  <figure xml:id="figure-2dregionpolar2">
+				 <caption>2D polar base region</caption>
+				 <image source="images/2dregionpolar2.png"><description>2D polar base region</description></image>
+			  </figure>
+		   </sidebyside>
+		   <sidebyside widths="50%">
+		      <figure xml:id="figure-regionpolar2">
+		          <caption>3D polar region plot</caption>
+		          <image source="images/regionpolar2.png"><description>3D polar region plot</description></image>
+		      </figure>
+           </sidebyside>
+		   
+		   <p>Play with these options and see what you get.</p>
+	  </subsection>
+		   
+		   
+	  <subsection xml:id="subsection-polarprisms"><title>Polar Prisms</title>
+	       <idx><h>polar prisms</h></idx>
+	       <p>Just as we could plot the Riemann prisms above for regions in rectangular coordinates, we can plot the polar prisms
+	       that are relevant here.  As above, just select the option to <em>Show Riemann Prisms</em>.  
+	       The dialog will extend as before giving you the same options. See <xref ref="figure-regiondialogpolarprism"/>.
+	       The only difference is that the bases of the prisms are not rectangles in the normal sense.
+	       They are "polar rectangles" instead.  See the bases of the prisms in <xref ref="figure-2dregionpolarprisms"/>.</p>
+		   <sidebyside widths="50% 50%">
+		      <figure xml:id="figure-regiondialogpolarprism">
+				 <caption>Polar region dialog with polar prism options visible</caption>
+				 <image source="images/regiondialogpolarprism.png"><description>Polar region dialog</description></image>
+			  </figure>
+			  <figure xml:id="figure-2dregionpolarprisms">
+				 <caption>2D polar region with prisms.</caption>
+				 <image source="images/2dregionpolarprisms.png"><description>2D polar region with prisms</description></image>
+			  </figure>
+		   </sidebyside>
+		   <p>The 3D polar region with polar prisms is shown below.</p>
+		   <sidebyside widths="50%">
+		      <figure xml:id="figure-3dpolarprisms1">
+		          <caption>3D polar region plot with polar prisms</caption>
+		          <image source="images/3dpolarprisms1.png"><description>3D polar region plot with polar prisms</description></image>
+		      </figure>
+           </sidebyside>
+	   </subsection>
 	</section>
 	
 	<section xml:id="section-sliders">
@@ -910,7 +1094,7 @@
 			helping you to see how they are related.  The coordinates of the function point are shown both in the green display above the 3D plot
 			and on the plot itself, in the upper left corner.</p>
     </section>
-    <section>
+    <section xml:id="section-traceplanemenu">
         <title>Trace Plane Menu Options</title>
         <introduction>
 			<p>When the 2D trace plane is displayed, a related menu appears just to the right of the trace plane button with additional options.  
@@ -1061,6 +1245,7 @@
 	         <title>Points, Lines <ampersand/> Planes in Space</title>
 	         <subsection>
 	            <title>Plane through Three Non-Collinear Points</title>
+	            <idx><h>plane</h><h>through 3 non-collinear points</h></idx>
 	      <!--      <p>Finding the equation of the plane determined by three non-collinear points and visually verifying that the plane contains these three points.</p>  -->
           <!--      <exercises>
                 <exercise>  -->
@@ -1097,6 +1282,7 @@
             </subsection>
             <subsection>
                 <title>The Line of Intersection of Two Planes</title>
+                <idx><h>intersection</h><h>of two planes</h></idx>
                 <exploration xml:id="exploration-plane-intersection">
                     <statement>
                         <p>a. Determine the line of intersection of the following two planes. Write the parametric equations for this line, showing all work.</p>
@@ -1143,14 +1329,17 @@
 	    </section>
 	    <section>
 	         <title>*Intersections of General Surfaces</title>
+	         <idx><h>intersection</h><h>of any two surfaces</h></idx>
 	         <p></p>
 	    </section>
         <section xml:id="section-contourplots">
 	         <title>*Contour Plots</title>
+	         <idx><h>contour plot</h></idx><idx><h>level curves</h></idx><idx><h>contours</h></idx>
 	         <p></p>
 	    </section>
 	    <section xml:id="section-levelsurfaces">
 	         <title>Level Surfaces</title>
+	         <idx><h>level surfaces</h></idx><idx><h>surfaces</h><h>level</h></idx>
 	         <p><dl width="narrow"><li>
 	               <title>Video:</title>
 	               <p>Here is a <url href="https://www.youtube.com/embed/lqiXsYYUb-I?rel=0"><alert>short video about Level Surfaces</alert></url> in CalcPlot3D created by Professor Larry Green of Lake Tahoe Community College.</p>
@@ -1276,6 +1465,7 @@
 	         <title>Using the Direction Field Explorer app</title>
 	         <subsection>
 				 <title>Visualizing 1st-order Differential Equations</title>
+				 <idx><h>differential equations</h><h>visualizing 1st-order</h></idx>
 				 <p>In differential equations we begin by studying many applications of first-order differential equations.
 				 We learn how these equations are derived from the language of the problems, and then we examine the direction fields
 				 associated with each equation to make predictions, consider equilibria and to analyze the situations.</p>
@@ -1306,6 +1496,7 @@
         	<title>Using CalcPlot3D</title>
 			 <subsection>
 				 <title>Visualizing Systems of Differential Equations</title>
+				 <idx><h>differential equations</h><h>systems</h></idx><idx><h>phase portrait</h></idx><idx><h>phase plane</h></idx>
 				 <p>When we study systems of 1st-order differential equations, it is helpful to be able to visualize the phase plots associated with these systems,
 				 and to see that no matter what values we use for the two (or three) parameters we obtain in the solution, 
 				 the general solution (expressed parametrically) will always pass through the vectors in the (two or three dimensional)
@@ -1367,8 +1558,10 @@
 
 <chapter>
     <title>Creating STL Files for 3D Printing</title>
+    <idx><h>3D printing</h></idx>
     <section xml:id="section-stlfile">
         <title>STL file Creation in CalcPlot3D</title>
+        <idx><h>STL files</h><h>creation</h></idx>
 		<p>One of the CalcPlot3D's newest features is its ability to save a surface to an STL file.
 		This STL file can then be used to print a solid 3D surface model using a 3D printer, sometimes called a rapid prototyping machine.
 		For example, here are the saddle, <m>z = x^2 – y^2</m>, and the parametric surface I call the Big Knot.</p>
@@ -1441,9 +1634,10 @@
 	 <p></p>
 </chapter>
 <backmatter xml:id="backmatter">
-    <title>Appendices</title>
+    <title>Appendices <ampersand/> Index</title>
 	<appendix xml:id="appendix-availablefunctions">
 	    <title>List of Available Functions</title>
+	    <idx><h>functions</h><h>available</h></idx>
 	    <sidebyside>
 	        <tabular halign="center" top="major">
 				<col width="20%"/>
@@ -1762,6 +1956,10 @@
 		</section>
 
 	</appendix>
+	<index>
+		<title>Index</title>
+		<index-list />
+	</index>
 </backmatter>
 
 </book>
