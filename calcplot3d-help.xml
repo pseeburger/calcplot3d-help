@@ -333,6 +333,9 @@
     	<p>This section includes a list of highlighted tips for using the CalcPlot3D app.  Most can be found elsewhere in this manual, 
     	but this section may help you find some useful features of CalcPlot3D that you may not have discovered yet.</p>
     	<p><ol>
+    	    <li><p><alert>If you can't see all the options of a function, curve, point, etc., click on it's textbox and its options will appear.</alert></p>
+    	       <p>See <xref ref="section-activeobjects" /> for more information on this important CalcPlot3D fact.</p>
+    	    </li>
     	    <li><p><alert>CalcPlot3D allows you to enter most functions you might want to use.</alert></p>
     	       <p>See <xref ref="appendix-availablefunctions" /> for available functions.</p>
     	    </li>
@@ -368,6 +371,14 @@
     	    </li>
     	</ol></p>
     </section>
+    <!--    
+    <section>
+        <title>FAQ</title>
+        <p>After graphing a surface, how come I sometimes cannot seem to find some of the options like making a contour plot?</p>
+        <p>Is there a way to save the current view in CalcPlot3D so I don't have to create it all from scratch next time?</p>
+        <p>If a surface is self-intersecting, it doesn't look quite right.  Is there a way to make the intersections clearner in CalcPlot3D?</p>
+    </section>
+    -->
 </chapter>
 
 
@@ -375,9 +386,9 @@
 <chapter xml:id="chapter-objects">
     <title>CalcPlot3D Objects</title>
     <introduction>
-    <p>
-    There are a number of objects that can be added to the plot window in CalcPlot3D using the <alert>Add to graph</alert> drop-down menu.  This chapter will explain each of these objects and how to use them.
-    </p>
+		<p>There are a number of objects that can be added to the plot window in CalcPlot3D using the <alert>Add to graph</alert> drop-down menu.
+		This chapter will explain each of these objects and how to use them.</p>
+		<p>Note that any object can be <alert>deleted</alert> using the small <c>X</c> in the upper-right corner.</p>
     </introduction>
 	
 	<section xml:id="section-functions-fxy">
@@ -823,6 +834,9 @@
 	   <sidebyside widths="80%">
 	      <image width="50%" source="images/uvbannertraced.png"><description>Coordinates of the parametric surface trace point</description></image>
 	   </sidebyside>
+	   <p><m>\Large\textbf{Adjusting the}\,uv \Large\textbf{-domain of a Parametric Surface on the 2D Traceplot:}</m></p>
+	   <p>You can even directly adjust the rectangular region in the <m>uv</m>-plane that defines the parametric surface.  To do this, click and drag on any of the four edges of this recrtangular region.  You should be able to adjust each edge and observe how this affects the corresponding parametric surface.</p>
+	   <p>Note that while adjusting these edges, they will lock onto multiples and fractions of <m>\pi</m>, as many parametric surfaces use radians.</p>
 	</section>
 	
     <section xml:id="section-regions">
@@ -877,6 +891,7 @@
 				 <image width="50%" source="images/regionfy.png"><description>Region plot for x = f(y)</description></image>
 			  </figure>
 		   </sidebyside>
+		   <p><em>Currently parameters are not yet supported in regions.</em></p>
 	   </introduction>
 	   
 	   <subsection xml:id="subsection-riemannprisms">
@@ -992,11 +1007,152 @@
 	</section>
 	
 	<section xml:id="section-sliders">
-	<title>*Parameter Sliders</title>
-		<p></p>
+	<title>Parameter Sliders</title>
+	    <idx><h>parameters</h></idx>
+	    <introduction>
+			<p>Parameters can be used in surfaces, curves or vector fields to show the effect of varying these parameters on the plot.</p>
+			<p>They are useful for exploration, for demonstration of relationships, and for animation.</p>
+			<p>Currently, possible parameters are <c>a</c>, <c>b</c>, <c>c</c>, <c>d</c>, and <c>t</c>.
+			More parameters may be added in the future.  And note that <c>t</c> cannot be used as a parameter in Space Curves,
+			since it is already being used in this context as the independent variable.</p>
+			<p>When you use a parameter in a surface, curve or vector field, a corresponding slider object will be added automatically when you graph the object.</p>
+			<p>The parameter <m>t</m> will also be automatically added to the plot when you add a vector field.
+			See more about this feature in the chapter on differential equations in <xref ref="subsection-desystems"/>.</p>
+		</introduction>
+		<subsection xml:id="subsection-parametersliders">
+		   <title>Working with Parameter Sliders</title>
+		   <idx><h>parameters</h><h>working with sliders</h></idx>
+		   <p>Although the corresponding parameter slider will automatically be added to the plot when you use a new parameter in another object,
+		   you may wish to create and configure one first.  To do this, select the option <c>slider</c> on the <alert>Add to graph</alert> drop-down menu.
+		   You'll see an object dialog appear like the following:</p>
+		   <sidebyside widths="50%">
+			  <figure xml:id="figure-sliderdialog">
+				 <caption>Parameter slider dialog</caption>
+				 <image source="images/sliderdialog.png"><description>Parameter slider dialog</description></image>
+			  </figure>
+		   </sidebyside>
+		    <p>By default, the new slider will be assigned the next available parameter name, although you can then use the drop-down menu
+		    to select which parameter you wish the slider to represent.  It is even possible for you to have more than one slider for a given parameter,
+		    perhaps with different ranges or number of steps.</p>
+		    <p>Each slider has a textbox that allows you to enter an initial value for the parameter.  Entering a value here will automatically
+		    affect any object in the plot that uses this parameter in its definition.</p>
+		    <p>The range of values for this parameter is given along the bottom of the slider dialog.  You can specify this range by adjusting these values.
+		    This will affect the values obtained in the textbox when using the slider and will affect what values are used in animation of this parameter.</p>
+		    <p>The number of steps can also be adjusted for each parameter.  If you wish to used just integer steps in your animation or slider,
+		    you will need to consider the difference between the max and min range values and then use this natural number as your number of steps.</p>
+		    <p>Clicking the <alert>Animate</alert> button on a slider will cause the value of this parameter to automatically vary,
+		    starting with the minimum value and progressing through the number of steps specified to reach the maximum range value.
+		    To speed up this animation, use a smaller number of steps.  To slow it down, use a larger number of steps.</p>
+		    <p>When animation of a parameter starts, the label on the <alert>Animate</alert> button changes to read <alert>Pause</alert>.
+		    When you click it again, it will continue with the animation.</p>	    
+		</subsection>
+		<subsection xml:id="subsection-parameter-settings">
+		   <title>Parameter Settings,  ⚙</title>
+		   <idx><h>parameters</h><h>settings</h></idx>
+		   <p>If you click on the settings button ⚙ on a slider object, you will see the following menu.</p>
+		   <sidebyside widths="50%">
+		       <image source="images/slidersettings.png"><description>slider settings menu</description></image>
+		   </sidebyside>
+	      <p>The options are:<dl width="medium">
+	         <li>
+	            <title>Continuous Animation:</title>
+	            <p>(the default) Causes animation to continue once it has passed through the range of slider values.</p>
+	         </li>
+	         <li>
+	            <title>Bounce over range:</title>
+	            <p>(the default) If Continuous Animation is selected, this option causes animation to continue by going back in reverse
+	            through the range of slider values.  Once it reaches the minimum value again, it will reverse again and go back through the values
+	            in the forward direction, etc.</p>
+	         </li>
+	         <li>
+	            <title>Hide Animation button:</title>
+	            <p>Causes the <alert>Animate</alert> button to be hidden.  This is most useful when creating dynamic figures.
+	            For more information on creating dynamic figures see <xref ref="appendix-dynamicfigures"/>.</p>
+	         </li>
+	         <li>
+	            <title>Wait time (1-1000):</title>
+	            <p>This option gives you another way to control the speed of the animation (in addition to using more steps for slower animation).</p>
+	         </li>
+	         <li>
+	            <title>Only allow exact step values in input:</title>
+	            <p>If this option is selected, only values that would come up using the slider's exact steps will be allowed in the textbox.
+	            If it is unselected, other values are allowed.</p>
+	         </li>
+	      </dl></p>
+		</subsection>
+		<subsection xml:id="subsection-parameter-examples">
+		   <title>Ways to Use Parameters</title>
+		   <idx><h>parameters</h><h>ways to use</h></idx>
+		   <p><ul>
+		       <li><p><alert>To show function transformations:</alert></p>
+		          <p>Example:  Enter <alert>z = c(x-a)^2 + d(y-b)^2 + t</alert></p>
+		          <p>Varying the various parameters will then show how the paraboloid is transformed.
+		          <dl width="narrow">
+		              <li><title>a</title><p>shifts paraboloid <m>a</m> units in the positive <m>x</m>-direction</p></li>
+		              <li><title>b</title><p>shifts paraboloid <m>b</m> units in the positive <m>y</m>-direction</p></li>
+		              <li><title>t</title><p>shifts paraboloid <m>t</m> units in the positive <m>z</m>-direction</p></li>
+		              <li><title>c</title><p>scales the <m>x</m>-components of the paraboloid by a factor of <m>c</m> in the vertical <m>z</m>-direction</p></li>
+		              <li><title>d</title><p>scales the <m>y</m>-components of the paraboloid by a factor of <m>d</m> in the vertical <m>z</m>-direction</p></li>
+		          </dl></p>		          
+		       </li>
+		       <li><p><alert>To show various curves in a family:</alert></p>  <!-- solution of system of DEs, hypocycloids, epicycloids, etc. -->
+		       <p>Example: <alert>Hypocycloids and Epicycloids</alert></p>
+		       <p><ol><li>Clear the plot.</li>
+		       <li>Add a space curve to the plot by selecting <alert>Add a space curve</alert> from the <alert>Add to graph</alert> dropdown menu.</li>
+		       <li>Zoom out to -8 to 8 in both <m>x</m>- and <m>y</m>-directions using the Zoom-out button.</li>
+               <li>Now enter the following parametric function: <c>x = a cos(t) - cos(at)</c>, <c>y = a sin(t) - sin(at)</c>, <c>z = 0</c>.</li>
+               <li>Enter a range of 0 to 2pi for <m>t</m>, and select <alert>Restrict view to 2D</alert> on the space curve dialog.</li>
+               <li><p>A parameter slider object should have automatically appeared for the parameter <c>a</c>.  Vary the value of <c>a</c> using the slider or enter values of 2, 3, or -4.</p>
+               <p>Notice that when the value of <c>a</c> is a positive integer, you will see an <em>epicycloid</em> with <c>a</c> cycles (petals).</p>
+               <p>When the value of <c>a</c> is a negative integer, you will see a <em>hypocycloid</em> with <c>a</c> cycles (points).</p></li>
+               <li>Now it would be nicest if we only showed these integer values for the parameter <c>a</c> as the slider is moved. To do this, click on the parameter dialog so it displays all its options. Set the values of <c>a</c> to range from -10 to 10 and then enter 20 steps. This will force the parameter <c>a</c> to only take on the integer values between -10 and 10, inclusive. Now try the slider again to see the series of epicycloids and hypocycloids displayed one after another.</li></ol>
+               </p>
+		       </li>
+		       <li><alert>To show solution curves for a system of DEs:</alert> This is really a special case of the previous category,
+		       but it is a distinct application.  See an example in <xref ref="subsection-desystems"/> on exploring systems of differential equations using CalcPlot3D.
+		       </li>
+		       <li><alert>To show level surfaces:</alert> You can add an <alert>Implicit Surface</alert> to the plot and enter the level surface equation of <m>f(x, y, z) = c</m> using parameter <m>c</m>.  Then you can vary the parameter to view the various level surfaces of this function of three variables.
+		       See more about this example in the second part of <xref ref="section-levelsurfaces"/>, titled <alert>Method 2</alert>.
+		       </li>
+		       <li><p><alert>To create animations:</alert></p>
+               <p>Click on the following link to open CalcPlot3D with an example of how parameters can be used for animation.</p>
+               <p><url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/?exploration=Cycloids">Cycloid animation exploration in CalcPlot3D app</url></p>
+               <p>In the first displayed example, you will see three object dialogs on the left side of the screen. (See <xref ref="figure-cycloid1"/> below.)</p>
+               <figure xml:id="figure-cycloid1">
+               	   <caption>Cycloid animation objects</caption>
+               	   <image width="100%" source="images/cycloidanimation.png"><description>cycloid animation objects</description></image>
+               </figure>
+               <p>The bottom object is the Label object stating that "This is a Cycloid Example."</p>
+               <p>The middle object is the red cycloid curve in parametric form.</p>
+               <p>Finally, the first object is the one we will animate using the parameter <c>a</c>.  It is a circle that is animated to show it rolling along the <m>x</m>-axis to trace out the cycloid curve.  To make it look more like it is rolling, we have left the color to vary in hue as it would for a 3D space curve.  We also forced the point to appear on the circle (that traces out the cycloid) by entering a trace value of <m>t = 0</m> and selecting the Trace checkbox on this space curve object.  Click on this dialog to see this.</p>
+               <p>To animate this circle to roll along the <m>x</m>-axis and trace out the cycloid curve, click the <alert>Animate</alert> button on the <c>a</c> parameter slider.</p> 
+         <!--      <sidebyside widths="50% 50%">  -->
+               	  <p>Note that this example also shows an example of a script with three steps.  You can view the various steps using the exploration dialog that should have appeared in the upper right corner of the app window.  See <xref ref="figure-explorationdialog"/>.</p>
+               	 <figure xml:id="figure-explorationdialog">
+               	  	 <caption>Exploration dialog for Cycloid exploration</caption>
+                     <image width="50%" source="images/explorationdialogcycloids.png"><description>Exploration dialog</description></image>
+                 </figure>
+         <!--      </sidebyside>  -->
+                 <p>To view the second animation example, click the <alert>Next</alert> button on the exploration dialog.</p>
+                 <figure xml:id="figure-epicycloid">
+               	   <caption>Epicycloid animation</caption>
+               	   <image width="100%" source="images/epicycloidanimation.png"><description>Epicycloid animation</description></image>
+                 </figure>
+                 <p>This example will animate tracing out an <alert>epicycloid</alert> as a circle rolls around the outside of a circle.</p>
+                 <p>Try it out by clicking on the <alert>Animate</alert> button on the <c>a</c> parameter slider.</p>
+                 <p>Note that the curves are color-coded with the green curve being the circle on which the epicycloid is created, the blue curve is the epicycloid itself, and the black curve is the circle being animated to roll around the green circle tracing out the epicycloid.  Again the trace point is displayed so you can see it, showing how it traces out the epicycloid curve as the small black circle rolls around the green circle.</p>
+                 <p>Clicking the <alert>Next</alert> button again will display the third example, showing how a <alert>hypocycloid</alert> is traced out as a small black circle rolls around the inside of a larger green circle.</p>
+                 <figure xml:id="figure-hypocycloid">
+               	   <caption>Hypocycloid animation</caption>
+               	   <image width="100%" source="images/hypocycloidanimation.png"><description>Hypocycloid animation</description></image>
+                 </figure>
+		       </li>
+ 		   </ul></p>
+		</subsection>
 	</section>
 	<section xml:id="section-surfacesettings">
 		<title>Surface Settings, ⚙</title>
+		<idx><h>surfaces</h><h>settings</h></idx>
 		<introduction>
 			<sidebyside widths="50% 50%">
 			<p>Function settings are the same for the following objects:
@@ -1063,6 +1219,40 @@
 			    </li>
 			</ul></p>
 		</subsection>
+	</section>
+	<section xml:id="section-activeobjects">
+	    <title>Focused <ampersand/> Unfocused Objects</title>
+	    <p>Note that when an object dialog has the focus, all it's options will be visible, but when another object has the focus, most of these options are hidden,
+		leaving only its most important properties visible.  An object will always have the focus just after being created.  To make it the active object and
+		obtain the focus again, just click on the object.  All its options will appear again.</p>
+		<p>For example, <xref ref="figure-activefunction"/> shows a function object dialog when it has the focus.</p>
+		<sidebyside widths="50%">
+		    <figure xml:id="figure-activefunction">
+				 <caption>Function dialog with the focus</caption>
+				 <image source="images/functionactive.png"><description>Function dialog with the focus</description></image>
+			</figure>
+		</sidebyside>
+		<p><xref ref="figure-inactivefunction"/> shows the same function object when it no longer has the focus.</p>
+		<sidebyside widths="50%">
+		    <figure xml:id="figure-inactivefunction">
+				 <caption>Function dialog without the focus</caption>
+				 <image source="images/functioninactive.png"><description>Function dialog without the focus</description></image>
+			</figure>
+		</sidebyside>
+		<p>As another example, <xref ref="figure-activecurve"/> shows a space curve object dialog when it has the focus.</p>
+		<sidebyside widths="50%">
+		    <figure xml:id="figure-activecurve">
+				 <caption>Space curve dialog with the focus</caption>
+				 <image source="images/curveactive.png"><description>Space curve dialog with the focus</description></image>
+			</figure>
+		</sidebyside>
+		<p><xref ref="figure-inactivecurve"/> shows the same space curve object when it no longer has the focus.</p>
+		<sidebyside widths="50%">
+		    <figure xml:id="figure-inactivecurve">
+				 <caption>Space curve dialog without the focus</caption>
+				 <image source="images/curveinactive.png"><description>Space curve dialog without the focus</description></image>
+			</figure>
+		</sidebyside>
 	</section>
 </chapter>
 
@@ -1494,9 +1684,10 @@
 	    </section>
         <section>
         	<title>Using CalcPlot3D</title>
-			 <subsection>
+			 <subsection xml:id="subsection-desystems">
 				 <title>Visualizing Systems of Differential Equations</title>
-				 <idx><h>differential equations</h><h>systems</h></idx><idx><h>phase portrait</h></idx><idx><h>phase plane</h></idx>
+				 <idx><h>parameters</h><h>in phase plots</h></idx>
+				 <idx><h>differential equations</h><h>visualizing systems</h></idx><idx><h>phase portrait</h></idx><idx><h>phase plane</h></idx>
 				 <p>When we study systems of 1st-order differential equations, it is helpful to be able to visualize the phase plots associated with these systems,
 				 and to see that no matter what values we use for the two (or three) parameters we obtain in the solution, 
 				 the general solution (expressed parametrically) will always pass through the vectors in the (two or three dimensional)
@@ -1506,7 +1697,8 @@
 				 <exploration xml:id="exploration-phaseplots">
 				     <statement>
 				        <p>a. First, clear the view by clicking on the clear plot button or by deleting the function object by clicking the small x in the upper-right corner of the object.</p>
-				        <p>b. Then select <alert>Vector Field</alert> on the <alert>Add to graph</alert> menu.</p>
+				        <p>b. Then select <alert>Vector Field</alert> on the <alert>Add to graph</alert> menu.  Note that a parameter slider for the parameter <m>t</m> is also automatically added to the plot.
+				        This can be used for animating motion along a solution curve (or flowline) as described below in step g.</p>
 				        <p>c. Click the checkbox labeled, "Show system of DEs notation", so that it looks like the system we are entering.</p>
 				        <p>d. Now enter the equations of the following system of 1st-order differential equations to see its phase plot.</p>
 				        <p><md>
