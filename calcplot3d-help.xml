@@ -810,7 +810,7 @@
 	       <p>To see this feature, open the 2D Trace Plane using the toolbar button.</p>
 		   <image width="7%" source="images/tracePlane.png"><description>Trace Plane button</description></image>
 	   </sidebyside>
-	   <p>The traceplane should appear like <xref ref="figure-uvplanewithsliders"/></p>
+	   <p>The traceplane should appear like <xref ref="figure-uvplanewithsliders"/>.</p>
 	   <figure xml:id="figure-uvplanewithsliders">
 	      <caption><m>uv</m>-plane with sliders</caption>
 	      <image width="50%" source="images/uvplanewithsliders.png"><description>uv-plane with sliders</description></image>
@@ -1219,6 +1219,18 @@
 			    </li>
 			</ul></p>
 		</subsection>
+		<subsection xml:id="subsection-twoviewsdropdown">
+			<title>Two views dropdown</title>
+			<sidebyside widths="60% 40%">
+				<p>This option will appear here only if the <alert>Show two views</alert> option is selected on the <alert>View Settings</alert> submenu of the CalcPlot3D main menu.</p>
+				<image source="images/twoviewsdropdown.png"><description>two views dropdown</description></image>
+			</sidebyside>
+			<p>It allows you to choose in which of the side-by-side two views you wish each surface to appear.  By default, it will appear in both views.  You are given the following options.</p>
+			<sidebyside widths="40%">
+				<image source="images/twoviewsoptions.png"><description>two views options</description></image>
+			</sidebyside>
+			<p>For more information on turning this mode on and how it works, see <xref ref="subsection-twoviews"/>.</p>
+		</subsection>
 	</section>
 	<section xml:id="section-activeobjects">
 	    <title>Focused <ampersand/> Unfocused Objects</title>
@@ -1389,11 +1401,31 @@
    </sidebyside>
 </introduction>
 <section xml:id="section-filemenu">
-	<title>*File menu</title>
-	<introduction><p></p></introduction>
+	<title>File menu</title>
+	<introduction><sidebyside widths="50%">
+		<image source="images/filemenu.png"><description>File menu</description></image>
+	</sidebyside></introduction>
+	<subsection xml:id="subsection-viewvectorexplorations">
+	<title>View Vector Explorations</title>
+	   <p>Opens up the Vector Explorations dialog.  See <xref ref="section-vectorexplorations"/>.</p>
+	</subsection>
+	<subsection xml:id="subsection-create-stlfile">
+	<title>Create an STL file from the plot</title>
+	   <p>Opens the STL Creation dialog.  See <xref ref="section-stlfile"/>.</p>
+	</subsection>
+	<subsection xml:id="subsection-savetopng">
+	<title>Save the plot as a PNG</title>
+	   <p>Allows you to save the current plot image as a PNG file.</p>
+	</subsection>
+	<subsection xml:id="subsection-copyonoff-chrome">
+	<title>Copy option on/off (in Chrome)</title>
+	   <p>In the Chrome browser, the default behavior on an image is to be able to right click on it and copy it to the clipboard.  But in CalcPlot3D, the default behavior is to do something else when you right-click on the 3D plot.  This option allows you to use the standard Chrome contextual menu to copy the 3D plot image to the clipboard.  Clicking this option again will restore the default CalcPlot3D right-click behavior.</p>
+	</subsection>
 	<subsection xml:id="subsection-savetourl">
-	<title>Save the current view to a URL</title>
-	   <p></p>
+	<title>Encode View in URL</title>
+	   <p>This can be a very useful feature.  When you have created a 3D plot view that contains the objects you want to share with someone else or wish to use later in a class demonstration, you can use this option to encode the objects, settings, and perspective in the current view into a query string that is added to the standard app URL.  It is immediately reloaded with the encoded view to check that it encoded all that you wanted.</p>
+	   <p>If you find something that is not yet encoded using this option, let me know by emailing me at <email>pseeburger@monroecc.edu</email>.</p>
+	   <p>Note that you can add the encoded URL to your browser favorites, email it to a friend, student or professor, or you can include it on a webpage to automatically load the view when your visitors click on your link.</p>
 	</subsection>
 </section>
 <section xml:id="section-scriptsmenu">
@@ -1401,22 +1433,108 @@
 	<p></p>
 </section>
 <section xml:id="section-printplot">
-	<title>*Print Plot option</title>
-	<p></p>
+	<title>Print Plot option</title>
+	<sidebyside widths="50% 50%">
+		<p>When you select this option, you will be asked for a title for the printed plot.  This could be your name, a title for what is contained in the plot, or perhaps a level surface constant value.</p>
+		<image source="images/printtitledialog.png"><description>Print title dialog</description></image>
+	</sidebyside>
+    <p>Once you enter a title, the system print dialog should open.  On a Mac, it will look like the dialog below.</p>
+    <sidebyside widths="90%">
+		<image source="images/macprintdialog.png"><description>Print dialog on a Mac</description></image>
+	</sidebyside>
+	<p>Note that you can cancel the print from either dialog.</p>
 </section>
 <section xml:id="section-3doptions">
-	<title>*3D Options menu</title>
-	<p></p>
+	<title>3D Options menu</title>
+	<sidebyside widths="50%">
+		<image source="images/3doptionsmenu.png"><description>3D Options menu</description></image>
+	</sidebyside>
+	<p><dl>
+		<li width="narrow">
+		<title>Standard Projection:</title>
+		<p>This is the default view.  No 3D glasses special viewing techniques are required.</p>
+	</li>
+	<li>
+		<title>Colored Red-Cyan:</title>
+		<p>This mode is meant to be used with red-cyan 3D glasses.  It makes the 3D plot appear to be half behind the screen and half in front of the screen.  It is the standard 3D mode used when you click on the 3D glasses toolbar button.</p>
+	</li>
+	<li>
+		<title>Stereo Pair:</title>
+		<p>This mode provides you with two side-by-side versions of the 3D plot.  You need to stare at these images so that your left eye is looking at the left image and your right eye is looking at the right image.  Then a third image should appear in the center that looks 3D and is colored exactly as the standard view is.  To achieve this, I find it helpful to cover my right eye while focusing my left eye on the left image.  Then cover my left eye while focusing my right eye on the right image then opening both eyes again.</p>
+	</li>
+	<li>
+		<title>VR Stereo Pair:</title>
+		<p>This mode is still experimental, but is intended to allow the 3D plot in CalcPlot3D to be viewed using a Virtual Reality (VR) viewer on a phone.  It's been tested on an iPhone so far, but seems to work differently on Android phones.</p>
+		<p>If it is working as intended, the 3D view should rotate when you turn your head from side to side or look up or down.</p>
+	</li>
+    </dl></p>
 </section>
 <section xml:id="section-viewsettingsmenu">
-	<title>*View Settings menu</title>
+	<title>View Settings menu</title>
 	<introduction>
+	   <sidebyside widths="40%">
+		  <image source="images/settingsmenu.png"><description>View settings menu</description></image>
+	   </sidebyside>
 	   <p></p>
 	</introduction>
-	<subsection xml:id="subsection-toptitles">
-	    <title>Adding Top Titles</title>
-	    <p></p>
-	</subsection>
+<!--	<p><dl width="narrow">  -->
+	   <subsection xml:id="subsection-toptitles">
+	      <title>Adding Top Titles</title>
+	      
+          <sidebyside widths="60% 40%">
+          	 <stack>
+	            <p>This submenu allows you to add up to three distinct titles at the top of the 3D plot on the top-left, top-center, and top-right.</p>
+	            <p>Each title can use LaTeX, as each is processed through MathJax.</p>
+	         </stack>
+	         <image source="images/toptitlesmenu.png"><description>Top titles submenu</description></image>
+	      </sidebyside>
+	   </subsection>
+
+	   <subsection xml:id="subsection-hiddensurfacemode">
+	   	  <title>Hidden Surface Mode</title>
+	   	  <sidebyside widths="60% 40%">
+	   	  	 <stack>
+	            <p>This submenu allows you to select which hidden surface mode to use for 3D rendering.
+	            	There are pros and cons for each of them.  There is a trade-off between speed and accuracy.</p>
+	            <p>See the options and their descriptions below.</p>
+	         </stack>
+	         <image source="images/hiddensurfacemodemenu.png"><description>Hidden Surface Mode submenu</description></image>
+	      </sidebyside>
+	      <p><dl width="narrow">
+             <li><title>Array Depthsort:</title>
+                 <p>This is the default hidden surface mode as it is the least time and memory intensive mode.  It uses a depth sort on arrays of polygons and other objects, minimizing the memory used and the time taken to process the view.</p>
+                 <p>It is great for morphing surfaces that use parameters, e.g., level surfaces, but it does not handle intersections of surfaces well.</p>
+             </li>
+             <li><title>Array Depthsort Tri.:</title>
+                 <p>This mode is the same as the previous mode, except that it triangularizes each polygon.  That is, if it was not a triangle already, it is broken into four triangles using its midpoint.  This will produce an improved surface rendering, but will be slower than the non-triangularized mode, as it uses a lot more polygon arrays.</p>
+                 <p>This mode also morphs well, but does not handle surface intersections well.</p>
+             </li>
+             <li><title>BSP Tree:</title>
+                 <p>This mode will automatically be selected if two intersecting surfaces are plotted together, as it handles surface intersections fairly well, and is still not overly slow.</p>
+                 <p>It is generated using objects rather than arrays and uses a Binary Space Partitioning Tree to order the collection of polygon faces in the view.  A first face is selected using some criteria and then the rest of the faces are divided into a collection of faces that are in front of the chosen face and those that are behind it.  Any faces that are partly in front and partly behind this dividing face are split into two polygons (one of which is in front of the chosen face and one that is behind it).  This process is then repeated on the front collection of faces and the back collection of faces.  Once all faces (and other objects) are organized in this way, we draw the back collection first, then the splitting face and then the front collection, using what is often called the "Painter's Algorithm".</p>
+             </li>
+             <li><title>BSP Tree Triangulated:</title>
+                 <p>This mode uses a BSP Tree after first triangularizing each polygonal face.  That is, if any polygon is not already a triangle, it will be split into 4 triangles using its midpoint (and calculating the correct <m>z</m>-coordinate for the midpoint).</p>
+                 <p>This is the most accurate 3D rendering mode, but it also will take the most time to process initially and will generate the most extra polygons, so it will rotate more slowly.</p>
+                 <p>It provides the nicest rendering of self-intersecting surfaces or of plots containing two or more intersecting surfaces.</p>
+             </li>
+             <li><title>Object Depth Sort:</title>
+                 <p>This mode uses a depth sort using an object model.  It is therefore very similar to the Array Depthsort, but may use a little more memory and be somewhat slower than the Array Depthsort mode.</p>
+             </li>
+             <li><title>Object Depth Sort Tri.:</title>
+                 <p>This uses the same depthsort and object model as the previous mode, but it first triangularizes any non-triangular faces.</p>
+             </li>
+	      </dl></p>
+	   </subsection>
+	   <subsection xml:id="subsection-twoviews">
+	   	  <title>Show two views</title>
+	   	  <p>Select this option if you want to have two linked or unlinked 3D views containing related plots.</p>
+	   	  <sidebyside widths="60% 40%">
+	   	     <p>When this option is selected, a new option will appear on the Surface Settings for each surface, allowing you to specify in which view(s) you want it to appear.  For more information on this see <xref ref="subsection-twoviewsdropdown"/> on the Surface Settings help page.</p>
+	   	     <image source="images/twoviewsdropdown.png"><description>two views dropdown</description></image>
+	   	 </sidebyside>
+	   </subsection>
+ <!--   </dl></p>  -->
 </section>
 <section xml:id="section-examplesmenu">
 	<title>*Examples menu</title>
@@ -1427,7 +1545,7 @@
 
 <chapter>
     <title>Exploring Multivariable Calculus</title>
-        <section>
+        <section xml:id="section-vectorexplorations">
 	         <title>*Vector Explorations</title>
 	         <p></p>
 	    </section>
