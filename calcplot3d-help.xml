@@ -1530,9 +1530,64 @@
 	   	  <title>Show two views</title>
 	   	  <p>Select this option if you want to have two linked or unlinked 3D views containing related plots.</p>
 	   	  <sidebyside widths="60% 40%">
-	   	     <p>When this option is selected, a new option will appear on the Surface Settings for each surface, allowing you to specify in which view(s) you want it to appear.  For more information on this see <xref ref="subsection-twoviewsdropdown"/> on the Surface Settings help page.</p>
+	   	     <p>When this option is selected, a new option will appear on the Surface Settings for each surface (and eventually also on the settings for other objects too), allowing you to specify in which view(s) you want it to appear.  For more information on this see <xref ref="subsection-twoviewsdropdown"/> on the Surface Settings help page.</p>
 	   	     <image source="images/twoviewsdropdown.png"><description>two views dropdown</description></image>
-	   	 </sidebyside>
+	   	  </sidebyside>
+	   	  <p>Although this mode looks a lot like the Stereo View 3D mode, it is not rendering the two views from a different perspective this time, but exactly the same.  It allows related plots to be displayed next to each other with the same viewpoint.</p>
+	   </subsection>
+	   <subsection xml:id="subsection-unlinktwoviews">
+	   	  <title>Unlink two views</title>
+	   	  <p>This option is not yet implemented, but it is intended to allow the two parallel views without requiring them to rotate with the same viewpoint.</p>
+	   </subsection>
+	   <subsection xml:id="subsection-setviewpoint">
+	   	  <title>Set Viewpoint</title>
+	   	  <p>This option allows you to enter a specified viewpoint for the 3D plot using either Cartesian or Spherical coordinates.</p>
+	   	  <sidebyside widths="60% 40%">
+	   	     <p>When this option is selected, a dialog will appear asking you which coordinate system you wish to use to specify the viewpoint.</p>
+	   	     <image source="images/viewpointcartspher.png"><description>viewpoint coordinate system dialog</description></image>
+	   	  </sidebyside>
+	   	  <p>Depending on which selection you make you will see a different series of dialogs asking you to specify the viewpoint.</p>
+	   	  <p><m>\Large\textbf{Cartesian Coordinates:}</m> If you select <alert>Cartesian</alert>, you will be asked for viewpoint coordinates (the coordinates of the point where you wish the user's eye to be, viewing the focus point of the plot) and the components of the up direction (as a vector).</p>
+	   	  <p>These dialogs are shown in the figure below.</p>
+	   	  <figure xml:id="figure-viewpointdialogs-cartesian">
+	   	  	 <caption>Dialogs shown for entering a viewpoint in Cartesian coordinates.</caption>
+	   	     <sidebyside widths="50% 50%">
+	   	     	<image source="images/viewpointcartcoords.png"><description>viewpoint point dialog</description></image>
+	   	     	<image source="images/upcoords.png"><description>viewpoint up vector dialog</description></image>
+	   	     </sidebyside>
+	   	  </figure>
+	   	  <p>If you wish to change the focus point, see the <alert>Format Axes</alert> help page in <xref ref="section-formataxes"/>.</p>
+	   	  <p><m>\Large\textbf{Spherical Coordinates:}</m> If you select <alert>Spherical</alert>, you will be asked for the eye distance from the focus point, the angle theta, and the angle phi, as well as the components of the up direction (as a vector).</p>
+	   	  <p>These dialogs are shown in the figure below.</p>
+	   	  <figure xml:id="figure-viewpointdialogs-spherical">
+	   	  	 <caption>Dialogs shown for entering a viewpoint in Spherical coordinates.</caption>
+	   	  	 <sbsgroup>
+		   	     <sidebyside widths="50% 50%">
+		   	     	<image source="images/viewpointeyedistance.png"><description>spherical viewpoint eye distance dialog</description></image>
+		   	     	<image source="images/viewpointtheta.png"><description>spherical viewpoint theta dialog</description></image>
+		   	     </sidebyside>
+		   	     <sidebyside widths="50% 50%">
+		   	     	<image source="images/viewpointphi.png"><description>spherical viewpoint phi dialog</description></image>
+		   	     	<image source="images/upcoords.png"><description>viewpoint up vector dialog</description></image>
+		   	     </sidebyside>
+	   	     </sbsgroup>
+	   	  </figure>
+	   </subsection>
+	   <subsection>
+	   	  <title>Reset 3D View</title>
+	   	  <p>Resets the 3D plot's viewpoint to the default 3D view from the 1st octant.</p>
+	   </subsection>
+	   <subsection>
+	   	  <title>View above <m>xy</m>-plane</title>
+	   	  <p>Sets the 3D plot's viewpoint to be from a point on the <m>z</m>-axis above the <m>xy</m>-plane with the <m>y</m>-axis being in the up-direction.  This option does not alter whether the view is projected in parallel or perspective mode.</p>
+	   </subsection>
+	   <subsection>
+	   	  <title>View above <m>xz</m>-plane</title>
+	   	  <p>Sets the 3D plot's viewpoint to be from a point on the <m>y</m>-axis above the <m>xz</m>-plane with the <m>z</m>-axis being in the up-direction.  This option does not alter whether the view is projected in parallel or perspective mode.</p>
+	   </subsection>
+	   <subsection>
+	   	  <title>View above <m>yz</m>-plane</title>
+	   	  <p>Sets the 3D plot's viewpoint to be from a point on the <m>x</m>-axis above the <m>yz</m>-plane with the <m>z</m>-axis being in the up-direction.  This option does not alter whether the view is projected in parallel or perspective mode.</p>
 	   </subsection>
  <!--   </dl></p>  -->
 </section>
