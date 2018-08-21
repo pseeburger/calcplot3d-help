@@ -1391,18 +1391,22 @@
 
 
 <chapter>
-<title>*CalcPlot3D Menus <ampersand /> Options</title>
+<title>CalcPlot3D Menus <ampersand /> Options</title>
 <introduction>
    <sidebyside widths="90% 7%">
-   <p>This chapter explains how to use each of the options on CalcPlot3D's main menu.  
-   To access this main menu, click or tap on the menu icon located at the upper left corner of the app, on the green bar.
-   It looks like the image to the right.</p>
+   	<stack>
+	   <p>This chapter explains how to use each of the options on CalcPlot3D's main menu.  
+	   To access this main menu, click or tap on the menu icon located at the upper left corner of the app, on the green bar.
+	   It looks like the image to the right.</p>
+	   <p>To hide the main menu, either click on the <alert>X</alert> in the upper-righthand corner of the menu or click somewhere in the app outside of the menu system.</p>
+	   <p>To hide a main submenu, you'll need to click the submenu name again or click on another submenu.</p>
+   </stack>
    <image width="50%" source="images/mainmenu.png"><description>App Main Menu icon</description></image>
    </sidebyside>
 </introduction>
 <section xml:id="section-filemenu">
 	<title>File menu</title>
-	<introduction><sidebyside widths="50%">
+	<introduction><sidebyside widths="40%">
 		<image source="images/filemenu.png"><description>File menu</description></image>
 	</sidebyside></introduction>
 	<subsection xml:id="subsection-viewvectorexplorations">
@@ -1429,8 +1433,40 @@
 	</subsection>
 </section>
 <section xml:id="section-scriptsmenu">
-	<title>*Scripts menu</title>
-	<p></p>
+	<title>Scripts menu</title>
+	<introduction>
+        <p>When a script is not yet loaded or created in CalcPlot3D, most of the script menu options are greyed out.</p>
+		<sidebyside widths="40%">
+		   <image source="images/scriptsmenu.png"><description>Scripts menu</description></image>
+	    </sidebyside>
+        <p>But once a script has been loaded or created, all script options are available.</p>
+        <sidebyside widths="40%">
+		   <image source="images/scriptsmenuactive.png"><description>active scripts menu</description></image>
+	    </sidebyside>
+    </introduction>
+	<subsection>
+		<title>Load a script</title>
+		<p>This menu option allows you to load any script created using CalcPlot3D from your local filesystem.</p>
+	</subsection>
+	<subsection>
+		<title>Create new script with current plot as 1st step</title>
+		<p>This option allows you to create a new script with the current view in the 3D plot of CalcPlot3D as the first step.</p>
+		<p>You will be asked for the script name.  This script name will be used as the filename when you save this script using the <alert>Save script</alert> option described below.</p>
+	</subsection>
+	<subsection>
+		<title>Add current view to active script</title>
+		<p>This option just adds the current view in CalcPlot3D to the active script in CalcPlot3D.  If there is no active script in CalcPlot3D, then this option should be greyed out as unavailable.</p>
+	</subsection>
+	<subsection>
+		<title>Delete a step in the active script</title>
+		<p>This option allows you to delete any step in the active script in CalcPlot3D.  If there is no active script in CalcPlot3D, then this option should be greyed out as unavailable.</p>
+	</subsection>
+	<subsection>
+		<title>Save script</title>
+		<p>Once you have created a script or loaded one into the app, you can save it to your computer using this option.  In fact, if you don't save it using this option, you will lose any steps you have added to the script when you close the exploration, reset the app, close the app, or close the browser.</p>
+		<p>You will be asked for a filename and then the script should be downloaded to your computer using the default download behavior of your browser.</p>
+		<p>Any scripts that you save in this way can then be loaded back into CalcPlot3D using the <alert>Load a script</alert> menu option described above.</p>
+	</subsection>
 </section>
 <section xml:id="section-printplot">
 	<title>Print Plot option</title>
@@ -1446,7 +1482,7 @@
 </section>
 <section xml:id="section-3doptions">
 	<title>3D Options menu</title>
-	<sidebyside widths="50%">
+	<sidebyside widths="40%">
 		<image source="images/3doptionsmenu.png"><description>3D Options menu</description></image>
 	</sidebyside>
 	<p><dl>
@@ -1592,9 +1628,16 @@
  <!--   </dl></p>  -->
 </section>
 <section xml:id="section-examplesmenu">
-	<title>*Examples menu</title>
-	<p></p>
-</section>
+	<title>Examples menu</title>
+	<sidebyside widths="40%">
+		<image source="images/examplesmenu.png"><description>Examples menu</description></image>
+	</sidebyside>
+	<p>You can select any of the categories shown on this submenu.  Selecting one should open another submenu that lists a series of examples for that type of surface object.</p>
+	<sidebyside widths="95% 5%">
+		<p>To exit one of these example submenus to the Example menu again, simply click on the sideways chevron in the upper-righthand corner of the submenu list.</p>
+		<image source="images/backchevron.png"><description>back chevron</description></image>
+	</sidebyside>
+</section> 
 </chapter>
 
 
