@@ -1734,9 +1734,88 @@
 	         <p></p>
 	    </section>
 	    <section>
-	         <title>*Intersections of General Surfaces</title>
+	         <title>Intersections of General Surfaces</title>
 	         <idx><h>intersection</h><h>of any two surfaces</h></idx>
-	         <p></p>
+             <exploration xml:id="exploration-surface-intersections1">
+                <statement>
+                    <p>Determine the vector-valued function that traces out the intersection of the surfaces defined by the equations below using the parameter <m>t</m>.</p>
+					<p><me>z = x^2 + y^2\quad\text{and}\quad y=x^2</me></p>
+					<p>State the answer as a vector-valued function.  Then visually verify this result, plotting the two surfaces in CalcPlot3D, and then plotting the curve to check that it really does represent the intersection of these two surfaces.</p>
+                </statement>
+				<answer>
+					<p>Here we can let <m>x=t</m>.  Then <m>y=t^2</m>.  What does <m>z</m> equal (as a function of <m>t</m>)?</p>
+				    <p>Then the vector-valued function we obtain that traces out the intersection of these surfaces is:</p>
+					<p><me>\vec{\textbf{r}}(t) = t \hat{\textbf{i}} + t^2 \hat{\textbf{j}} + (t^2 + t^4) \hat{\textbf{k}}</me></p>
+				    <p>This represents the same curve as specified by the parametric functions:<md>
+						<mrow>x &amp;= t</mrow>
+						<mrow>y &amp;=t^2</mrow>
+						<mrow>z &amp;=t^2 + t^4</mrow>
+                    </md></p>
+                    <p>Now let’s verify this in CalcPlot3D visually!</p>
+                    <p>a. Open the <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/">CalcPlot3D app</url>.</p>
+                    <p>b. Once the app is loaded and active, enter the first function listed above (<m>z =</m> <c>x^2 + y^2</c>) in the default function object on the left and press Enter (or click on the Graph button). The surface plot of this paraboloid should appear in the plot window.</p>
+                    <p>c. Now, to enter the second function, go to the <alert>Add to graph</alert> dropdown menu (just above the default function), and select <alert>Function: y = f (x, z)</alert>. This will set the function to y = 1 by default. Enter <c>x^2</c> in the textbox and press Enter (or use the Graph button).</p>
+                    <p>d. To extend the second surface farther up the paraboloid, change the range of <m>z</m> (just below y = x^2) to go from -2 to 4. You may want to use the scroll-wheel on the mouse to zoom-out a little. [Alternatively you could click on the <c>Format Axes</c> button located just to the right of the <c>3D Mode</c> button. Then set <m>z</m>-max to 4. This will automatically change the <alert>upper <m>z</m>-clip</alert> value to 8. Let’s change this value to 4 also.]</p>
+                    <p>e. Make the surfaces semi-transparent using the button or by typing the <c>T</c> key to get a clearer view of the intersection of the surfaces. Press the <c>E</c> key to turn off the edges on the surfaces.</p>
+                    <p>f. Next we need to graph the space curve to see how well it fits the intersection of the surfaces. Select <c>Space Curve: r(t)</c> from the <alert>Add to graph</alert> dropdown menu.  A space curve object should appear just below this menu.</p>
+                    <p>Enter the three parametric equations we obtained (each in terms of <m>t</m>). Then enter a range of -2 to 2. If you press Enter on the second value, it should produce the curve on the plot. If it does not appear, click the <c>Graph</c> button.</p>
+                    <p>g. I like the look of this one better with a constant color, so select the checkbox titled <alert>Use Constant Primary Color</alert>, at the bottom of this object.</p>
+                    <p>h. Finally rotate the graph to see if it looks like we found the correct intersection curve. Except for different coloring, this should look like the image in <xref ref="figure-intersection1"/> below.</p>
+
+                    <figure xml:id="figure-intersection1">
+						<caption>Intersection of the surfaces <m>z = x^2 + y^2\quad\text{and}\quad y=x^2</m>.</caption>
+						<image width="50%" source="images/intersection1.png"><description>Intersection of two surfaces</description></image>
+				    </figure>
+				</answer>
+            </exploration>
+            <exploration xml:id="exploration-surface-intersections2">
+                <statement>
+                    <p>Determine the vector-valued function that traces out the intersection of the surfaces defined below, assuming that <m>y = 2\sin t</m>.</p>
+					<p><me>2x^2 + y^2=4\quad\text{and}\quad z = x^2 + y^2</me></p>
+					<p>State the answer as a vector-valued function.  Then visually verify the result, plotting the two surfaces in CalcPlot3D, and then plotting the curve to check that it really does represent the intersection of these two surfaces.</p>
+                </statement>
+				<answer>
+					<p>Note that we can parameterize the ellipse given by the first equation with</p>
+					<p><me>x = \sqrt{2}\cos t \quad\text{and}\quad y = 2\sin t</me>.</p>
+					<p>Now that we've parameterized <m>x</m> and <m>y</m>, the second surface equation makes it easy to determine <m>z</m> in terms of <m>t</m>.</p>
+					<p>After simplifying the expression, we obtain, <m>z = 2 + 2\sin^2 t</m>.</p>
+				    <p>Then the vector-valued function we obtain that traces out the intersection of these surfaces is:</p>
+					<p><me>\vec{\textbf{r}}(t) = \sqrt{2}\cos t \hat{\textbf{i}} + 2\sin t \hat{\textbf{j}} + (2 + 2\sin^2 t) \hat{\textbf{k}}</me></p>
+				    <p>This represents the same curve as specified by the parametric functions:<md>
+						<mrow>x &amp;= \sqrt{2}\cos t</mrow>
+						<mrow>y &amp;= 2\sin t</mrow>
+						<mrow>z &amp;= 2 + 2\sin^2 t</mrow>
+                    </md></p>
+                    <p>Now let’s verify this in CalcPlot3D visually!</p>
+                    <p>a. Open the <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/">CalcPlot3D app</url>.</p>
+                    <p>b. Once the app is loaded and active, enter the second function listed above (z = x2 + y2) in the default function object on the left and press Enter (or click on the Graph button). The surface plot of this paraboloid should appear in the plot window.</p>
+                    <p>c. Now, to enter the first function, which is stated implicitly, go to the <alert>Add to graph</alert> dropdown menu (just above the default function), and select <alert>Implicit Surface</alert>. Once this new object definition appears on the left, enter the implicit equation defining the first surface in the textbox and press Enter (or use the Graph button).  This surface should look like an elliptic cylinder.</p>
+                    <p>d. To make the intersection more clear, let's first zoom out once using the <c>Zoom-out</c> button, so the <m>x</m>- and <m>y</m>-axes run from -4 to 4 instead of from -2 to 2. Now click on the <c>Format Axes</c> button located just to the right of the <c>3D Mode</c> button, and set the <alert>upper <m>z</m>-clip</alert> to 4.</p>
+                    <p>e. Next make the surfaces semi-transparent using the transparency button or by typing the <c>T</c> key to get a clearer view of the intersection of the surfaces. Press the <c>E</c> key to turn off the edges on the surfaces.</p>
+                    <p>f. Next we need to graph the space curve to see how well it fits the intersection of the surfaces. Select <c>Space Curve: r(t)</c> from the <alert>Add to graph</alert> dropdown menu.  A space curve object should appear just below this menu.</p>
+                    <p>Enter the three parametric equations we obtained (each in terms of <m>t</m>).</p>
+                    <p>You will enter them like this:<md>
+						<mrow>x &amp;= \textbf{sqrt(2)cos(t)}</mrow>
+						<mrow>y &amp;= \textbf{2sin(t)}</mrow>
+						<mrow>z &amp;= \textbf{2 + 2(sin(t))^2}</mrow>
+                    </md></p>
+                    <p>g. Now enter a range of 0 to <m>2\pi</m>. If you press Enter on the second value, it should produce the curve on the plot. If it does not appear, click the <c>Graph</c> button.</p>
+                    <p>I also like the look of this one better with a constant color, so select the checkbox titled <alert>Use Constant Primary Color</alert>, at the bottom of this object.</p>
+                    <p>h. Finally rotate the graph to see if it looks like we found the correct intersection curve. This should look like the image in <xref ref="figure-intersection2"/> below.</p>
+
+                    <p>Notice that the intersection of these two surfaces may appear a little polygonal rather than smooth like the curve we just graphed.  This is because we used an implicit surface with the default resolution.  To improve this resolution, you can adjust the <alert># Cubes/axis</alert> to a higher number, like 25.  See the result in <xref ref="figure-intersection2b"/>.</p>
+                    <sidebyside widths="50.5% 49.5%">
+	                    <figure xml:id="figure-intersection2">
+							<caption>Intersection of the surfaces <m>2x^2 + y^2=4\quad\text{and}\quad z = x^2 + y^2</m>.</caption>
+							<image width="50%" source="images/intersection2.png"><description>Intersection of two surfaces</description></image>
+					    </figure>
+					    <figure xml:id="figure-intersection2b">
+							<caption>Intersection of the surfaces <m>2x^2 + y^2=4\quad\text{and}\quad z = x^2 + y^2</m>, using a higher resulution on the implicit surface.</caption>
+							<image width="50%" source="images/intersection2b.png"><description>Intersection of two surfaces</description></image>
+					    </figure>
+				    </sidebyside>
+				</answer>
+            </exploration>
 	    </section>
         <section xml:id="section-contourplots">
 	         <title>*Contour Plots</title>
