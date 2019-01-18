@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <mathbook>
 
 <docinfo>
@@ -16,7 +16,7 @@
 <frontmatter xml:id="index">
 <titlepage>
 	<author>
-	  <personname>Paul Seeburger</personname>
+	  <personname>Paul Seeburger, with support from the NSF under grant, DUE-IUSE 1524968</personname>
 	  <department>Professor of Mathematics</department>
 	  <institution>Monroe Community College</institution>
 	  <email>pseeburger@monroecc.edu</email>
@@ -423,7 +423,7 @@
 	       <li><sidebyside widths="7% 85%"><image width="7%" source="images/contourplotbutton.png"><description>Contour plot button</description></image>
 			   <p>Use the contour plot button to create a contour plot for this surface.  For more details on Contour Plots see <xref ref="section-contourplots" />.</p>
 	       </sidebyside></li>
-	       <li>Use the settings button, ⚙, to adjust surface settings.  For a discussion of the options, see <xref ref="section-surfacesettings" />.</li>
+	       <li>Use the settings button <c>⚙</c><m>\faGear</m> to adjust surface settings.  For a discussion of the options, see <xref ref="section-surfacesettings" />.</li>
 	       </ul></p>
         </subsection>
         <subsection>
@@ -459,7 +459,7 @@
 				 <sidebyside widths="75%">
 					  <image width="70%" source="images/functionfthetaz.png"><description>Function r = f(θ,z) object</description></image>
 				 </sidebyside>
-				 <p>To enter <m>\theta</m> in your functions, you can either enter <c>theta</c> or click the <c>θ</c> button in the middle of the range for theta.</p>
+				 <p>To enter <m>\theta</m> in your functions, you can either enter <c>theta</c> or click the <m>\theta</m> button in the middle of the range for theta.</p>
 				 <p>Note that the ranges for <m>\theta</m> and <m>z</m> will not update for this type of function when you zoom in or out using the zooming buttons.</p>
 				 <p>The number of steps in each domain is important in determining the resolution of the cylindrical surface.</p>
 	          </li>
@@ -511,7 +511,7 @@
 		</introduction>
 		<subsection>
 		   <title>Space Curve Settings, ⚙</title>
-		   <p>Clicking on the settings button, ⚙, will open up the following menu.</p>
+		   <p>Clicking on the settings button ⚙ will open up the following menu.</p>
 		   <sidebyside widths="40%">
 		      <image width="50%" source="images/spacecurvesettings.png"><description>Space Curve settings</description></image>
 		   </sidebyside>
@@ -761,10 +761,10 @@
 	   <p>The number of cubes per axis tells CalcPlot3D how many cubes to use in the marching cubes algorithm that is used to
 	   approximate the implicit surface.  As this value gets larger, the surface will look more and more smooth,
 	   but it will also take longer and longer to generate and even to rotate.</p>  
-	   <p>Use the settings button, ⚙, to adjust surface settings.  For a discussion of the options, see <xref ref="section-surfacesettings" />.</p>
+	   <p>Use the settings button <c>⚙</c> to adjust surface settings.  For a discussion of the options, see <xref ref="section-surfacesettings" />.</p>
 	   <p></p>
 	   <p>Parameters are a great option to use with implicit surfaces.  
-	   See the <alert>Solution, Method 2</alert> in the section on Level Surfaces in <xref ref="section-levelsurfaces"/>.</p>
+	   See the <alert>Solution, Method 2</alert> in the section on Level Surfaces in <xref ref="section-levelsurfaces" />.</p>
 	</section>
 
 	<section xml:id="section-parametric-surfaces">
@@ -797,7 +797,7 @@
 	   <p></p>
 	   
 	   
-	   <p>Use the settings button, ⚙, to adjust surface settings.  For a discussion of the options, see <xref ref="section-surfacesettings" />.</p>
+	   <p>Use the settings button <c>⚙</c> to adjust surface settings.  For a discussion of the options, see <xref ref="section-surfacesettings" />.</p>
 	   <p></p>
 	   <p><em>The last option is not yet implemented.  It is intended to allow 4th dimensional parametric surfaces to be visualized, but it has not yet been worked out.</em></p>
 	   
@@ -985,7 +985,7 @@
 	       that are relevant here.  As above, just select the option to <em>Show Riemann Prisms</em>.  
 	       The dialog will extend as before giving you the same options. See <xref ref="figure-regiondialogpolarprism"/>.
 	       The only difference is that the bases of the prisms are not rectangles in the normal sense.
-	       They are "polar rectangles" instead.  See the bases of the prisms in <xref ref="figure-2dregionpolarprisms"/>.</p>
+	       They are <q>polar rectangles</q> instead.  See the bases of the prisms in <xref ref="figure-2dregionpolarprisms"/>.</p>
 		   <sidebyside widths="50% 50%">
 		      <figure xml:id="figure-regiondialogpolarprism">
 				 <caption>Polar region dialog with polar prism options visible</caption>
@@ -1049,7 +1049,7 @@
 		<subsection xml:id="subsection-parameter-settings">
 		   <title>Parameter Settings,  ⚙</title>
 		   <idx><h>parameters</h><h>settings</h></idx>
-		   <p>If you click on the settings button ⚙ on a slider object, you will see the following menu.</p>
+		   <p>If you click on the settings button <c>⚙</c> on a slider object, you will see the following menu.</p>
 		   <sidebyside widths="50%">
 		       <image source="images/slidersettings.png"><description>slider settings menu</description></image>
 		   </sidebyside>
@@ -1085,7 +1085,7 @@
 		   <idx><h>parameters</h><h>ways to use</h></idx>
 		   <p><ul>
 		       <li><p><alert>To show function transformations:</alert></p>
-		          <p>Example:  Enter <alert>z = c(x-a)^2 + d(y-b)^2 + t</alert></p>
+		          <p>Example:  Enter <c>z = c(x-a)^2 + d(y-b)^2 + t</c></p>
 		          <p>Varying the various parameters will then show how the paraboloid is transformed.
 		          <dl width="narrow">
 		              <li><title>a</title><p>shifts paraboloid <m>a</m> units in the positive <m>x</m>-direction</p></li>
@@ -1122,7 +1122,7 @@
                	   <caption>Cycloid animation objects</caption>
                	   <image width="100%" source="images/cycloidanimation.png"><description>cycloid animation objects</description></image>
                </figure>
-               <p>The bottom object is the Label object stating that "This is a Cycloid Example."</p>
+               <p>The bottom object is the Label object stating that <q>This is a Cycloid Example.</q></p>
                <p>The middle object is the red cycloid curve in parametric form.</p>
                <p>Finally, the first object is the one we will animate using the parameter <c>a</c>.  It is a circle that is animated to show it rolling along the <m>x</m>-axis to trace out the cycloid curve.  To make it look more like it is rolling, we have left the color to vary in hue as it would for a 3D space curve.  We also forced the point to appear on the circle (that traces out the cycloid) by entering a trace value of <m>t = 0</m> and selecting the Trace checkbox on this space curve object.  Click on this dialog to see this.</p>
                <p>To animate this circle to roll along the <m>x</m>-axis and trace out the cycloid curve, click the <alert>Animate</alert> button on the <c>a</c> parameter slider.</p> 
@@ -1169,7 +1169,7 @@
 			<image width="50%" source="images/surfacesettings.png"><description>Surface Settings Menu</description></image>
 			</sidebyside>
 
-			<p>You can find this settings menu by clicking on the settings button, ⚙, for the surface object whose settings you wish to adjust.</p>
+			<p>You can find this settings menu by clicking on the settings button <c>⚙</c> for the surface object whose settings you wish to adjust.</p>
 			<p>Using these settings, you can then adjust these formatting options for this surface only, leaving settings for other surfaces unaffected.</p>
 		</introduction>
 		<subsection>
@@ -1485,8 +1485,8 @@
 	<sidebyside widths="40%">
 		<image source="images/3doptionsmenu.png"><description>3D Options menu</description></image>
 	</sidebyside>
-	<p><dl>
-		<li width="narrow">
+	<p><dl width="narrow">
+	<li>
 		<title>Standard Projection:</title>
 		<p>This is the default view.  No 3D glasses special viewing techniques are required.</p>
 	</li>
@@ -1547,7 +1547,7 @@
              </li>
              <li><title>BSP Tree:</title>
                  <p>This mode will automatically be selected if two intersecting surfaces are plotted together, as it handles surface intersections fairly well, and is still not overly slow.</p>
-                 <p>It is generated using objects rather than arrays and uses a Binary Space Partitioning Tree to order the collection of polygon faces in the view.  A first face is selected using some criteria and then the rest of the faces are divided into a collection of faces that are in front of the chosen face and those that are behind it.  Any faces that are partly in front and partly behind this dividing face are split into two polygons (one of which is in front of the chosen face and one that is behind it).  This process is then repeated on the front collection of faces and the back collection of faces.  Once all faces (and other objects) are organized in this way, we draw the back collection first, then the splitting face and then the front collection, using what is often called the "Painter's Algorithm".</p>
+                 <p>It is generated using objects rather than arrays and uses a Binary Space Partitioning Tree to order the collection of polygon faces in the view.  A first face is selected using some criteria and then the rest of the faces are divided into a collection of faces that are in front of the chosen face and those that are behind it.  Any faces that are partly in front and partly behind this dividing face are split into two polygons (one of which is in front of the chosen face and one that is behind it).  This process is then repeated on the front collection of faces and the back collection of faces.  Once all faces (and other objects) are organized in this way, we draw the back collection first, then the splitting face and then the front collection, using what is often called the <q>Painter's Algorithm</q>.</p>
              </li>
              <li><title>BSP Tree Triangulated:</title>
                  <p>This mode uses a BSP Tree after first triangularizing each polygonal face.  That is, if any polygon is not already a triangle, it will be split into 4 triangles using its midpoint (and calculating the correct <m>z</m>-coordinate for the midpoint).</p>
@@ -1644,13 +1644,115 @@
 <chapter>
     <title>Exploring Multivariable Calculus</title>
         <section xml:id="section-vectorexplorations">
-	         <title>*Vector Explorations</title>
-	         <p></p>
+	         <title>Vector Explorations</title>
+	         <p>Much of multivariable calculus depends, to some degree, on a clear understanding of vectors.  To address the geometric nature of vectors and help students to explore the geometric significance of vectors operations, a special mode exists in CalcPlot3D titled, <alert>Vector Operations</alert>.</p>
+	         <sidebyside widths="60% 40%">
+		         <p>To access these Vector Explorations, open the main menu ☰ and select the <alert>View Vector Explorations</alert> option on the <alert>File</alert> menu.</p>
+		         
+		         <image source="images/viewvectorexplorationsmenu.png"><description>vector exploration menu option</description></image>
+		     </sidebyside>
+		     <p>Once it is open, you should see the following view of the app, showing the 2D Trace Plot on the left and the Vector Exploration control panel just below it, with a dashed green border.</p>
+	         <figure xml:id="figure-vectorexp-default">
+	         	<caption>Vector Explorations default view</caption>
+	         	<image source="images/vectors-anglebetweendefault.png"><description>vector explorations default view</description></image>
+	         </figure>
+	         <p><m>\Large\textbf{General Options:}</m></p>
+	         <p>In each exploration, you can adjust the red and blue vectors by clicking and dragging the tip of either vector.</p>
+	         <p>By default, the two vectors are fixed with a length of 2.  This allows for the geometric significance of some of the vector operations to be more clear.</p>
+	         <p>However, you can choose instead to free the vectors (clicking on <alert>Free vectors</alert>), so that you can adjust the lengths of each one to see the effect.  Note that when you select this option, a new panel will open below allowing you to vary the components of each vector using a textbox or slider.</p>
+	         <p>The Common Vertex is <m>(0, 0, 0)</m>, by default.  Eventually this vertex will be able to be changed, but not yet.</p>
+	         <p>By default, there are gridlines shown in the <m>xy</m>-plane to help make vectors in the <m>xy</m>-plane more clear.  Deselect the option <alert>Show <m>xy</m>-gridlines in 3D plot</alert> to hide these gridlines.  They may be distracting when viewing the vectors in 3D.</p>
+	         <p>By default, the two vectors are kept in the <m>xy</m>-plane, but you can explore the two vectors in 3D by selecting the option to <alert>Vary vectors in 3D</alert>, as you can see in <xref ref="figure-anglebetween3d"/>.</p>
+	         <figure xml:id="figure-anglebetween3d">
+	         	<caption>Showing the angle between two 3D vectors</caption>
+	         	<image source="images/vectors-anglebetween3d.png"><description>The angle btween two 3D vectors</description></image>
+	         </figure>
+	         <p>Note that the vectors in the 2D trace plot show only the projections of the red and blue vectors onto the <m>xy</m>-plane, while the 3D plot shows the 3D vectors.  Dashed lines help to emphasize the 3D location of the tip of each vector.</p>
+	         <p>Also note that several new options are provided when <alert>Vary vectors in 3D</alert> is selected.
+	         <dl width="medium">
+	         	<li><title><m>z</m>-coordinate sliders</title>
+	         	    <p>These allow you to vary the <m>z</m>-coordinates of the red and blue vectors.</p>
+	         	</li>
+	         	<li><title>Show dashed support lines in 3D</title>
+	         	    <p>Displayed by default to help visualize the 3D nature of each 3D vector.</p>
+	         	</li>
+	         	<li><title>Vary <m>z</m> on sphere using <m>xy</m>-plane</title>
+	         	    <p>This option allows for you to vary the vectors on the 2D trace plane forcing the vectors to have a common length in 3D.  When this option is not checked, clicking and dragging either red or blue vector in the 2D trace plane only affects the <m>x</m>- and <m>y</m>-components of the vector, leaving the <m>z</m>-component unchanged.</p>
+	         	</li>
+	         </dl></p>
+	         <p>Note that some additional options will be provided in some of the explorations described below.  These will be described below, where available.</p>
+
+	         <p><m>\Large\textbf{List of Vector Explorations:}</m></p>
+	         <sidebyside widths="60% 40%">
+	         	<p>Clicking on the Vector Explorations dropdown menu allows you to select which vector operation to explore.</p>
+	         	<image source="images/vectorexplorationsmenu.png"><description>Vector Explorations Menu</description></image>
+	         </sidebyside>
+	         <p><dl width="narrow">
+	         	<li><title>default mode:</title>
+                    <p>When the vector explorations mode is first selected (or when the dropdown option <q>Vector Explorations...</q> is selected), no particular vector operation is selected and the user can simply explore the two vectors using the various available options.</p>
+                    <figure xml:id="figure-vectors-anglebetween">
+                    	<caption>Exploring the angle between two vectors</caption>
+                    	<image source="images/vectors-anglebetween.png"><description>vectors-angle between</description></image>
+                    </figure>
+	            </li>
+	            <li><title>Vector Sum:</title>
+                    <p>Selecting the <alert>Vector Sum</alert> exploration displays not only the red and blue vectors, but also the resultant vector obtained by adding the blue vector to the red vector.  Additionally a copy of the blue vector is placed so its tail rests at the tip of the red vector to demonstrate the tail-to-tip method of adding vectors geometrically.</p>
+                    <figure xml:id="figure-vectors-vectorsum">
+                    	<caption>Exploring the sum of two vectors</caption>
+                    	<image source="images/vectors-vectorsum.png"><description>vectors-sum</description></image>
+                    </figure>
+	            </li>
+	            <li><title>Vector Difference:</title>
+                    <p>Similarly, the Vector Difference exploration displays the geometric interpretation of the differnce of two vectors.  Since there are at least two ways to think of this, two options are given in this mode, allowing both to be explored visually.</p>
+                    <p><alert>Option 1</alert> displays the most useful interpretation of a vector difference, showing its tail at the tip of the vector being subtracted and its tip at the tip of the vector coming first in the difference.  That is, the vector <m>\overset{\rightharpoonup}{\mathbf v} - \overset{\rightharpoonup}{\mathbf u}</m> will go from the tip of vector <m>\overset{\rightharpoonup}{\mathbf u}</m> to the tip of vector <m>\overset{\rightharpoonup}{\mathbf v}</m>.</p>
+                    <figure xml:id="figure-vectors-difference1">
+                    	<caption>Exploring the difference of two vectors</caption>
+                    	<image source="images/vectors-difference1.png"><description>vectors-difference, option 1</description></image>
+                    </figure>
+                    <p><alert>Option 2</alert> displays a second interpretation of the vector difference.  In this case, <m>\overset{\rightharpoonup}{\mathbf v} - \overset{\rightharpoonup}{\mathbf u}</m> is represented as the vector sum, <m>\overset{\rightharpoonup}{\mathbf v} + (-\overset{\rightharpoonup}{\mathbf u})</m>.  Then the negative of vector <m>\overset{\rightharpoonup}{\mathbf u}</m> is added, showing its tail at the tip of the vector <m>\overset{\rightharpoonup}{\mathbf v}</m>.</p>
+                    <figure xml:id="figure-vectors-difference2">
+                    	<caption>Exploring the difference of two vectors</caption>
+                    	<image source="images/vectors-difference2.png"><description>vectors-difference, option 2</description></image>
+                    </figure>
+	            </li>
+	            <li><title>Scalar Factor:</title>
+                    <p>This option shows the scalar product of the blue vector, here named <m>\overset{\rightharpoonup}{\mathbf u}</m> multiplied by the scalar, <m>c</m>.  This exploration option provides a textbox and slider to adjust the value of the scalar, <m>c</m>.</p>
+                    <figure xml:id="figure-vectors-scalarfactor">
+                    	<caption>Exploring the scalar product</caption>
+                    	<image source="images/vectors-scalarproduct.png"><description>vectors-scalar product</description></image>
+                    </figure>
+	            </li>
+	            <li><title>Dot Product Exploration:</title>
+                    <p>This exploration shows the value of the dot product of the red and blue vectors as well as the angle between them.</p>
+                    <figure xml:id="figure-vectors-dotproduct">
+                    	<caption>Exploring the dot product of two vectors</caption>
+                    	<image source="images/vectors-dotproduct.png"><description>vectors-dot product exploration</description></image>
+                    </figure>
+	            </li>
+	            <li><title>Cross Product Exploration:</title>
+                    <p>This exploration shows a red vector in the 3D plot to represent the cross-product vector formed by taking the cross product of the red and blue vectors in an order specified by the <alert>Order</alert> option tab.  The cross product's magnitude and the angle between the two vectors are displayed at the top of the 3D plot.</p>
+                    <p>For this exploration, it is especially helpful select the option to <alert>Vary vectors in 3D</alert>, so that you can see how the cross product vector is affected when the vectors forming it are not both on the <m>xy</m>-plane.</p>
+                    <figure xml:id="figure-vectors-crossproduct">
+                    	<caption>Exploring the cross product of two vectors</caption>
+                    	<image source="images/vectors-crossproduct.png"><description>vectors-cross product exploration</description></image>
+                    </figure>
+	            </li>
+	            <li><title>Projection Exploration:</title>
+                    <p>This exploration allows you to explore the projection of the blue vector onto the red vector.  The projection vector is displayed in orange.  Note that you also have the option here to display the <m>\overset{\rightharpoonup}{\mathbf u}</m>-perp vector (the vector component of the vector <m>\overset{\rightharpoonup}{\mathbf u}</m> that you would need to add to the projection vector to obtain <m>\overset{\rightharpoonup}{\mathbf u}</m>).</p>
+                    <figure xml:id="figure-vectors-projection">
+                    	<caption>Exploring the projection of one vector onto another</caption>
+                    	<image source="images/vectors-projection.png"><description>vectors-projection exploration</description></image>
+                    </figure>
+	            </li>
+	         </dl></p>
 	    </section>
 	    <section>
 	         <title>Points, Lines <ampersand/> Planes in Space</title>
+	         <introduction>
+	         	<p>CalcPlot3D makes it easy to explore the relationships between points, lines, and planes in space.  Below are some explorations to help you see how this can be done.</p>
+	         </introduction>
 	         <subsection>
-	            <title>Plane through Three Non-Collinear Points</title>
+	            <title>The Plane through Three Non-Collinear Points</title>
 	            <idx><h>plane</h><h>through 3 non-collinear points</h></idx>
 	      <!--      <p>Finding the equation of the plane determined by three non-collinear points and visually verifying that the plane contains these three points.</p>  -->
           <!--      <exercises>
@@ -1731,11 +1833,40 @@
 	    </section>
 	    <section>
 	         <title>*Vector-Valued Functions</title>
-	         <p></p>
+	         <introduction><p>Vector-valued functions allow us to represent a set of parametric equations defining a curve in the <m>xy</m>-plane or in space as a single function of time.  The outputs of vector-valued functions are vectors, as their name clearly indicates.  The vector output can be said to point to the location of a particle that is traveling along the curve it defines.</p></introduction>
+	         <subsection>
+	         	<title>Parameterizing the graph of a function, <m>y=f(x)</m></title>
+	         	<p><dl width="medium">
+	         		<li><title>From left-to-right:</title>
+	         		    <p></p>
+	         	    </li>
+	         	    <li><title>From right-to-left:</title>
+	         		    <p></p>
+	         	    </li>
+	         	</dl></p>
+	         </subsection>
+	         <subsection>
+	         	<title>Various Parameterizations of a path</title>
+	         	<p></p>
+	         </subsection>
+	         <subsection>
+	         	<title>Synchronized Space Curves</title>
+	         	<p><dl width="medium">
+	         		<li><title>Piecewise-defined vector-valued functions:</title>
+	         		    <p></p>
+	         	    </li>
+	         	    <li><title>Synchronizing motion along multiple curves at the same time:</title>
+	         		    <p></p>
+	         	    </li>
+	         	</dl></p>
+	         </subsection>
+
 	    </section>
 	    <section>
 	         <title>Intersections of General Surfaces</title>
 	         <idx><h>intersection</h><h>of any two surfaces</h></idx>
+	         <p>Although CalcPlot3D does not determine the intersection of two surfaces for you, it does make a great tool for visually checking that the parameterization you have worked out as the intersection of two surfaces is indeed correct.</p>
+	         <p>Below you will find two examples to explore this concept.  Hopefully this visualization process will help increase your confidence in and your appreciation for the results you have obtained.</p>
              <exploration xml:id="exploration-surface-intersections1">
                 <statement>
                     <p>Determine the vector-valued function that traces out the intersection of the surfaces defined by the equations below using the parameter <m>t</m>.</p>
@@ -1754,13 +1885,13 @@
                     <p>Now let’s verify this in CalcPlot3D visually!</p>
                     <p>a. Open the <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/">CalcPlot3D app</url>.</p>
                     <p>b. Once the app is loaded and active, enter the first function listed above (<m>z =</m> <c>x^2 + y^2</c>) in the default function object on the left and press Enter (or click on the Graph button). The surface plot of this paraboloid should appear in the plot window.</p>
-                    <p>c. Now, to enter the second function, go to the <alert>Add to graph</alert> dropdown menu (just above the default function), and select <alert>Function: y = f (x, z)</alert>. This will set the function to y = 1 by default. Enter <c>x^2</c> in the textbox and press Enter (or use the Graph button).</p>
-                    <p>d. To extend the second surface farther up the paraboloid, change the range of <m>z</m> (just below y = x^2) to go from -2 to 4. You may want to use the scroll-wheel on the mouse to zoom-out a little. [Alternatively you could click on the <c>Format Axes</c> button located just to the right of the <c>3D Mode</c> button. Then set <m>z</m>-max to 4. This will automatically change the <alert>upper <m>z</m>-clip</alert> value to 8. Let’s change this value to 4 also.]</p>
+                    <p>c. Now, to enter the second function, go to the <alert>Add to graph</alert> dropdown menu (just above the default function), and select <c>Function: y = f (x, z)</c>. This will set the function to y = 1 by default. Enter <c>x^2</c> in the textbox and press Enter (or use the Graph button).</p>
+                    <p>d. To extend the second surface farther up the paraboloid, change the range of <m>z</m> (just below <c>y = x^2</c>) to go from -2 to 4. You may want to use the scroll-wheel on the mouse to zoom-out a little. [Alternatively you could click on the <c>Format Axes</c> button located just to the right of the <c>3D Mode</c> button. Then set <m>z</m>-max to 4. This will automatically change the <alert>upper <m>z</m>-clip</alert> value to 8. Let’s change this value to 4 also.]</p>
                     <p>e. Make the surfaces semi-transparent using the button or by typing the <c>T</c> key to get a clearer view of the intersection of the surfaces. Press the <c>E</c> key to turn off the edges on the surfaces.</p>
                     <p>f. Next we need to graph the space curve to see how well it fits the intersection of the surfaces. Select <c>Space Curve: r(t)</c> from the <alert>Add to graph</alert> dropdown menu.  A space curve object should appear just below this menu.</p>
                     <p>Enter the three parametric equations we obtained (each in terms of <m>t</m>). Then enter a range of -2 to 2. If you press Enter on the second value, it should produce the curve on the plot. If it does not appear, click the <c>Graph</c> button.</p>
                     <p>g. I like the look of this one better with a constant color, so select the checkbox titled <alert>Use Constant Primary Color</alert>, at the bottom of this object.</p>
-                    <p>h. Finally rotate the graph to see if it looks like we found the correct intersection curve. Except for different coloring, this should look like the image in <xref ref="figure-intersection1"/> below.</p>
+                    <p>h. Finally rotate the graph to see if it looks like we found the correct intersection curve. Except for different coloring, this should look like the image in <xref ref="figure-intersection1" /> below.</p>
 
                     <figure xml:id="figure-intersection1">
 						<caption>Intersection of the surfaces <m>z = x^2 + y^2\quad\text{and}\quad y=x^2</m>.</caption>
@@ -1797,13 +1928,13 @@
                     <p>You will enter them like this:<md>
 						<mrow>x &amp;= \textbf{sqrt(2)cos(t)}</mrow>
 						<mrow>y &amp;= \textbf{2sin(t)}</mrow>
-						<mrow>z &amp;= \textbf{2 + 2(sin(t))^2}</mrow>
+						<mrow>z &amp;= \textbf{2 + 2(sin(t))\^{}2}</mrow>
                     </md></p>
                     <p>g. Now enter a range of 0 to <m>2\pi</m>. If you press Enter on the second value, it should produce the curve on the plot. If it does not appear, click the <c>Graph</c> button.</p>
                     <p>I also like the look of this one better with a constant color, so select the checkbox titled <alert>Use Constant Primary Color</alert>, at the bottom of this object.</p>
-                    <p>h. Finally rotate the graph to see if it looks like we found the correct intersection curve. This should look like the image in <xref ref="figure-intersection2"/> below.</p>
+                    <p>h. Finally rotate the graph to see if it looks like we found the correct intersection curve. This should look like the image in <xref ref="figure-intersection2" /> below.</p>
 
-                    <p>Notice that the intersection of these two surfaces may appear a little polygonal rather than smooth like the curve we just graphed.  This is because we used an implicit surface with the default resolution.  To improve this resolution, you can adjust the <alert># Cubes/axis</alert> to a higher number, like 25.  See the result in <xref ref="figure-intersection2b"/>.</p>
+                    <p>Notice that the intersection of these two surfaces may appear a little polygonal rather than smooth like the curve we just graphed.  This is because we used an implicit surface with the default resolution.  To improve this resolution, you can adjust the <alert><hash /> Cubes/axis</alert> to a higher number, like 25.  See the result in <xref ref="figure-intersection2b" />.</p>
                     <sidebyside widths="50.5% 49.5%">
 	                    <figure xml:id="figure-intersection2">
 							<caption>Intersection of the surfaces <m>2x^2 + y^2=4\quad\text{and}\quad z = x^2 + y^2</m>.</caption>
@@ -1820,7 +1951,11 @@
         <section xml:id="section-contourplots">
 	         <title>*Contour Plots</title>
 	         <idx><h>contour plot</h></idx><idx><h>level curves</h></idx><idx><h>contours</h></idx>
-	         <p></p>
+	         <p>A contour plot provides a 2D topographical map of a 3D surface, showing contours (or level curves) that trace out the parts of the surface that have the same <m>z</m>-coordinate.</p>
+	         <sidebyside widths="50% 50%">
+		         <p>To generate a contour plot of a function of 2 variables in CalcPlot3D, we first need to plot the function we are interested in.  Then we will find a contour plot button on the function object that we can use to create the corresponding contour plot.</p>
+		         <image source="images/functionfxy.png"><description>Contour plot button on function object</description></image>
+		     </sidebyside>
 	    </section>
 	    <section xml:id="section-levelsurfaces">
 	         <title>Level Surfaces</title>
@@ -1850,10 +1985,10 @@
 							<mrow>z &amp;= -\sqrt{C + x^2 - y^2}</mrow>
 						</md></p>
 					<p>In a form for us to enter in CalcPlot3D these are:</p>
-					<p>z = sqrt(C + x^2 - y^2)</p>
-					<p>z = -sqrt(C + x^2 - y^2)</p>
+					<p><c>z = sqrt(C + x^2 - y^2)</c></p>
+					<p><c>z = -sqrt(C + x^2 - y^2)</c></p>
 					<p>For <m>C = -2</m>, we enter:</p>
-					<p>z = sqrt(-2 + x^2 - y^2) in the 1st function and z = -sqrt(-2 + x^2 - y^2) in a 2nd function.</p>
+					<p><c>z = sqrt(-2 + x^2 - y^2)</c> in the 1st function and <c>z = -sqrt(-2 + x^2 - y^2)</c> in a 2nd function.</p>
 				
 					<figure>
 						<caption>Level surface, <m>C = -2</m></caption>
@@ -1864,7 +1999,7 @@
 						</interactive>
 					</figure>
 				    <p>For <m>C = 2</m>, we enter:</p>
-					<p>z = sqrt(2 + x^2 - y^2) in the 1st function and z = -sqrt(2 + x^2 - y^2) in a 2nd function.</p>
+					<p><c>z = sqrt(2 + x^2 - y^2)</c> in the 1st function and <c>z = -sqrt(2 + x^2 - y^2)</c> in a 2nd function.</p>
 					<figure>
 						<caption>Level surface, <m>C = 2</m></caption>
 						<interactive calcplot3d="type=z;z=-sqrt(2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=reversed;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=z;z=sqrt(2+x^2-y^2);visible=true;umin=-4;umax=4;vmin=-4;vmax=4;grid=30;format=reversed;alpha=-1;constcol=rgb(255,0,0);view=0;contourcolor=red;fixdomain=false&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-8.270108132492869,17.434097758282633,5.259044288794762,1;focus=0,0,0,1;up=0.06540861657849147,-0.14679188379427732,0.9870024598395972,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.45;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-4;xmax=4;ymin=-4;ymax=4;zmin=-4;zmax=4;xscale=2;yscale=2;zscale=2;zcmin=-8;zcmax=8;zoom=0.2;xscalefactor=1;yscalefactor=1;zscalefactor=1" variant="minimal" width="60%">
@@ -1877,13 +2012,13 @@
 					
 					<p><m>\large\textbf{Solution: Method 2}</m> Using an Implicit Surface</p>
 					<p>Setting <m>f (x, y, z) = z^2 – x^2 + y^2 = C</m>, we can write a single implicit equation for each level surface.</p>
-					<p>For <m>C = -2</m>, we will plot the implicit equation: <m> z^2 - x^2 + y^2 = -2</m></p>
+					<p>For <m>C = -2</m>, we will plot the implicit equation: <m>z^2 - x^2 + y^2 = -2</m></p>
 					<p>For <m>C = 2</m>, we will plot the implicit equation:  <m>z^2 - x^2 + y^2 = 2</m></p>
 					<p>To do this,
 					   <ol>
 					       <li>We clear the screen by clicking on the clear screen button.</li>
 					       <li>Then we select to add an <alert>Implicit Surface</alert> from the <alert>Add to graph</alert> menu.</li>
-					       <li>Enter z^2 - x^2 + y^2 = -2 in the corresponding textbox and select the checkbox (or press enter) to plot it.
+					       <li>Enter <c>z^2 - x^2 + y^2 = -2</c> in the corresponding textbox and select the checkbox (or press enter) to plot it.
 					       This is the level surface for <m>C = -2</m>.</li>
 					       <li>Print it out, if desired, using the <alert>Print Plot</alert> option on the app main menu.</li>
 					       <li>To view the level surface for <m>C = 2</m>, just change the <m>-2</m> on the right side of the equation to a <m>2</m>.</li>
@@ -1965,10 +2100,10 @@
 				 <p>To do so, follow the steps below:</p>
 				 <p>
 				 <ol>
-				 <li>Enter the differential equation, solved for dy/dx to see the associated direction field.</li>
-				 <li>Then enter the general solution to this differential equation (including the integration parameter C).</li>
-				 <li>Next we can verify that the solution curves generated for various values of the parameter C all fit nicely through the field
-				  no matter what value of C is used.  A slider is provided to allow this parameter to be quickly and smoothly varied through a broad range of values.</li>
+				 <li>Enter the differential equation, solved for <m>dy/dx</m> to see the associated direction field.</li>
+				 <li>Then enter the general solution to this differential equation (including the integration parameter <m>C</m>).</li>
+				 <li>Next we can verify that the solution curves generated for various values of the parameter <m>C</m> all fit nicely through the field
+				  no matter what value of <m>C</m> is used.  A slider is provided to allow this parameter to be quickly and smoothly varied through a broad range of values.</li>
 				  </ol>
                   </p>
                   <p>The variables of the problem can be changed, and the range of values for each variable can be set to whatever
@@ -1987,14 +2122,14 @@
 				 and to see that no matter what values we use for the two (or three) parameters we obtain in the solution, 
 				 the general solution (expressed parametrically) will always pass through the vectors in the (two or three dimensional)
 				 phase plot just as the solution curves to 1st-order differential equations pass nicely through the corresponding direction fields
-				 for any given value of the single parameter C.</p>
+				 for any given value of the single parameter <m>C</m>.</p>
 				 <p>Let's do a 2 x 2 system of differential equations example!</p>
 				 <exploration xml:id="exploration-phaseplots">
 				     <statement>
 				        <p>a. First, clear the view by clicking on the clear plot button or by deleting the function object by clicking the small x in the upper-right corner of the object.</p>
 				        <p>b. Then select <alert>Vector Field</alert> on the <alert>Add to graph</alert> menu.  Note that a parameter slider for the parameter <m>t</m> is also automatically added to the plot.
 				        This can be used for animating motion along a solution curve (or flowline) as described below in step g.</p>
-				        <p>c. Click the checkbox labeled, "Show system of DEs notation", so that it looks like the system we are entering.</p>
+				        <p>c. Click the checkbox labeled, <q>Show system of DEs notation</q>, so that it looks like the system we are entering.</p>
 				        <p>d. Now enter the equations of the following system of 1st-order differential equations to see its phase plot.</p>
 				        <p><md>
 							<mrow>\frac{dx}{dt} &amp;= -2x + y</mrow>
@@ -2117,8 +2252,64 @@
 	</section>
 </chapter>
 <chapter xml:id="chapter-creatingscripts">
-	 <title>*Creating Scripts</title>
-	 <p></p>
+	 <title>*Creating <ampersand/> Using Scripts</title>
+	 <idx><h>Scripts</h></idx>
+	 <introduction>
+	 	<p>As you learned in <xref ref="subsection-savetourl" />, you can save a single view to the URL and share this URL to allow the view to be recreated when it is opened.</p>
+	 	<p>Scripts allow you to save a series of views from CalcPlot3D to create a dynamic slide show or exploration.</p>
+	    <p>You can use scripts to create:
+	    	<ul>
+	    		<li><alert>Classroom Demonstrations:</alert> It is often useful to demonstrate how to enter functions, space curves, etc. in CalcPlot3D during class, but sometimes it would be nice to quickly step through a series of visual examples, each of which can be manipulated and explored as much or as little as time allows and you desire.</li>
+				<li><alert>Guided Student Exploration Activities:</alert> Students gain the most understanding from playing with and exploring the concepts visually themselves. The more directly students are engaged in the visualization and exploration of calculus concepts the more they will internalize and the clearer their geometric intuition will become.</li>
+			</ul>
+		</p>
+		<p>To access the script commands, we'll use the <alert>Scripts</alert> submenu on the CalcPlot3D main menu.</p>
+	 </introduction>
+	 <section xml:id="section-scriptload">
+        <title>Loading a Script</title>
+        <idx><h>Scripts</h><h>loading</h></idx>
+        <p></p>
+     </section>
+	 <section xml:id="section-scriptcreate">
+        <title>Creating a New Script</title>
+        <idx><h>Scripts</h><h>creating</h></idx>
+        <p>When you decide that you'd like to create a script, first be sure you have a step you want to include created and then go to the main menu, select <alert>Scripts</alert>, and then select the option, <alert>Create new script with current plot as 1st step</alert>.</p>
+        <p>You will be asked to enter a title for your new script.  See the figure below.  This title will display at the top of an exploration control dialog and will also be the name of the file that will be created when you choose to save it later.</p>
+        <figure xml:id="figure-newscript">
+            <caption></caption>
+            <image width="60%" source="images/newscript.png"><description>New script dialog</description></image>
+        </figure>
+        <p>Once you've selected a name for the script, CalcPlot3D will recreate the view using the generated script and the exploration control dialog will be displayed on the screen.  This control dialog will allow you to control which step to display in the script and will also allow you to refresh the current step.  Initially it will indicate that you are viewing <alert>Step 1 of 1</alert>.</p>
+        <figure xml:id="figure-explorationdialog1">
+            <caption></caption>
+            <image width="60%" source="images/explorationdialog.png"><description>New script dialog</description></image>
+        </figure>
+        <p>You are now ready to change the plot to create a second step for the script.  Once it is ready, you'll need to use the <alert>Add current view to active script</alert>.  See the next section for more details.</p>
+        <p>Just remember that creating the script does not automatically save it.  You must eventually choose the <alert>Save script</alert> option to do that.</p>
+     </section>
+     <section xml:id="section-scriptaddstep">
+        <title>Adding a Step to the Current Script</title>
+        <idx><h>Scripts</h><h>adding a step</h></idx>
+        <p>Once you have created a script and populated it with its first step, you can add additional steps, slides, or examples.  To do this, simply modify the plot to show whatever it is that you wish to have in your next step and select the option to <alert>Add current view to active script</alert> from the <alert>Scripts</alert> menu.</p>
+        <p>Note that you will be asked the step number after which you wish to add the new step.  By default CalcPlot3D will assume you may want to add it after the last step, but you can place it earlier in the script, as you wish.  If you want your new step to become the first step, just enter 0.</p>
+        <figure xml:id="figure-addstep">
+            <caption></caption>
+            <image width="60%" source="images/addstepnumber2.png"><description>Add a step dialog</description></image>
+        </figure>
+        <p>This option allows you to adjust the order of your steps as you go to some degree.  But if you wish to make further adjustments to the order of the steps, we can easily do this in the script file itself once we have saved it.</p>
+     </section>
+     <section xml:id="section-scriptdeletestep">
+        <title>Deleting a Step from the Current Script</title>
+        <idx><h>Scripts</h><h>deleting a step</h></idx>
+        <p>If you decide to modify a step using CalcPlot3D, you can do this by adjusting the view to your liking, adding it at the appropriate step, and then deleting the old version of the step.</p>
+        <p>You may also decide to eliminate a step from your script as you rethink your demonstration or exploration.</p>
+        <p>In either case, to delete a step, you will select the <alert>Delete a step in the active script</alert> option from the <alert>Scripts</alert> menu.  You will be asked which step you wish to delete and then the step will be deleted from the script.</p>
+     </section>
+     <section xml:id="section-scriptsave">
+        <title>Saving the Current Script</title>
+        <idx><h>Scripts</h><h>saving</h></idx>
+        <p></p>
+     </section>
 </chapter>
 <backmatter xml:id="backmatter">
     <title>Appendices <ampersand/> Index</title>
@@ -2133,7 +2324,7 @@
 				<row valign="top" bottom="none">
 					<cell><p>ln()</p></cell>
 					<cell><p>log()</p></cell>
-					<cell><p>e^()</p></cell>
+					<cell><p>e<circumflex />()</p></cell>
 				</row>
 				<row valign="top" bottom="none">
 					<cell><p>cos()</p></cell>
@@ -2181,7 +2372,7 @@
 		<p><ol>
 			<li>For absolute value, you can use |x| instead of abs(x).</li>
 			<li>Factorial can be entered using !, e.g. 5! which is 5(4)(3)(2)(1).</li>
-			<li>The exponential function e^(x) can also be entered exp(x).</li>
+			<li>The exponential function <c>e^(x)</c> can also be entered exp(x).</li>
 			<li>The sign function can also be entered as sgn().  It returns 1, if the input is positive, 0 if the input is 0, and -1, if the input is negative.</li>
 			<li>For Spanish speakers, sin(x) can also be entered sen(x).  
 			Similarly, arcsin(x) = arcsen(x) and sinh(x) = senh(x).</li>
@@ -2226,9 +2417,7 @@
 			   <title>LibreTexts and many other HTML web pages</title>
 			   <p>In order to get a dynamic figure that hides all the menus and controls of the CalcPlot3D app, we need to use a slightly different URL.</p>
 			   <p>The URL for a dynamic figure with <alert>no controls</alert> is:</p> 
-			   <sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/
-			   
-			   </input></program></sidebyside>
+			   <sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/</input></program></sidebyside>
 			   <p>Note that the data for the figure is encoded in a query string by CalcPlot3D.  This means that we will need a question mark (?) just after the URL above
 			   and then we'll paste the data copied from the CalcPlot3D-generated URL.  If we were to enter this new URL and query string in the browser directly,
 			   we would get the dynamic figure by itself on the page.</p>
@@ -2338,11 +2527,11 @@
 			</li>
 			<li><p>Now you have a few options that you may wish to alter in the query string by hand.
 			    <ul>
-			        <li><p>You can add a <c>name</c> attribute and/or a <c>noanimate</c> attribute to any sliders.  For example, "noanimate=true;name=n_x".  Note that each object, including the sliders, starts with "type=" in the query string.</p>
+			        <li><p>You can add a <c>name</c> attribute and/or a <c>noanimate</c> attribute to any sliders.  For example, <q>noanimate=true;name=n<underscore />x</q>.  Note that each object, including the sliders, starts with <q>type=</q> in the query string.</p>
 			            <p>The <c>name</c> attribute changes the label of the slider to the supplied name, using MathJAX to format the supplied name.  This means you can use LaTeX in the name.</p>
 			            <p>The <c>noanimate</c> attribute allows you to hide the Animate button on the slider control, if you wish.</p></li>
 			        <li><p>You can add one or more of the following attributes to the window element at the very end of the query string: 
-			        "hidexysliders=true;hidetracevalue=true;"</p>
+			        <q>hidexysliders=true; hidetracevalue=true;</q></p>
 			            <p>Here the <c>hidexysliders</c> tag allows you to hide the <m>x</m>- and <m>y</m>-sliders that appear below the 2D trace plane by default.</p>
 			            <p>The <c>hidetracevalue</c> tag allows you to hide the trace value normally displayed on the 3D plot when moving a trace point around on the
 			            2D trace plane (and 3D surface).</p></li>
@@ -2375,29 +2564,29 @@
 			               <iframe frameborder="0" height="480px" src="https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigureWCP/?
 			               type=jaxlabel;position=middle;math=%255Cpsi_%257Bn_x%252Cn_y%257D(x%252Cy);textonly=false&amp;
 			               type=z;z=sin(api*x)sin(bpi*y);visible=true;umin=0;umax=1;vmin=0;vmax=1;grid=50;format=normal;alpha=200;
-			                 constcol=rgb(255,0,0);view=0;contourcolor=rgb(255,0,0);contourplot=true;showcontourplot=true;firstvalue=-1;
-			                 stepsize=0.2;numlevels=11;xnum=75;ynum=75;show2d=false;hidesurface=false;hidelabels=false;showprojections=false;
-			                 surfacecontours=true;projectioncolor=rgba(51,153,0,1);showxygrid=false;showxygridonbox=false&amp;
+			               constcol=rgb(255,0,0);view=0;contourcolor=rgb(255,0,0);contourplot=true;showcontourplot=true;firstvalue=-1;
+			               stepsize=0.2;numlevels=11;xnum=75;ynum=75;show2d=false;hidesurface=false;hidelabels=false;showprojections=false;
+			               surfacecontours=true;projectioncolor=rgba(51,153,0,1);showxygrid=false;showxygridonbox=false&amp;
 			               type=slider;slider=a;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_x&amp;
 			               type=slider;slider=b;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_y&amp;
 			               type=text;text=0;visible=true;point=(0,0,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=15pt;bold=true;italic=false;
-			                 fontmath=true;align=Center-left&amp;
+			               fontmath=true;align=Center-left&amp;
 			               type=text;text=L;visible=true;point=(1,-0.025,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;
-			                 fontmath=true;align=Center&amp;
+			               fontmath=true;align=Center&amp;
 			               type=text;text=L;visible=true;point=(-0.05,1,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;
-			                 fontmath=true;align=Center&amp;
+			               fontmath=true;align=Center&amp;
 			               type=text;text=x;visible=true;point=(0.5,-0.07,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;
-			                 fontmath=true;align=Center&amp;
+			               fontmath=true;align=Center&amp;
 			               type=text;text=y;visible=true;point=(-0.08,0.5,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;
-			                 fontmath=true;align=Center&amp;
+			               fontmath=true;align=Center&amp;
 			               type=window;hsrmode=3;anaglyph=-1;center=-7.447051206708178,-2.790794355991455,3.71998429905919,1;
-			                 focus=0.5,0.5,0.5,1;up=0.39804763218685024,0.14521777837291014,0.9057979241281567,1;transparent=true;alpha=140;twoviews=false;
-			                 unlinkviews=false;axisextension=0;xaxislabel=%20;yaxislabel=%20;zaxislabel=%20;edgeson=false;faceson=true;showbox=false;
-			                 showaxes=false;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.4;rotationsteps=30;autospin=true;
-			                 xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=false;gridplanes=true;gridcolor=rgb(128,128,128);
-			                 xmin=0;xmax=1;ymin=0;ymax=1;zmin=0;zmax=1;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=3.543529;
-			                 xscalefactor=1;yscalefactor=1;zscalefactor=0.5;
-			                 hidexysliders=true;hidetracevalue=true;" 
+			               focus=0.5,0.5,0.5,1;up=0.39804763218685024,0.14521777837291014,0.9057979241281567,1;transparent=true;alpha=140;twoviews=false;
+			               unlinkviews=false;axisextension=0;xaxislabel=%20;yaxislabel=%20;zaxislabel=%20;edgeson=false;faceson=true;showbox=false;
+			               showaxes=false;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.4;rotationsteps=30;autospin=true;
+			               xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=false;gridplanes=true;gridcolor=rgb(128,128,128);
+			               xmin=0;xmax=1;ymin=0;ymax=1;zmin=0;zmax=1;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=3.543529;
+			               xscalefactor=1;yscalefactor=1;zscalefactor=0.5;
+			               hidexysliders=true;hidetracevalue=true;" 
 			               width="90%"></iframe></p>]]>
 					  </input>
 				  </program>
@@ -2421,11 +2610,12 @@
 			       </figure>
 			       ]]>
 			   </input></program></sidebyside>
-			   <p>Note that we changed the <c>variant</c> attribute from "minimal" to "controls".  We also added an <c>aspect</c> attribute.
+			   <p>Note that we changed the <c>variant</c> attribute from <q>minimal</q> to <q>controls</q>.  We also added an <c>aspect</c> attribute.
 			   This forces the viewport to the given aspect ratio, making it wider than it is tall and accommodating the control panel on the left.</p>
 			   <p>For the example shown in <xref ref="figure-dynamicfigure2" /> above, this construction looks like:</p>
 			   <sidebyside><program><input>
-			       <![CDATA[<figure xml:id="figure-dynamicfigure2">
+			       <![CDATA[
+			       <figure xml:id="figure-dynamicfigure2">
 						<caption>A dynamic figure with controls</caption>
 						<interactive calcplot3d="type=jaxlabel;position=middle;math=%255Cpsi_%257Bn_x%252Cn_y%257D(x%252Cy);textonly=false&amp;type=z;z=sin(api*x)sin(bpi*y);visible=true;umin=0;umax=1;vmin=0;vmax=1;grid=50;format=normal;alpha=200;constcol=rgb(255,0,0);view=0;contourcolor=rgb(255,0,0);contourplot=true;showcontourplot=true;firstvalue=-1;stepsize=0.2;numlevels=11;xnum=75;ynum=75;show2d=false;hidesurface=false;hidelabels=false;showprojections=false;surfacecontours=true;projectioncolor=rgba(51,153,0,1);showxygrid=false;showxygridonbox=false&amp;type=slider;slider=a;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_x&amp;type=slider;slider=b;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_y&amp;type=text;text=0;visible=true;point=(0,0,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=15pt;bold=true;italic=false;fontmath=true;align=Center-left&amp;type=text;text=L;visible=true;point=(1,-0.025,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=L;visible=true;point=(-0.05,1,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=x;visible=true;point=(0.5,-0.07,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=y;visible=true;point=(-0.08,0.5,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=window;hsrmode=3;anaglyph=-1;center=-7.447051206708178,-2.790794355991455,3.71998429905919,1;focus=0.5,0.5,0.5,1;up=0.39804763218685024,0.14521777837291014,0.9057979241281567,1;transparent=true;alpha=140;twoviews=false;unlinkviews=false;axisextension=0;xaxislabel=%20;yaxislabel=%20;zaxislabel=%20;edgeson=false;faceson=true;showbox=false;showaxes=false;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.4;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=false;gridplanes=true;gridcolor=rgb(128,128,128);xmin=0;xmax=1;ymin=0;ymax=1;zmin=0;zmax=1;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=3.0;xscalefactor=1;yscalefactor=1;zscalefactor=0.5;hidexysliders=true;hidetracevalue=true;"
 						             variant="controls" 
