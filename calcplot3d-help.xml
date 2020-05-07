@@ -2,7 +2,7 @@
 <mathbook>
 
 <docinfo>
-	<brandlogo url="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/" 
+	<brandlogo url="https://c3d.libretexts.org/CalcPlot3D/index.html" 
 			   source="images/hyperboloid-small.png" />
 	<html>
 		<!-- Expects favicon/favicon-32x32.png, and favicon/favicon-16x16.png -->
@@ -28,7 +28,7 @@
 
 <chapter xml:id="chapter-overview"><title>Overview</title>
     <introduction>
-    <p>This is a help manual for using <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/"><alert>CalcPlot3D</alert></url>,
+    <p>This is a help manual for using <url href="https://c3d.libretexts.org/CalcPlot3D/index.html"><alert>CalcPlot3D</alert></url>,
 	 an interactive JavaScript app for visualizing multivariable calculus, differential equations, physics, and more!</p>
 	 <figure xml:id="figure-calcplot3d-defaultview">
 		<caption>CalcPlot3D Default View</caption>
@@ -1116,7 +1116,7 @@
 		       </li>
 		       <li><p><alert>To create animations:</alert></p>
                <p>Click on the following link to open CalcPlot3D with an example of how parameters can be used for animation.</p>
-               <p><url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/?exploration=Cycloids">Cycloid animation exploration in CalcPlot3D app</url></p>
+               <p><url href="https://c3d.libretexts.org/CalcPlot3D/index.html?exploration=Cycloids">Cycloid animation exploration in CalcPlot3D app</url></p>
                <p>In the first displayed example, you will see three object dialogs on the left side of the screen. (See <xref ref="figure-cycloid1"/> below.)</p>
                <figure xml:id="figure-cycloid1">
                	   <caption>Cycloid animation objects</caption>
@@ -1795,7 +1795,7 @@
                     <statement>
                         <p>a. Determine the line of intersection of the following two planes. Write the parametric equations for this line, showing all work.</p>
 						<p><me>2x + y – 2z = 5 \quad\text{and}\quad 3x – 6y – 2z = 15</me></p>
-						<p>b. Use the <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/">CalcPlot3D app</url> to display these two planes.
+						<p>b. Use the <url href="https://c3d.libretexts.org/CalcPlot3D/index.html">CalcPlot3D app</url> to display these two planes.
 						To do this, solve each planar equation for <m>z</m>, and enter them in the app, using two function objects.
 						There is one there when you open the app, and you can add another by selecting <alert>Function: <m>z = f(x, y)</m></alert> on the <alert>Add to graph</alert> menu.
 						Zoom out a couple times (if necessary) until you can see both planes along with their intersection.
@@ -1883,7 +1883,7 @@
 						<mrow>z &amp;=t^2 + t^4</mrow>
                     </md></p>
                     <p>Now let’s verify this in CalcPlot3D visually!</p>
-                    <p>a. Open the <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/">CalcPlot3D app</url>.</p>
+                    <p>a. Open the <url href="https://c3d.libretexts.org/CalcPlot3D/index.html">CalcPlot3D app</url>.</p>
                     <p>b. Once the app is loaded and active, enter the first function listed above (<m>z =</m> <c>x^2 + y^2</c>) in the default function object on the left and press Enter (or click on the Graph button). The surface plot of this paraboloid should appear in the plot window.</p>
                     <p>c. Now, to enter the second function, go to the <alert>Add to graph</alert> dropdown menu (just above the default function), and select <c>Function: y = f (x, z)</c>. This will set the function to y = 1 by default. Enter <c>x^2</c> in the textbox and press Enter (or use the Graph button).</p>
                     <p>d. To extend the second surface farther up the paraboloid, change the range of <m>z</m> (just below <c>y = x^2</c>) to go from -2 to 4. You may want to use the scroll-wheel on the mouse to zoom-out a little. [Alternatively you could click on the <c>Format Axes</c> button located just to the right of the <c>3D Mode</c> button. Then set <m>z</m>-max to 4. This will automatically change the <alert>upper <m>z</m>-clip</alert> value to 8. Let’s change this value to 4 also.]</p>
@@ -1918,7 +1918,7 @@
 						<mrow>z &amp;= 2 + 2\sin^2 t</mrow>
                     </md></p>
                     <p>Now let’s verify this in CalcPlot3D visually!</p>
-                    <p>a. Open the <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/">CalcPlot3D app</url>.</p>
+                    <p>a. Open the <url href="https://c3d.libretexts.org/CalcPlot3D/index.html">CalcPlot3D app</url>.</p>
                     <p>b. Once the app is loaded and active, enter the second function listed above (z = x2 + y2) in the default function object on the left and press Enter (or click on the Graph button). The surface plot of this paraboloid should appear in the plot window.</p>
                     <p>c. Now, to enter the first function, which is stated implicitly, go to the <alert>Add to graph</alert> dropdown menu (just above the default function), and select <alert>Implicit Surface</alert>. Once this new object definition appears on the left, enter the implicit equation defining the first surface in the textbox and press Enter (or use the Graph button).  This surface should look like an elliptic cylinder.</p>
                     <p>d. To make the intersection more clear, let's first zoom out once using the <c>Zoom-out</c> button, so the <m>x</m>- and <m>y</m>-axes run from -4 to 4 instead of from -2 to 2. Now click on the <c>Format Axes</c> button located just to the right of the <c>3D Mode</c> button, and set the <alert>upper <m>z</m>-clip</alert> to 4.</p>
@@ -2089,7 +2089,7 @@
 				 <p>In differential equations we begin by studying many applications of first-order differential equations.
 				 We learn how these equations are derived from the language of the problems, and then we examine the direction fields
 				 associated with each equation to make predictions, consider equilibria and to analyze the situations.</p>
-				 <p>We can use the <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/DirectionField/"><alert>Direction Field Explorer app</alert></url>
+				 <p>We can use the <url href="https://c3d.libretexts.org/DirectionField/index.html"><alert>Direction Field Explorer app</alert></url>
 				 to visually explore the direction fields associated with
 				 any first order differential equation that can be solved for the first derivative.</p>
 				 <p>We can also visually verify the general solution to these first-order differential equations.</p>
@@ -2203,7 +2203,7 @@
 		To address this issue, CalcPlot3D will automatically give the thickness you specify to a surface before creating the STL file.
 		The app must create a closed solid to represent the surface if you wish it to print on a 3D printer.</p>
 		<p>To give this feature a try, first find a surface that you would like to print to a 3D printer and graph it with CalcPlot3D.</p>
-		<p><ol><li>Open <url href="https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/"><alert>CalcPlot3D</alert></url>.</li>
+		<p><ol><li>Open <url href="https://c3d.libretexts.org/CalcPlot3D/index.html"><alert>CalcPlot3D</alert></url>.</li>
 			<li><p>From the File menu select Create an STL file from the plot.  
 			A dialog will appear like the one below.</p>
 			<figure>
@@ -2404,7 +2404,7 @@
 			<ol><li>Create the plot you desire to display in the dynamic figure using CalcPlot3D.</li>
 			<li><p>Then save the view to the URL using the option on the File menu.  (See <xref ref="subsection-savetourl"/>.)
 			You'll get a URL something like this:</p>
-			<sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/?type=z;z=7xy/e^(x^2+y^2);visible=false;umin=0;umax=10;usteps=100;vmin=0;vmax=10;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);contourcolor=red&amp;type=spacecurve;spacecurve=curve;x=t+7;y=2t+5;z=1.5t+1;visible=true;tmin=-10;tmax=10;tsteps=100;color=rgb(17,109,192);showtrace=false;tval=2.4000000000000004;constcol=true;twod=false;showpt=true;trace=true;vel=true;acc=true;osc=false;k=false;repeat=false;bounce=false;showtvector=false;shownvector=false;showbvector=false;showtnbeqs=false;showtnblabels=false;showoscplane=false;showrectplane=false;shownormplane=false&amp;type=vector;vector=%3C1,2,1.5%3E;visible=true;color=rgb(255,0,0);size=2;initialpt=(0,0,0)&amp;type=point;point=(7.4,5.8,1.6);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(9.4,9.8,4.6);visible=true;color=rgb(0,0,0);size=4&amp;type=text;text=%20%20%20%20%20P%20~%20(x%3Csub%3E0%3C%2Fsub%3E%2C%20y%3Csub%3E0%3C%2Fsub%3E%2C%20z%3Csub%3E0%3C%2Fsub%3E);visible=true;point=(7.4,5.8,1.6);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;bold=false;italic=false;fontmath=true;align=Center-right&amp;type=text;text=%20%20%20%20Q%20~%20(x%2C%20y%2C%20z);visible=true;point=(9.4,9.8,4.6);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;bold=false;italic=false;fontmath=true;align=Center-right&amp;type=text;text=v%3Charpoon%3E%20~%20%3Ca%2C%20b%2C%20c%3E;visible=true;point=(1,2,1.5);color=rgb(255,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=false;italic=true;fontmath=true;align=Center-left&amp;type=window;hsrmode=1;anaglyph=-1;center=17.139439715453594,10.377939594400079,5.155621864146323,1;focus=5,5,5,1;up=-0.2866219643580234,-0.12700640150211873,0.9495879230092552,1;transparent=false;alpha=140;edgeson=true;faceson=true;showbox=false;showaxes=true;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=true;yzgrid=true;xzgrid=true;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=0;xmax=10;ymin=0;ymax=10;zmin=0;zmax=10;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.305882;xscalefactor=1;yscalefactor=1;zscalefactor=1
+			<sidebyside><program><input>https://c3d.libretexts.org/CalcPlot3D/index.html?type=z;z=7xy/e^(x^2+y^2);visible=false;umin=0;umax=10;usteps=100;vmin=0;vmax=10;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);contourcolor=red&amp;type=spacecurve;spacecurve=curve;x=t+7;y=2t+5;z=1.5t+1;visible=true;tmin=-10;tmax=10;tsteps=100;color=rgb(17,109,192);showtrace=false;tval=2.4000000000000004;constcol=true;twod=false;showpt=true;trace=true;vel=true;acc=true;osc=false;k=false;repeat=false;bounce=false;showtvector=false;shownvector=false;showbvector=false;showtnbeqs=false;showtnblabels=false;showoscplane=false;showrectplane=false;shownormplane=false&amp;type=vector;vector=%3C1,2,1.5%3E;visible=true;color=rgb(255,0,0);size=2;initialpt=(0,0,0)&amp;type=point;point=(7.4,5.8,1.6);visible=true;color=rgb(0,0,0);size=4&amp;type=point;point=(9.4,9.8,4.6);visible=true;color=rgb(0,0,0);size=4&amp;type=text;text=%20%20%20%20%20P%20~%20(x%3Csub%3E0%3C%2Fsub%3E%2C%20y%3Csub%3E0%3C%2Fsub%3E%2C%20z%3Csub%3E0%3C%2Fsub%3E);visible=true;point=(7.4,5.8,1.6);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;bold=false;italic=false;fontmath=true;align=Center-right&amp;type=text;text=%20%20%20%20Q%20~%20(x%2C%20y%2C%20z);visible=true;point=(9.4,9.8,4.6);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=12pt;bold=false;italic=false;fontmath=true;align=Center-right&amp;type=text;text=v%3Charpoon%3E%20~%20%3Ca%2C%20b%2C%20c%3E;visible=true;point=(1,2,1.5);color=rgb(255,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=false;italic=true;fontmath=true;align=Center-left&amp;type=window;hsrmode=1;anaglyph=-1;center=17.139439715453594,10.377939594400079,5.155621864146323,1;focus=5,5,5,1;up=-0.2866219643580234,-0.12700640150211873,0.9495879230092552,1;transparent=false;alpha=140;edgeson=true;faceson=true;showbox=false;showaxes=true;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=true;yzgrid=true;xzgrid=true;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=0;xmax=10;ymin=0;ymax=10;zmin=0;zmax=10;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.305882;xscalefactor=1;yscalefactor=1;zscalefactor=1
 			
 			</input></program></sidebyside>
 			</li>
@@ -2417,7 +2417,7 @@
 			   <title>LibreTexts and many other HTML web pages</title>
 			   <p>In order to get a dynamic figure that hides all the menus and controls of the CalcPlot3D app, we need to use a slightly different URL.</p>
 			   <p>The URL for a dynamic figure with <alert>no controls</alert> is:</p> 
-			   <sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/</input></program></sidebyside>
+			   <sidebyside><program><input>https://c3d.libretexts.org/CalcPlot3D/dynamicFigure/index.html</input></program></sidebyside>
 			   <p>Note that the data for the figure is encoded in a query string by CalcPlot3D.  This means that we will need a question mark (?) just after the URL above
 			   and then we'll paste the data copied from the CalcPlot3D-generated URL.  If we were to enter this new URL and query string in the browser directly,
 			   we would get the dynamic figure by itself on the page.</p>
@@ -2430,7 +2430,7 @@
 			          <input>
 			               <![CDATA[<p style="text-align:center">
 			               <iframe frameborder="0" height="480px" 
-			                       src="https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/?type=
+			                       src="https://c3d.libretexts.org/CalcPlot3D/dynamicFigure/index.html?type=
 			                       z;z=7xy/e^(x^2+y^2);visible=false;umin=0;umax=10;usteps=100;vmin=0;vmax=10;grid=30;
 			                       format=normal;alpha=-1;constcol=rgb(255,0,0);contourcolor=red&amp;
 			                       type=spacecurve;spacecurve=curve;x=t+7;y=2t+5;z=1.5t+1;visible=true;tmin=-10;tmax=10;
@@ -2503,7 +2503,7 @@
         <section>
              <title>Dynamic Figures with Controls</title>
 			 <p>It is possible to create dynamic figures that do show some parameter sliders and sometimes also the 2D trace plot.  These dynamic figures use a different base URL:</p>
-			 <sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigureWCP/</input></program></sidebyside>
+			 <sidebyside><program><input>https://c3d.libretexts.org/CalcPlot3D/dynamicFigureWCP/index.html</input></program></sidebyside>
 			 <p>If there are sliders in these dynamic figures with controls, they can be given new labels and used to vary the associated parameters in the plot.
 			 See an example in <xref ref="figure-dynamicfigure2"/> below. Note that you can click on the 2D trace plane and see a corresponding trace point on the 3D surface.
 			 You can also move the sliders or enter values from 1 to 3 in each textbox to see the number of peaks/valleys change.</p>
@@ -2521,7 +2521,7 @@
 			As time goes on, more options may become available.  (Let me know what you'd like to use, and I'll try to implement it.)</li>
 			<li><p>Then save the view to the URL using the option on the File menu.  (See <xref ref="subsection-savetourl"/>.)
 			You'll get a URL something like this:</p>
-			<sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/calcnsf/CalcPlot3D/?type=jaxlabel;position=middle;math=%255Cpsi_%257Bn_x%252Cn_y%257D(x%252Cy);textonly=false&amp;type=z;z=sin(api*x)sin(bpi*y);visible=true;umin=0;umax=1;vmin=0;vmax=1;grid=50;format=normal;alpha=200;constcol=rgb(255,0,0);view=0;contourcolor=rgb(255,0,0);contourplot=true;showcontourplot=true;firstvalue=-1;stepsize=0.2;numlevels=11;xnum=75;ynum=75;show2d=false;hidesurface=false;hidelabels=false;showprojections=false;surfacecontours=true;projectioncolor=rgba(51,153,0,1);showxygrid=false;showxygridonbox=false&amp;type=slider;slider=a;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_x&amp;type=slider;slider=b;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_y&amp;type=text;text=0;visible=true;point=(0,0,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=15pt;bold=true;italic=false;fontmath=true;align=Center-left&amp;type=text;text=L;visible=true;point=(1,-0.025,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=L;visible=true;point=(-0.05,1,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=x;visible=true;point=(0.5,-0.07,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=y;visible=true;point=(-0.08,0.5,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=window;hsrmode=3;anaglyph=-1;center=-7.447051206708178,-2.790794355991455,3.71998429905919,1;focus=0.5,0.5,0.5,1;up=0.39804763218685024,0.14521777837291014,0.9057979241281567,1;transparent=true;alpha=140;twoviews=false;unlinkviews=false;axisextension=0;xaxislabel=%20;yaxislabel=%20;zaxislabel=%20;edgeson=false;faceson=true;showbox=false;showaxes=false;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.4;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=false;gridplanes=true;gridcolor=rgb(128,128,128);xmin=0;xmax=1;ymin=0;ymax=1;zmin=0;zmax=1;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=3.543529;xscalefactor=1;yscalefactor=1;zscalefactor=0.5;hidexysliders=true;hidetracevalue=true;
+			<sidebyside><program><input>https://c3d.libretexts.org/CalcPlot3D/index.html?type=jaxlabel;position=middle;math=%255Cpsi_%257Bn_x%252Cn_y%257D(x%252Cy);textonly=false&amp;type=z;z=sin(api*x)sin(bpi*y);visible=true;umin=0;umax=1;vmin=0;vmax=1;grid=50;format=normal;alpha=200;constcol=rgb(255,0,0);view=0;contourcolor=rgb(255,0,0);contourplot=true;showcontourplot=true;firstvalue=-1;stepsize=0.2;numlevels=11;xnum=75;ynum=75;show2d=false;hidesurface=false;hidelabels=false;showprojections=false;surfacecontours=true;projectioncolor=rgba(51,153,0,1);showxygrid=false;showxygridonbox=false&amp;type=slider;slider=a;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_x&amp;type=slider;slider=b;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_y&amp;type=text;text=0;visible=true;point=(0,0,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=15pt;bold=true;italic=false;fontmath=true;align=Center-left&amp;type=text;text=L;visible=true;point=(1,-0.025,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=L;visible=true;point=(-0.05,1,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=x;visible=true;point=(0.5,-0.07,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=y;visible=true;point=(-0.08,0.5,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=window;hsrmode=3;anaglyph=-1;center=-7.447051206708178,-2.790794355991455,3.71998429905919,1;focus=0.5,0.5,0.5,1;up=0.39804763218685024,0.14521777837291014,0.9057979241281567,1;transparent=true;alpha=140;twoviews=false;unlinkviews=false;axisextension=0;xaxislabel=%20;yaxislabel=%20;zaxislabel=%20;edgeson=false;faceson=true;showbox=false;showaxes=false;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.4;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=false;gridplanes=true;gridcolor=rgb(128,128,128);xmin=0;xmax=1;ymin=0;ymax=1;zmin=0;zmax=1;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=3.543529;xscalefactor=1;yscalefactor=1;zscalefactor=0.5;hidexysliders=true;hidetracevalue=true;
 			
 			</input></program></sidebyside>
 			</li>
@@ -2545,7 +2545,7 @@
 			   <title>LibreTexts and many other HTML web pages</title>
 			   <p>In order to get a dynamic figure that hides all the menus and controls of the CalcPlot3D app, we need to use a slightly different URL.</p>
 			   <p>The URL for a dynamic figure with <alert>no controls</alert> is:</p> 
-			   <sidebyside><program><input>https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/</input></program></sidebyside>
+			   <sidebyside><program><input>https://c3d.libretexts.org/CalcPlot3D/dynamicFigure/index.html?</input></program></sidebyside>
 			   <p>Note that the data for the figure is encoded in a query string by CalcPlot3D.  This means that we will need a question mark (?) just after the URL above
 			   and then we'll paste the data copied from the CalcPlot3D-generated URL.  If we were to enter this new URL and query string in the browser directly,
 			   we would get the dynamic figure by itself on the page.</p>
@@ -2561,7 +2561,7 @@
 			      <program language="html">
 			          <input>
 			               <![CDATA[<p style="text-align:center">
-			               <iframe frameborder="0" height="480px" src="https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigureWCP/?
+			               <iframe frameborder="0" height="480px" src="https://c3d.libretexts.org/CalcPlot3D/dynamicFigureWCP/index.html??
 			               type=jaxlabel;position=middle;math=%255Cpsi_%257Bn_x%252Cn_y%257D(x%252Cy);textonly=false&amp;
 			               type=z;z=sin(api*x)sin(bpi*y);visible=true;umin=0;umax=1;vmin=0;vmax=1;grid=50;format=normal;alpha=200;
 			               constcol=rgb(255,0,0);view=0;contourcolor=rgb(255,0,0);contourplot=true;showcontourplot=true;firstvalue=-1;
