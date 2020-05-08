@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<mathbook>
+<pretext>
 
 <docinfo>
 	<brandlogo url="https://c3d.libretexts.org/CalcPlot3D/index.html" 
@@ -13,7 +13,7 @@
 <book xml:id="calcplot3d-help">
 <title>CalcPlot3D Help</title>
 
-<frontmatter xml:id="index">
+<frontmatter xml:id="front">
 <titlepage>
 	<author>
 	  <personname>Paul Seeburger, with support from the NSF under grant, DUE-IUSE 1524968</personname>
@@ -39,7 +39,7 @@
     <p>First, let’s cover some of the basic functionality of the CalcPlot3D app.</p>
     </introduction>
     <section>
-        <title>Rotating the 3D Plot <ampersand/> Key Shortcuts</title>
+        <title>Rotating the 3D Plot &amp; Key Shortcuts</title>
         <p>Click on the 3D plot window and drag the mouse on the plot. 
         This should rotate the surface in the direction you move the mouse about the focus point (the origin, by default).
         To reset the viewpoint to the original one, press the <alert>Home</alert> key (<em>fn-left arrow</em> on Mac).</p>
@@ -319,7 +319,7 @@
 	   <li><alert>Show planes with grids:</alert> Displays planes with the gridlines so they are easier to see.</li>
 	   <li><alert>Show box:</alert> Indicates whether to display the plot bounding box or not.  The b-key also toggles the presence of this box.</li>
 	   <li><alert>Show axes:</alert> Indicates whether to display the coordinate axes or not.  The a-key also toggles the presence of the axes.</li>
-	   <li><alert>Show Ticks <ampersand /> Labels:</alert> Indicates whether to display the tick marks and numbers labeling the axes.</li>
+	   <li><alert>Show Ticks &amp; Labels:</alert> Indicates whether to display the tick marks and numbers labeling the axes.</li>
 	   </ul></p>
 	   <figure xml:id="figure-gridlines-example">
 		   <caption>An example plot with the gridlines shown on all three coordinate planes, shown on the box with planes to make them more visible.</caption>
@@ -1233,7 +1233,7 @@
 		</subsection>
 	</section>
 	<section xml:id="section-activeobjects">
-	    <title>Focused <ampersand/> Unfocused Objects</title>
+	    <title>Focused &amp; Unfocused Objects</title>
 	    <p>Note that when an object dialog has the focus, all it's options will be visible, but when another object has the focus, most of these options are hidden,
 		leaving only its most important properties visible.  An object will always have the focus just after being created.  To make it the active object and
 		obtain the focus again, just click on the object.  All its options will appear again.</p>
@@ -1391,7 +1391,7 @@
 
 
 <chapter>
-<title>CalcPlot3D Menus <ampersand /> Options</title>
+<title>CalcPlot3D Menus &amp; Options</title>
 <introduction>
    <sidebyside widths="90% 7%">
    	<stack>
@@ -1747,7 +1747,7 @@
 	         </dl></p>
 	    </section>
 	    <section>
-	         <title>Points, Lines <ampersand/> Planes in Space</title>
+	         <title>Points, Lines &amp; Planes in Space</title>
 	         <introduction>
 	         	<p>CalcPlot3D makes it easy to explore the relationships between points, lines, and planes in space.  Below are some explorations to help you see how this can be done.</p>
 	         </introduction>
@@ -1934,7 +1934,7 @@
                     <p>I also like the look of this one better with a constant color, so select the checkbox titled <alert>Use Constant Primary Color</alert>, at the bottom of this object.</p>
                     <p>h. Finally rotate the graph to see if it looks like we found the correct intersection curve. This should look like the image in <xref ref="figure-intersection2" /> below.</p>
 
-                    <p>Notice that the intersection of these two surfaces may appear a little polygonal rather than smooth like the curve we just graphed.  This is because we used an implicit surface with the default resolution.  To improve this resolution, you can adjust the <alert><hash /> Cubes/axis</alert> to a higher number, like 25.  See the result in <xref ref="figure-intersection2b" />.</p>
+                    <p>Notice that the intersection of these two surfaces may appear a little polygonal rather than smooth like the curve we just graphed.  This is because we used an implicit surface with the default resolution.  To improve this resolution, you can adjust the <alert># Cubes/axis</alert> to a higher number, like 25.  See the result in <xref ref="figure-intersection2b" />.</p>
                     <sidebyside widths="50.5% 49.5%">
 	                    <figure xml:id="figure-intersection2">
 							<caption>Intersection of the surfaces <m>2x^2 + y^2=4\quad\text{and}\quad z = x^2 + y^2</m>.</caption>
@@ -2252,7 +2252,7 @@
 	</section>
 </chapter>
 <chapter xml:id="chapter-creatingscripts">
-	 <title>*Creating <ampersand/> Using Scripts</title>
+	 <title>*Creating &amp; Using Scripts</title>
 	 <idx><h>Scripts</h></idx>
 	 <introduction>
 	 	<p>As you learned in <xref ref="subsection-savetourl" />, you can save a single view to the URL and share this URL to allow the view to be recreated when it is opened.</p>
@@ -2312,7 +2312,7 @@
      </section>
 </chapter>
 <backmatter xml:id="backmatter">
-    <title>Appendices <ampersand/> Index</title>
+    <title>Appendices &amp; Index</title>
 	<appendix xml:id="appendix-availablefunctions">
 	    <title>List of Available Functions</title>
 	    <idx><h>functions</h><h>available</h></idx>
@@ -2324,7 +2324,7 @@
 				<row valign="top" bottom="none">
 					<cell><p>ln()</p></cell>
 					<cell><p>log()</p></cell>
-					<cell><p>e<circumflex />()</p></cell>
+					<cell><p>e^()</p></cell>
 				</row>
 				<row valign="top" bottom="none">
 					<cell><p>cos()</p></cell>
@@ -2527,7 +2527,7 @@
 			</li>
 			<li><p>Now you have a few options that you may wish to alter in the query string by hand.
 			    <ul>
-			        <li><p>You can add a <c>name</c> attribute and/or a <c>noanimate</c> attribute to any sliders.  For example, <q>noanimate=true;name=n<underscore />x</q>.  Note that each object, including the sliders, starts with <q>type=</q> in the query string.</p>
+			        <li><p>You can add a <c>name</c> attribute and/or a <c>noanimate</c> attribute to any sliders.  For example, <q>noanimate=true;name=n_x</q>.  Note that each object, including the sliders, starts with <q>type=</q> in the query string.</p>
 			            <p>The <c>name</c> attribute changes the label of the slider to the supplied name, using MathJAX to format the supplied name.  This means you can use LaTeX in the name.</p>
 			            <p>The <c>noanimate</c> attribute allows you to hide the Animate button on the slider control, if you wish.</p></li>
 			        <li><p>You can add one or more of the following attributes to the window element at the very end of the query string: 
@@ -2640,4 +2640,4 @@
 </backmatter>
 
 </book>
-</mathbook>
+</pretext>
