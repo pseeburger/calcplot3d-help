@@ -2386,7 +2386,9 @@
 		 Typically only the plot window is displayed, while the menus and controls from the CalcPlot3D app are hidden.</p>
 		 <p>Depending on the context, the exact HTML code used to embed them will vary.</p>
 		 <p>These dynamic figures are already being used in OER textbooks in the LibreTexts platform,
-		 in PreTeXt OER textbooks and articles (like this one), in Geogebra books, and more.</p></introduction>
+		 in PreTeXt OER textbooks and articles (like this one), in Geogebra books, and more.</p>
+		 <p>For a video introduction to creating these figures for LibreTexts click the link below.</p>
+		 <p><url href="https://www.youtube.com/watch?v=sP9TESllJfw">Creating Dynamic Figures in LibreTexts using CalcPlot3D</url></p></introduction>
 		 <section>
 		     <title>Dynamic Figures with No Controls</title>
 			 <p>These figures can be rotated if they are 3D, and can be manipulated in other ways with the mouse and keystrokes, just as if they were in the full CalcPlot3D app.</p>
