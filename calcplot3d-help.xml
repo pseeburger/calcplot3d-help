@@ -38,6 +38,16 @@
 	 </figure>
     <p>First, let’s cover some of the basic functionality of the CalcPlot3D app.</p>
     </introduction>
+	<section>
+        <title>CalcPlot3D Introduction Video</title>
+        <p>Here is a 24 minute intro video to CalcPlot3D.</p>
+		<figure>
+            <caption>CalcPlot3D Intro Video</caption>
+            <video xml:id="video-calcplot3d-intro" href="https://c3d.libretexts.org/CalcPlot3D/videos/CalcPlot3D-IntroVideo.mp4" aspect="16:8" width="100%" play-at="select" controlslist="nodownload" disablePictureInPicture="true">
+				<track kind="captions" label="US English" xml:lang="en" source="https://c3d.libretexts.org/CalcPlot3D/videos/captions.vtt"/>
+			</video>
+        </figure>
+	</section>
     <section>
         <title>Rotating the 3D Plot &amp; Key Shortcuts</title>
         <p>Click on the 3D plot window and drag the mouse on the plot. 
@@ -50,7 +60,7 @@
 				<col width="25%"/>
 				<col width="75%" />
 				<row valign="bottom" bottom="major">
-				    <cell colspan="2" halign="center"><p><m>\large\textbf{CalcPlot3D}</m> <m>\large\textit{Rotation}</m> <m>\large\textbf{Key Shortcuts}</m></p></cell>
+				    <cell colspan="2" halign="center"><p><m>\large{\textbf{CalcPlot3D}\quad\textit{Rotation}\quad\textbf{Key Shortcuts}}</m></p></cell>
 				</row>
 				<row valign="top" bottom="medium">
 					<cell>Key combination</cell>
@@ -99,7 +109,7 @@
 				<col width="25%"/>
 				<col width="75%" />
 				<row valign="bottom" bottom="major">
-				    <cell colspan="2" halign="center"><p><m>\large\textbf{CalcPlot3D}</m> <m>\large\textit{Viewpoint}</m> <m>\large\textbf{and}</m> <m>\large\textit{Center}</m> <m>\large\textbf{Key Shortcuts}</m></p></cell>
+				    <cell colspan="2" halign="center"><p><m>\large{\textbf{CalcPlot3D}\quad\textit{Viewpoint}\quad\textbf{and}\quad\textit{Center}\quad\textbf{Key Shortcuts}}</m></p></cell>
 				</row>
 				<row valign="top" bottom="medium">
 					<cell><p>Key combination</p></cell>
@@ -834,7 +844,7 @@
 	   <sidebyside widths="80%">
 	      <image width="50%" source="images/uvbannertraced.png"><description>Coordinates of the parametric surface trace point</description></image>
 	   </sidebyside>
-	   <p><m>\Large\textbf{Adjusting the}\,uv \Large\textbf{-domain of a Parametric Surface on the 2D Traceplot:}</m></p>
+	   <p><m>\Large{\textbf{Adjusting the uv-domain of a Parametric Surface on the 2D Traceplot:}}</m></p>
 	   <p>You can even directly adjust the rectangular region in the <m>uv</m>-plane that defines the parametric surface.  To do this, click and drag on any of the four edges of this recrtangular region.  You should be able to adjust each edge and observe how this affects the corresponding parametric surface.</p>
 	   <p>Note that while adjusting these edges, they will lock onto multiples and fractions of <m>\pi</m>, as many parametric surfaces use radians.</p>
 	</section>
